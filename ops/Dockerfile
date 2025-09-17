@@ -10,18 +10,17 @@ ENV HOME="/var/www"
 
 COPY ops/bin/pre-run /usr/bin/pre-run
 
-EXPOSE $WEBSOCKET_PORT
 
-RUN mkdir -p "${HOME}" && \
+RUN mkdir -p "${HOME}/app" && \
   chown -R ${APP_USER_ID}:${APP_GROUP_ID} "${HOME}"
 
 WORKDIR $HOME
-
+EXPOSE $WEBSOCKET_PORT
 USER ${APP_USER_ID}:${APP_GROUP_ID}
 
-#############
-# dev below
-#############
+# ------------------------------------------------------
+# Development stages below
+#-------------------------------------------------------
 FROM base AS development
 
 ENV NODE_ENV=development
@@ -31,9 +30,9 @@ VOLUME $HOME
 ENTRYPOINT ["pre-run"]
 CMD [ "npm", "run", "dev" ]
 
-#############
-# prod below
-#############
+# ------------------------------------------------------
+# Production stages below
+#-------------------------------------------------------
 FROM base AS production
 
 ENV NODE_ENV=production

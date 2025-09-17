@@ -2,6 +2,7 @@ services:
   app:
     image: ${APP_IMAGE:-}
     platform: linux/amd64
+    hostname: jvfr-app
     build:
       context: ..
       target: ${APP_TARGET}
@@ -12,7 +13,27 @@ services:
     env_file:
       - ../.env
     ports:
-      - ${API_PORT:-10102}:3000
+      - ${APP_PORT:-10102}:3000
       - ${DEBUG_PORT:-9230}:9229
     volumes:
-      - ../.:/var/www
+      - ../.:/var/www/app
+
+    db:
+        user: postgres
+        image: postgres:latest
+        platform: linux/amd64
+        hostname: jvfr-db
+        ports:
+          - "${DB_PORT:-5444}:5432"
+        volumes:
+            - ./sql:/docker-entrypoint-initdb.d/
+        environment:
+            POSTGRES_USER: jvfr-admin
+            POSTGRES_PASSWORD: jvfr-admin
+            POSTGRES_DB: jvfr
+        healthcheck:
+            test: ['CMD-SHELL', 'pg_isready -q -d $${POSTGRES_DB} -U $${POSTGRES_USER}']
+            interval: 30s
+            timeout: 10s
+            retries: 3
+            start_period: 30s
