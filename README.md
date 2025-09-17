@@ -1,5 +1,11 @@
 # Live World 
 
+## DEV GOALS P1
+* Introduce logging library (inspect how one,that's most popular build), maybe we can write one if it is very easy
+
+## DEV GOALS P100
+* Create dependency graph for this project
+
 ## Overview
 
 The **Live World ** is a e-commerce front-end application. TODO...

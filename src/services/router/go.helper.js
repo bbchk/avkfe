@@ -16,14 +16,13 @@ async function go(route, addToHistory = true) {
 
   const path = `../../pages/${contentPath}/index.js`;
 
-  console.log(pages);
   if (pages[path]) {
     const { html, css } = await pages[path]();
     // TODO: let's reload content here and then inject data into the page via ajax
     // how to do it though?
     reloadContent(html, css);
   } else {
-    console.error(`Page not found: ${contentPath}`);
+    // TODO: it should return 404 error page then
   }
 
   let data = null;
