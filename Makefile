@@ -26,7 +26,7 @@ $(compose_file_custom):
 	touch "$(compose_file_custom)"
 
 .env: $(compose_file_custom)
-	-@cp -i .env.example .env
+	-@cp -i ./src/.env.example ./src/.env
 
 	temp_file=$$(mktemp)
 
