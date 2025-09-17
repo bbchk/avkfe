@@ -9,12 +9,12 @@ app_port = 8080
 # TODO:
 # db_port = 5444
 
-compose_file = ike/compose.yaml
-compose_file_custom = ike/compose.custom.yaml
+compose_file = ops/compose.yaml
+compose_file_custom = ops/compose.custom.yaml
 compose_project_name = jvfr
 
 app_target = development
-app_image = jvfr 
+app_image = jvfr
 
 export COMPOSE_PATH_SEPARATOR = :
 export COMPOSE_FILE ?= $(compose_file):$(compose_file_custom)

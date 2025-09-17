@@ -1,4 +1,4 @@
-FROM node:lts-slim as base
+FROM node:lts-slim AS base
 
 ARG APP_GROUP_ID="65534"
 ARG APP_USER_ID="65534"
