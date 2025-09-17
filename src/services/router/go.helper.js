@@ -5,8 +5,26 @@ import { ROUTE_CHANGED_EVENT } from '@/config/constants';
 
 import { fetchProducts } from '/services/api.service';
 
+const pages = import.meta.glob('../../pages/*/index.js');
+
 async function go(route, addToHistory = true) {
+  if (addToHistory) {
+    history.pushState({ route }, 'null', route);
+  }
+
   const contentPath = routes[route] || routes['default'];
+
+  const path = `../../pages/${contentPath}/index.js`;
+
+  console.log(pages);
+  if (pages[path]) {
+    const { html, css } = await pages[path]();
+    // TODO: let's reload content here and then inject data into the page via ajax
+    // how to do it though?
+    reloadContent(html, css);
+  } else {
+    console.error(`Page not found: ${contentPath}`);
+  }
 
   let data = null;
   switch (contentPath) {
@@ -18,14 +36,6 @@ async function go(route, addToHistory = true) {
     //   break;
     // default:
   }
-
-  if (addToHistory) {
-    history.pushState({ route }, 'null', route);
-  }
-
-  // TODO: don't use variable as vite cannot analyze this efficiently enough
-  const { html, css } = await import(`/pages/${contentPath}/index.js`);
-  reloadContent(html, css);
 
   window.dispatchEvent(
     new CustomEvent(ROUTE_CHANGED_EVENT, {

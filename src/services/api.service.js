@@ -1,9 +1,10 @@
-import { DB_PORT, DB_DOMAIN } from '@/config/constants';
 
-const db_hostname = `http://${DB_DOMAIN}:${DB_PORT}`;
+// import { DB_PORT, DB_DOMAIN } from '@/config/constants';
+// const database_url = `http://${DB_DOMAIN}:${DB_PORT}`;
+const database_url = `http://jvfr-jvbk:8080`;
 
 const fetchProducts = async () => {
-  const response = await fetch(`${db_hostname}/products`);
+  const response = await fetch(`${database_url}/products`);
 
   if (!response.ok) {
     // TODO: introduce custom errors

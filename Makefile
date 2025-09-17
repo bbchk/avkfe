@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: .env setup build install up down clean 
+.PHONY: .env create-network setup build install up down clean 
 
 .ONESHELL:
 .SHELLFLAGS := -eu -c  
@@ -52,7 +52,10 @@ $(compose_file_custom):
 		cp -i $$temp_file .env
 		rm -f $$temp_file
 
-setup: build install-deps up 
+create-network:
+	-@docker network create jv >/dev/null 2>&1 || true 
+
+setup: create-network build install-deps up 
 
 build: .env 
 	docker compose build
