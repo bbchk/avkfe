@@ -5,9 +5,7 @@
 .SHELLFLAGS := -eu -c  
 SHELL := bash
 
-app_port = 8080
-# TODO:
-# db_port = 5444
+app_port = 3000
 
 compose_file = ops/compose.yaml
 compose_file_custom = ops/compose.custom.yaml
@@ -37,7 +35,6 @@ $(compose_file_custom):
 		# ---------------------------------------------------
 
 		APP_PORT="$(app_port)"
-		DB_PORT="$(db_port)"
 		APP_IMAGE="$(app_image)"
 		APP_TARGET="$(app_target)"
 
@@ -50,9 +47,8 @@ $(compose_file_custom):
 		COMPOSE_PROJECT_NAME="$(compose_project_name)"
 		APP_GROUP_ID="$(APP_GROUP_ID)"
 		APP_USER_ID="$(APP_USER_ID)"
-		HOST_IP="$(HOST_IP)"
-
 		EOF
+
 		cp -i $$temp_file .env
 		rm -f $$temp_file
 
@@ -62,7 +58,7 @@ build: .env
 	docker compose build
 
 install-deps:
-	docker compose run --no-deps --rm app npm ci 
+	docker compose run --no-deps --rm app -- pnpm install --frozen-lockfile
 
 up:
 	 docker compose up -d --remove-orphans --wait --wait-timeout 30
@@ -71,4 +67,4 @@ down:
 	docker compose down --remove-orphans 
 	
 clean: down
-	rm -rf .env src/.npm src/node_modules src/coverage src/debug.json "$(compose_file_custom)"
+	rm -rf .env src/node_modules src/coverage src/debug.json "$(compose_file_custom)"

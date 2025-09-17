@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "description": "Front-end application for Zhyvyi Svit project",
+  "description": "Front-end application for Live World e-commerce platform.",
   "author": {
     "name": "Bohdan Buchok",
     "email": "bohdanbuchok@gmail.com"
