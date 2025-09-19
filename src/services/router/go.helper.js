@@ -16,29 +16,17 @@ async function go(route, addToHistory = true) {
 
   const path = `../../pages/${contentPath}/index.js`;
 
-  if (pages[path]) {
-    const { html, css } = await pages[path]();
-    // TODO: let's reload content here and then inject data into the page via ajax
-    // how to do it though?
-    reloadContent(html, css);
-  } else {
-    // TODO: it should return 404 error page then
-  }
+  const { html, css, preFetch } = await pages[path]();
+  reloadContent(html, css);
 
-  let data = null;
-  switch (contentPath) {
-    case 'home':
-      data = await fetchProducts();
-      break;
-    // case 'landing':
-    //   data = await fetchProduct();
-    //   break;
-    // default:
+  let prefetchedData = null;
+  if(preFetch){
+    prefetchedData = await preFetch();
   }
 
   window.dispatchEvent(
     new CustomEvent(ROUTE_CHANGED_EVENT, {
-      detail: { route: route, contentPath: contentPath, data: data },
+      detail: { route, contentPath, prefetchedData },
     }),
   );
 

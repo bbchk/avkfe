@@ -1,10 +1,19 @@
-import html from './index.html?raw';
+// "id": "pf001",
+// "imageUrl": "/public/goods_placeholder.svg",
+// "name": "Royal Canine Adult 10kg",
+// "count": 20,
+// "weight": "10kg",
+// "price_discount": 45.99,
+// "price_orig": 55.00,
+// "type": "Dry Food",
+// "animal": "Dog"
 
+import html from './index.html?raw';
 import css from './index.scss?inline';
 
-import { ROUTE_CHANGED_EVENT } from '/config/constants';
-
 import { fetchProducts } from '/services/api.service';
+
+import { ROUTE_CHANGED_EVENT } from '/config/constants';
 
 async function preFetch(){
   let data = await fetchProducts();
@@ -12,7 +21,7 @@ async function preFetch(){
   return data;
 }
 
-window.on(ROUTE_CHANGED_EVENT, (ev) => {
+window.on(ROUTE_CHANGED_EVENT, async (ev) => {
   const gallery = $('#homeGalleryContent--first');
   if (gallery) {
     let galleryContent = '';
@@ -20,20 +29,7 @@ window.on(ROUTE_CHANGED_EVENT, (ev) => {
     // TODO: sort by real label `favorite choice` from db in the future
     let idx = 0;
 
-
-    // "id": "pf001",
-    // "imageUrl": "/public/goods_placeholder.svg",
-    // "name": "Royal Canine Adult 10kg",
-    // "count": 20,
-    // "weight": "10kg",
-    // "price_discount": 45.99,
-    // "price_orig": 55.00,
-    // "type": "Dry Food",
-    // "animal": "Dog"
-    //
-
-    for (const { name, image_url, price_orig, price_discount } of ev.detail
-      .prefetchedData) {
+    for (const { name, image_url, price_orig, price_discount } of ev.detail.prefetchedData) {
       // TODO: sort by real label `favorite choice` from db in the future
       if (idx > 7) {
         break;
