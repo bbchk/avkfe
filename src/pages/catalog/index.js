@@ -16,9 +16,7 @@ import { fetchProducts } from '/services/api.service';
 import { ROUTE_CHANGED_EVENT } from '/config/constants';
 
 async function preFetch(){
-  let data = await fetchProducts();
-
-  return data;
+  return await fetchProducts();
 }
 
 window.on(ROUTE_CHANGED_EVENT, async (ev) => {

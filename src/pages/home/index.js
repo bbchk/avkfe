@@ -1,5 +1,4 @@
 import html from './index.html?raw';
-
 import css from './index.scss?inline';
 
 import { ROUTE_CHANGED_EVENT } from '/config/constants';
@@ -7,9 +6,7 @@ import { ROUTE_CHANGED_EVENT } from '/config/constants';
 import { fetchProducts } from '/services/api.service';
 
 async function preFetch(){
-  let data = await fetchProducts();
-
-  return data;
+  return await fetchProducts();
 }
 
 window.on(ROUTE_CHANGED_EVENT, (ev) => {
