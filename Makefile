@@ -20,9 +20,6 @@ export COMPOSE_PROJECT_NAME ?= $(compose_project_name)
 export APP_GROUP_ID ?= $(shell echo $${SUDO_GID:-$$(id -g)})
 export APP_USER_ID ?= $(shell echo $${SUDO_UID:-$$(id -u)})
 
-
-setup: create-network build install-deps up 
-
 help:
 	@cat <<EOF
 	|===============================
