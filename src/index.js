@@ -3,7 +3,7 @@ import './assets/styles/index.scss';
 import './utils/dom.utils.js';
 
 // TODO: introduce logging
-// import logger from './config/logger.js';
+import logger from './config/logger.js';
 
 import { Router } from './services/router/index.service.js';
 
@@ -12,6 +12,7 @@ window._app = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+  logger.debug({Router}, "Router init")
   window._app.router.init();
 });
 
