@@ -20,6 +20,67 @@ export COMPOSE_PROJECT_NAME ?= $(compose_project_name)
 export APP_GROUP_ID ?= $(shell echo $${SUDO_GID:-$$(id -g)})
 export APP_USER_ID ?= $(shell echo $${SUDO_UID:-$$(id -u)})
 
+
+setup: create-network build install-deps up 
+
+help:
+	@cat <<EOF
+	|===============================
+	| Available targets:
+	| ------------------------------
+	|  Primary:
+	|
+	|   - setup        Boot up project for local development.
+	|   - build        Build project images.
+	|   - up           Start project containers.
+	|   - stop         Stop project containers.
+	|   - down         Stop and remove project containers.
+	|   - clean        Shut down compose project and remove all generated artifacts.
+	|   - install-deps Run main container and install dependencies from lock file.
+	|
+	|   - test (WIP)   Boot up project and run tests inside main application container.
+	|
+	| ------------------------------
+	|  Auxiliary:
+	|
+	|   - .env                      Write .env files from .env.example ones OR prompt the user to overwrite them. 
+	|   - create-network    	Creates external network.
+	|   - $(compose_file_custom)   Creates custom docker compose file.
+	|
+	| ------------------------------
+	|  Quality of life:
+	| 
+	|   - help   Print this help message.
+	|   - logs   Follow logs of service(s). Use `make logs` or `make logs s1 s2 s3`.
+	|   - exec   Exec sh into service container. Use `make exec s1`.
+	|
+	|===============================
+	EOF
+
+# == Primary targets below ======================
+
+setup: create-network build install-deps up 
+
+build: .env 
+	docker compose build
+
+install-deps:
+	docker compose run --no-deps --rm app -- pnpm install --frozen-lockfile
+
+up:
+	 docker compose up -d --remove-orphans --wait --wait-timeout 30
+
+stop:
+	docker compose stop
+
+down:
+	docker compose down --remove-orphans 
+	
+clean: down
+	rm -rf .env src/node_modules src/coverage src/debug.json "$(compose_file_custom)"
+
+# == Auxiliary targets below ======================
+
 $(compose_file_custom):
 	touch "$(compose_file_custom)"
 
@@ -55,19 +116,11 @@ $(compose_file_custom):
 create-network:
 	-@docker network create jv >/dev/null 2>&1 || true 
 
-setup: create-network build install-deps up 
+# == QoL targets below ======================
 
-build: .env 
-	docker compose build
+logs:
+	docker compose logs -f $(filter-out $@,$(MAKECMDGOALS))
 
-install-deps:
-	docker compose run --no-deps --rm app -- pnpm install --frozen-lockfile
-
-up:
-	 docker compose up -d --remove-orphans --wait --wait-timeout 30
-
-down:
-	docker compose down --remove-orphans 
-	
-clean: down
-	rm -rf .env src/node_modules src/coverage src/debug.json "$(compose_file_custom)"
+exec:
+	service="$(firstword $(filter-out $@,$(MAKECMDGOALS)))"
+	docker compose exec $${service:-app} bash
