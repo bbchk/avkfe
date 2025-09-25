@@ -5,4 +5,6 @@ const APP_ENV = import.meta.env.VITE_APP_ENV || 'production';
 const DB_PORT = import.meta.env.VITE_DB_PORT || '8080';
 const DB_DOMAIN = import.meta.env.VITE_DB_DOMAIN || 'localhost';
 
-export { APP_ENV, DB_PORT, DB_DOMAIN, ROUTE_CHANGED_EVENT };
+const PINO_LOG_LEVEL = import.meta.env.VITE_PINO_LOG_LEVEL || 'info';
+
+export { APP_ENV, DB_PORT, DB_DOMAIN, ROUTE_CHANGED_EVENT, PINO_LOG_LEVEL };
