@@ -1,18 +1,18 @@
 .DEFAULT_GOAL := help
-.PHONY: .env create-network setup build install up down clean 
+.PHONY: .env create-network setup build install up down clean
 
 .ONESHELL:
-.SHELLFLAGS := -eu -c  
+.SHELLFLAGS := -eu -c
 SHELL := bash
 
 app_port = 3000
 
 compose_file = ops/compose.yaml
 compose_file_custom = ops/compose.custom.yaml
-compose_project_name = jvfr
+compose_project_name = lvfe
 
 app_target = development
-app_image = jvfr
+app_image = lvfe
 
 export COMPOSE_PATH_SEPARATOR = :
 export COMPOSE_FILE ?= $(compose_file):$(compose_file_custom)
@@ -30,24 +30,24 @@ help:
 	|   - setup        Boot up project for local development.
 	|   - build        Build project images.
 	|   - up           Start project containers.
-	|   - stop         Stop project containers.
 	|   - down         Stop and remove project containers.
 	|   - clean        Shut down compose project and remove all generated artifacts.
-	|   - install-deps Run main container and install dependencies from lock file.
 	|
 	|   - test (WIP)   Boot up project and run tests inside main application container.
 	|
 	| ------------------------------
 	|  Auxiliary:
 	|
-	|   - .env                      Write .env files from .env.example ones OR prompt the user to overwrite them. 
+	|   - .env                      Write .env files from .env.example ones OR prompt the user to overwrite them.
 	|   - create-network    	Creates external network.
+	|   - install-deps 			Run main container and install dependencies from lock file.
 	|   - $(compose_file_custom)   Creates custom docker compose file.
 	|
 	| ------------------------------
 	|  Quality of life:
-	| 
+	|
 	|   - help   Print this help message.
+	|   - stop   Stop project containers.
 	|   - logs   Follow logs of service(s). Use `make logs` or `make logs s1 s2 s3`.
 	|   - exec   Exec sh into service container. Use `make exec s1`.
 	|
@@ -56,9 +56,9 @@ help:
 
 # == Primary targets below ======================
 
-setup: create-network build install-deps up 
+setup: create-network build install-deps up
 
-build: .env 
+build: .env
 	docker compose build
 
 install-deps:
@@ -71,8 +71,8 @@ stop:
 	docker compose stop
 
 down:
-	docker compose down --remove-orphans 
-	
+	docker compose down --remove-orphans
+
 clean: down
 	rm -rf .env src/node_modules src/coverage src/debug.json "$(compose_file_custom)"
 
@@ -111,7 +111,7 @@ $(compose_file_custom):
 		rm -f $$temp_file
 
 create-network:
-	-@docker network create jv >/dev/null 2>&1 || true 
+	-@docker network create lv >/dev/null 2>&1 || true
 
 # == QoL targets below ======================
 

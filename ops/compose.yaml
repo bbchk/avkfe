@@ -2,7 +2,7 @@ services:
   app:
     image: ${APP_IMAGE:-}
     platform: linux/amd64
-    hostname: jvfr-app
+    hostname: lvfe
     build:
       context: ..
       target: ${APP_TARGET}
@@ -51,4 +51,4 @@ services:
 networks:
   default:
     external: true
-    name: jv
+    name: lv
