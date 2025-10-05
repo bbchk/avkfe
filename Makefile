@@ -10,10 +10,6 @@
 
 # == Variables below ======================
 
-.PHONY: .env create-network setup build install up down clean install-deps
-.SILENT: .env
-.IGNORE: .env
-
 compose_file = ops/compose.yaml
 compose_file_custom = ops/compose.custom.yaml
 compose_project_name = lvfe
@@ -28,12 +24,8 @@ clean: down
 	rm -rf .env src/node_module src/.env "$(compose_file_custom)"
 
 # == Auxiliary targets below ======================
-	# $(compose_file_custom)
-	#
-	# 	cp -i $$temp_file .env
-	# 	rm -f $$temp_file
 
-.env:
+.env: $(compose_file_custom)
 	cp -i src/.env.example src/.env
 	cp -i <(cat <<EOF
 		APP_PORT="$(app_port)"
@@ -49,9 +41,4 @@ clean: down
 install-deps:
 	docker compose run --no-deps --rm app -- pnpm install --frozen-lockfile
 
-help: help-primary
-	-@$(MAKE) -s help-auxiliary
-	@cat <<EOF
-	|   - foo  Just foo and see what's gonna happen
-	EOF
-	$(MAKE) -s help-qol
+help: help-primary help-auxiliary help-qol
