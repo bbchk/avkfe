@@ -1,5 +1,5 @@
 include:
-  - ssh://git@github.com/bbchk/lvops.git#main:compose.yaml
+  - ./common/lvops/compose.yaml
 
 services:
   app:
