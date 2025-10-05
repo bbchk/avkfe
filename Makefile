@@ -27,7 +27,7 @@ clean: down
 
 .env: $(compose_file_custom)
 	cp -i src/.env.example src/.env
-	cp -i <(cat <<<'
+	cp -i <(cat <<<' # Build-related env variables
 		APP_PORT="$(app_port)"
 		APP_IMAGE="$(app_image)"
 		APP_TARGET="$(app_target)"
