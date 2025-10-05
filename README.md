@@ -78,3 +78,8 @@ To run tests, please use:
 ```sh
 TODO
 ```
+
+<!-- # TODO: what flags are necessary then? -->
+<!-- update-submodules-default: -->
+<!-- 	git submodule update --init --recursive --remote --merge -->
+<!---->
