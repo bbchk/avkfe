@@ -1,3 +1,6 @@
+include:
+  - ssh://git@github.com/bbchk/lvops.git#main:compose.yaml
+
 services:
   app:
     image: ${APP_IMAGE:-}
@@ -27,28 +30,3 @@ services:
     working_dir: /var/www
     ports:
       - "8080:8080"
-
-    # db:
-    #     user: postgres
-    #     image: postgres:latest
-    #     platform: linux/amd64
-    #     hostname: jvfr-db
-    #     ports:
-    #       - "${DB_PORT:-5444}:5432"
-    #     volumes:
-    #         - ./sql:/docker-entrypoint-initdb.d/
-    #     environment:
-    #         POSTGRES_USER: jvfr-admin
-    #         POSTGRES_PASSWORD: jvfr-admin
-    #         POSTGRES_DB: jvfr
-    #     healthcheck:
-    #         test: ['CMD-SHELL', 'pg_isready -q -d $${POSTGRES_DB} -U $${POSTGRES_USER}']
-    #         interval: 30s
-    #         timeout: 10s
-    #         retries: 3
-    #         start_period: 30s
-
-networks:
-  default:
-    external: true
-    name: lv
