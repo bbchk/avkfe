@@ -40,4 +40,6 @@ clean: down
 install-deps:
 	docker compose run --no-deps --rm app -- pnpm install --frozen-lockfile
 
+# == QoL targets below ======================
+
 help: help-primary help-auxiliary help-qol
