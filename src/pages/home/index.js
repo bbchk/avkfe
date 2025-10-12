@@ -1,7 +1,7 @@
 import html from './index.html?raw';
 import css from './index.scss?inline';
 
-import getCategoryCardHTML from './comps/categoryCard.js'
+import getCategoryCardHTML from './components/categoryCard.js'
 
 import { ROUTE_CHANGED_EVENT } from '/config/constants';
 
