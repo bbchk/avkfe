@@ -1,8 +1,6 @@
 @use '@styles/settings/index' as *;
-@use '@styles/elements/index' as *;
+@use '@styles/components/index' as *;
 @use '@styles/utils' as *;
-
-@use '@styles/comps/rating' as *;
 
 .home {
   display: flex;

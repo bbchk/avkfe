@@ -11,7 +11,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   // root: 'src',
-  publicDir: resolve(__dirname, './public'),
+  publicDir: resolve(__dirname, './assets/public'),
   // envDir: __dirname,
   // plugins: [Inspect()],
   base: '/avkfe/',

@@ -1,11 +1,11 @@
-@use 'settings/index' as *;
-@use 'elements/index' as *;
-@use 'utils' as *;
-
 @use 'settings/reset.scss' as *;
 @use 'settings/normalize.scss' as *;
+@use 'settings/index' as *;
 
-@use 'comps/layout/index' as *;
+@use 'components/index' as *;
+
+@use 'utils' as *;
+
 
 html {
   overscroll-behavior: none;

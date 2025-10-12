@@ -37,6 +37,11 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- TODO: optimize font loading, download them in the project, not to rely on external api -->
     <!-- even if it is google one -->
     <!-- Font loading below -->
@@ -71,65 +76,69 @@
 
   <body>
     <header class="header">
-      <a href="/" class="inLink headerLogo">
-        <img src="logo-elipsis-transparent.svg" width="100" height="100" alt="Логотип" />
+      <a href="/" class="inLink header__logo">
+        <img
+          src="logo-elipsis-transparent.svg"
+          width="100"
+          height="100"
+          alt="Логотип"
+        />
       </a>
 
       <nav class="header__nav">
-        <ul class="header__navList">
-
+        <ul>
           <li class="header__navItem--catalog">
-            <a class="inLink" href="/catalog">
-              <span class="header__navItemIcon">🗃️</span> Каталог</a
-            >
-          </li>
-          <li class="header__navItem--cart">
-            <a class="inLink" href="/todo-koshik-button">
-              <span class="header__navItemIcon">🛒</span>Кошик</a
-            >
+            <a class="inLink" href="/catalog"> Каталог</a>
           </li>
 
+          <li class="header__navItem--cart">
+            <a class="inLink" href="/todo-koshik-button"> Кошик</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-
-
     <main id="main_elem"></main>
-    <footer class="footer">
-      <!-- <a href="/about_us" class="footerLogo inLink"> -->
-      <!-- </a> -->
-
-      <section class="footer__about">
-        <!-- < -->
-        <h5>Про Живий Cвіт</h5>
-        <ul class="footer__aboutList">
-          <li><a class="inLink">Про нас</a></li>
-          <li><a class="inLink">Правила сайту</a></li>
-          <li><a class="inLink">Політика конфеденційності</a></li>
-          <li><a class="inLink">Співпраця з нами</a></li>
-        </ul>
-      </section>
-
-      <section class="footer__rules">
-        <h5>Покупцям</h5>
-
-        <ul class="footer__rulesList">
-          <li><a class="inLink">Доставка та оплата</a></li>
-          <li><a class="inLink">Повернення товару</a></li>
-          <li><a class="inLink">Гарантійне обслуговування</a></li>
-        </ul>
-      </section>
-
-      <section class="footer__contacts">
-        <h5>Контакти</h5>
-        <ul class="footer__contactsList">
-          <li><a class="inLink">Усі контакти</a></li>
-          <li><a class="inLink">Усі локації</a></li>
-        </ul>
-        <!-- TODO: мапа основної точки -->
-        <!-- TODO: основні контакти  -->
-      </section>
-    </footer>
   </body>
 </html>
+
+
+
+<!-- -------------------------- -->
+
+
+
+    <!-- <footer class="footer"> -->
+    <!--   <a href="/about_us" class="footerLogo inLink"> -->
+    <!--   </a> -->
+    <!---->
+    <!--   <section class="footer__about"> -->
+    <!--     <h5>Про Живий Cвіт</h5> -->
+    <!--     <ul class="footer__aboutList"> -->
+    <!--       <li><a class="inLink">Про нас</a></li> -->
+    <!--       <li><a class="inLink">Правила сайту</a></li> -->
+    <!--       <li><a class="inLink">Політика конфеденційності</a></li> -->
+    <!--       <li><a class="inLink">Співпраця з нами</a></li> -->
+    <!--     </ul> -->
+    <!--   </section> -->
+    <!---->
+    <!--   <section class="footer__rules"> -->
+    <!--     <h5>Покупцям</h5> -->
+    <!---->
+    <!--     <ul class="footer__rulesList"> -->
+    <!--       <li><a class="inLink">Доставка та оплата</a></li> -->
+    <!--       <li><a class="inLink">Повернення товару</a></li> -->
+    <!--       <li><a class="inLink">Гарантійне обслуговування</a></li> -->
+    <!--     </ul> -->
+    <!--   </section> -->
+    <!---->
+    <!--   <section class="footer__contacts"> -->
+    <!--     <h5>Контакти</h5> -->
+    <!--     <ul class="footer__contactsList"> -->
+    <!--       <li><a class="inLink">Усі контакти</a></li> -->
+    <!--       <li><a class="inLink">Усі локації</a></li> -->
+    <!--     </ul> -->
+    <!--     TODO: мапа основної точки -->
+    <!--     TODO: основні контакти  -->
+    <!--   </section> -->
+    <!-- </footer> -->

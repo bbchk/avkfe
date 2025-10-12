@@ -9,12 +9,10 @@
 
   overflow: clip;
 
-  /* border-bottom: 1px solid $color-wh-platinum; */
-
-  /* background: $color-gr-medbud; */
+  border-bottom: 2px solid $color-downplay;
 }
 
-.headerLogo {
+.header__logo {
   display: flex;
   flex-flow: row nowrap;
   gap: 15px;
@@ -47,28 +45,24 @@
   }
 }
 
-.header__nav {}
-
-.header__navList {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 15px;
+.header__nav {
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+  }
 }
 
 .header__navItem {
-
   &--catalog,
   &--cart {
     font-family: $font-primary;
     font-size: 1.2rem;
   }
 
-  &--catalog {}
+  &--catalog {
+  }
 
-  &--cart {}
-}
-
-.header__navItemIcon {
-  font-family: $font-emoji;
-  /* color: $color-blu-dasl; */
+  &--cart {
+  }
 }

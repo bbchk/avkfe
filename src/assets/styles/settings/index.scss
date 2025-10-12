@@ -1,13 +1,15 @@
-@use "./variables/colors.scss" as color;
-@use "./variables/fonts.scss" as font;
+@use './variables/_colors.scss' as color;
+@use './variables/_fonts.scss' as font;
 
-@forward "./variables/sizes.scss" as size-*;
+@forward './variables/_sizes.scss' as size-*;
 
 /* ---------- COLORS --------------- */
 $color-primary: color.$blu-indigo;
 $color-secondary: color.$wh-lightsilv;
 
-$color-downplay: #848482;
+$color-logo: color.$blu-azure;
+
+$color-downplay: color.$wh-platinum;
 $color-highlight: color.$rd-decapink;
 
 $color-confirm: color.$gr-ao;
@@ -17,7 +19,7 @@ $color-text: color.$blck-rich;
 $color-background: color.$wh-cultured;
 
 /* ---------- FONTS --------------- */
-$font-primary: font.$balsamiq-sans;
+$font-primary: font.$raleway;
 $font-secondary: font.$noto-serif;
 
 $font-decor: font.$pacifico;
