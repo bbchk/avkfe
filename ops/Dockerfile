@@ -7,8 +7,8 @@ RUN apt-get install curl -y
 ARG APP_GROUP_ID="1000"
 ARG APP_USER_ID="1000"
 
-# RUN getent group $APP_GROUP_ID || groupmod -g $APP_GROUP_ID nobody && \
-#     getent passwd $APP_USER_ID || usermod -u $APP_USER_ID nobody
+RUN getent group $APP_GROUP_ID || groupmod -g $APP_GROUP_ID nobody && \
+    getent passwd $APP_USER_ID || usermod -u $APP_USER_ID nobody
 
 ENV HOME="/var/www"
 ENV APP_HOME="${HOME}/app" \

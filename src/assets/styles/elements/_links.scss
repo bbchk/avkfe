@@ -7,10 +7,10 @@
 .link--primary {
   @extend .link;
 
-  color: $color-blu-defrance;
+  /* color: $color-blu-defrance; */
 
   &:hover {
-    color: $color-blu-navy;
+    /* color: $color-blu-navy; */
     text-decoration: underline;
   }
 }

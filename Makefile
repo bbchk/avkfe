@@ -63,7 +63,7 @@ create-network:
 	) .env
 
 install-deps:
-	docker compose run --no-deps --rm app -- pnpm install --frozen-lockfile
+	docker compose run --no-deps --rm -w /var/www/app/src app -- pnpm install --frozen-lockfile
 
 # == QoL targets below ======================
 

@@ -4,7 +4,7 @@
 
 @use '@styles/comps/rating' as *;
 
-@import './styles/categories.scss';
+@use 'styles/categories.scss';
 
 .home {
   display: flex;

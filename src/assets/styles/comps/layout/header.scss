@@ -9,9 +9,9 @@
 
   overflow: clip;
 
-  border-bottom: 1px solid $color-wh-platinum;
+  /* border-bottom: 1px solid $color-wh-platinum; */
 
-  background: $color-gr-medbud;
+  /* background: $color-gr-medbud; */
 }
 
 .headerLogo {
@@ -22,15 +22,15 @@
   padding: 0 30px;
 
   span {
-    font-family: $font-pacifico;
+    /* font-family: $font-pacifico; */
     font-size: 3rem;
     font-weight: 500;
-    color: $color-blu-dasl;
+    /* color: $color-blu-dasl; */
   }
 
   &:hover {
     span {
-      color: $color-blu-dasl;
+      /* color: $color-blu-dasl; */
     }
   }
 
@@ -59,7 +59,7 @@
 
   &--catalog,
   &--cart {
-    font-family: $font-balsamiq-sans;
+    font-family: $font-primary;
     font-size: 1.2rem;
   }
 
@@ -69,6 +69,6 @@
 }
 
 .header__navItemIcon {
-  font-family: $font-noto-emoji;
-  color: $color-blu-dasl;
+  font-family: $font-emoji;
+  /* color: $color-blu-dasl; */
 }

@@ -1,36 +1,40 @@
-@use './variables/index.scss' as *;
-@forward './variables/index.scss';
+@use "./variables/colors.scss" as color;
+@use "./variables/fonts.scss" as font;
 
-/* colors */
-$color-primary: $color-blu-indigo;
-$color-secondary: $color-wh-lightsilv;
+@forward "./variables/sizes.scss" as size-*;
+
+/* ---------- COLORS --------------- */
+$color-primary: color.$blu-indigo;
+$color-secondary: color.$wh-lightsilv;
 
 $color-downplay: #848482;
+$color-highlight: color.$rd-decapink;
 
-$color-highlight: $color-rd-decapink;
+$color-confirm: color.$gr-ao;
+$color-decline: color.$rd-decapink;
 
-$color-confirm: $color-gr-ao;
-$color-decline: $color-rd-decapink;
+$color-text: color.$blck-rich;
+$color-background: color.$wh-cultured;
 
-/* $color-background */
-$color-text: $color-blck-rich;
-/* $color-error (often red) */
-/* $color-success (often green) */
-/* $color-warning (often yellow) */
-/* $color-info (often blue) */
+/* ---------- FONTS --------------- */
+$font-primary: font.$balsamiq-sans;
+$font-secondary: font.$noto-serif;
 
-/* $color-danger */
-/* $color-positive */
-/* $color-negative */
-/* $color-neutral */
-/* $color-highlight */
+$font-decor: font.$pacifico;
+$font-emoji: font.$noto-emoji;
 
-/* $color-hover */
-/* $color-active */
-/* $color-disabled */
-/* $color-focused */
+/* ============================ */
+/* Placeholder / reference variables
+   — define later when adding state colors etc. */
 
-$color-background: $color-wh-cultured;
+/*
+$color-error: color.$rd-error;
+$color-success: color.$gr-success;
+$color-warning: color.$yl-warning;
+$color-info: color.$blu-info;
 
-/* fonts */
-$font-primary: $font-noto-serif;
+$color-hover: color.$wh-hover;
+$color-active: color.$wh-active;
+$color-disabled: color.$gr-disabled;
+$color-focused: color.$bl-focused;
+*/
