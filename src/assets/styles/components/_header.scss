@@ -67,9 +67,18 @@
   &--catalog {
   }
 
-  &--diagnosis {
+  &--diagnostics {
   }
+}
 
-  &--diagnosis {
+.header__navItem--contacts {
+  display: flex;
+  gap: 20px;
+
+  font-size: 1.5rem;
+
+  p {
+    display: inline;
+    line-height: 15px;
   }
 }
