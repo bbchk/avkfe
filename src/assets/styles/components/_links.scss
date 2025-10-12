@@ -1,16 +1,16 @@
 @use '@styles/settings/index' as *;
 
-.link {
+.inLink {
   transition: color 0.25s ease-in-out;
 }
 
-.link--primary {
-  @extend .link;
+.inLink--primary {
+  @extend .inLink;
 
-  /* color: $color-blu-defrance; */
+  color: $color-primary;
 
   &:hover {
-    /* color: $color-blu-navy; */
+    color: $color-secondary;
     text-decoration: underline;
   }
 }

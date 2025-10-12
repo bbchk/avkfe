@@ -46,6 +46,16 @@
 }
 
 .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 0 20px;
+
+  font-family: $font-primary;
+  font-size: 1.2rem;
+
   ul {
     display: flex;
     flex-flow: row nowrap;
@@ -54,15 +64,12 @@
 }
 
 .header__navItem {
-  &--catalog,
-  &--cart {
-    font-family: $font-primary;
-    font-size: 1.2rem;
-  }
-
   &--catalog {
   }
 
-  &--cart {
+  &--diagnosis {
+  }
+
+  &--diagnosis {
   }
 }
