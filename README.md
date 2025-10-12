@@ -1,4 +1,4 @@
-# Live World 
+# AVAK GROUP Front-end
 
 ## DEV GOALS P1
 * Introduce logging library (inspect how one,that's most popular build), maybe we can write one if it is very easy
