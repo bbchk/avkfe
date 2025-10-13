@@ -2,7 +2,7 @@
 @use '@styles/components/index' as *;
 @use '@styles/utils' as *;
 
-@use 'styles/categories.scss';
+@use 'styles/home__hero.scss';
 
 .home {
   display: flex;
@@ -15,50 +15,5 @@
 
 .container--home {
   @extend .container;
-}
-
-.home__hero {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-
-  padding: 100px 0;
-
-  @include media($size-tablet) {
-    flex-flow: column nowrap;
-  }
-}
-
-.home__heroAppeal {
-  flex: 1 1 70%;
-
-  p {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-    line-height: 1.3;
-  }
-
-  @include media($size-tablet) {
-    order: 2;
-  }
-}
-
-.home_heroImage {
-  flex: 1 5 30%;
-
-  width: 100%;
-
-  border-radius: 10px;
-
-  object-fit: cover;
-
-  @include media($size-tablet) {
-    order: 1;
-  }
 }
 
