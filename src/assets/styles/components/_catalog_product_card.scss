@@ -43,6 +43,48 @@
   }
 }
 
+.carBat__polarity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.3rem;
+  margin-top: 0.6rem;
+
+  position: absolute;
+  left: 10px;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  &--left {
+    top: 40px;
+  }
+
+  &--right {
+    top: 10px;
+  }
+
+  &Pos {
+    background-color: #dc3545; // red
+  }
+
+  &Neg {
+    background-color: #0078d7; // blue
+  }
+}
+
 /* .carBat:hover .carBat__image img { */
 /*   transform: scale(1.05); */
 /* } */
@@ -147,7 +189,6 @@
   align-self: center;
   justify-self: center;
 
-
   /* background: #0078d7; */
   border: 2px solid $color-confirm;
   color: $color-confirm;
@@ -160,10 +201,12 @@
   border-radius: 10px;
 
   cursor: pointer;
-  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
 
   &:hover {
-
     border-color: transparent;
     color: white;
     background: $color-confirm;

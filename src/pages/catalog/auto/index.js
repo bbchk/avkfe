@@ -46,6 +46,7 @@ const createProductCard = (p) => {
     <div class="carBat__specs">
       <span>${p.capacity} Ah</span>
       <span>${p.current} A(EN)</span>
+      <span>${p.polarities.join("/")}</span>
     </div>
 
     <div class="carBat__price">
