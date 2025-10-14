@@ -30,7 +30,9 @@ const getContainerForCapacity = (capacity) => {
 };
 
 const createProductCard = (p) => {
-  console.log(p.image_url)
+  // TODO: use env variable
+  p.image_url = `/assets/public/${p.image_url}`
+
   return `
     <div class="product-card" data-id="${p.id}">
       <div class="product-image">

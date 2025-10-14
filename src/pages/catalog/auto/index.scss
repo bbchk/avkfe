@@ -4,13 +4,8 @@
 
 
 .catalog--auto {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
 }
 
 .catalog__gallery {
@@ -23,6 +18,21 @@
     border-top: 1px solid #e0e0e0;
     margin: 0;
   }
+}
+
+.s60,
+.s70,
+.s80,
+.s90,
+.s100,
+.s101 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 1.5rem;
+  padding: 2rem 0;
+  background-color: #f5f6f7;
 }
 
 .s60 {
