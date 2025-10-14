@@ -14,7 +14,7 @@ export default defineConfig({
   publicDir: resolve(__dirname, './assets/public'),
   // envDir: __dirname,
   // plugins: [Inspect()],
-  base: '/',
+  base: '/avkfe/',
   build: {
     outDir: resolve(__dirname, '../docs'),
     // sourcemap: true,
