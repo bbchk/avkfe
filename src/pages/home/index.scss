@@ -6,7 +6,7 @@
 
 .home {
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1.5fr;
+  grid-template-columns: 0.7fr 1fr 1.5fr;
   grid-template-rows: 1fr 1fr;
 
   grid-template-areas:
@@ -15,8 +15,7 @@
 
   padding: 35px 0;
 
-  height: 1fr;
-  width: 100%; // Add this line
+  width: 100%;
 }
 
 .home__hero {
@@ -41,20 +40,37 @@
   font-size: 1.1rem;
   cursor: pointer;
 
-  p {
+   &::after {
+      content: '';
+      position: absolute;
+      bottom: 0; // Start from bottom
+      left: 0;
+      width: 100%;
+      height: 30%; // Cover bottom 30%
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+      z-index: 1;
+    }
+
+  span {
     position: absolute;
-    left: 0;
-    z-index: 2; // Ensure text appears above image
+    left: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 2;
+    color: $color-background;
+
+    font-width: 600;
+    font-size: 2rem;
   }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute; // Position absolutely to fill the container
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: 1; // Behind the text
+    z-index: 1;
+
   }
 }
 
@@ -73,4 +89,3 @@
   flex-direction: row;
   text-align: left;
 }
-
