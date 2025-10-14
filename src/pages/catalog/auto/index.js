@@ -1,66 +1,93 @@
-// "id": "pf001",
-// "imageUrl": "/public/goods_placeholder.svg",
-// "name": "Royal Canine Adult 10kg",
-// "count": 20,
-// "weight": "10kg",
-// "price_discount": 45.99,
-// "price_orig": 55.00,
-// "type": "Dry Food",
-// "animal": "Dog"
-
 import html from './index.html?raw';
 import css from './index.scss?inline';
 
-import { fetchProducts } from '/services/api.service';
-
 import { ROUTE_CHANGED_EVENT } from '/config/constants';
 
-async function preFetch(){
-  return await fetchProducts();
-}
+const data = import.meta.glob("/assets/data/*.json", { eager: true });
+const products = Object.values(data).flatMap((m) => m.default);
 
-window.on(ROUTE_CHANGED_EVENT, async (ev) => {
-  const gallery = $('#homeGalleryContent--first');
-  if (gallery) {
-    let galleryContent = '';
+// Function to get container based on capacity
+const getContainerForCapacity = (capacity) => {
+  // Remove 'Ah' and get numeric value
+  const numericCapacity = parseInt(capacity.replace('Ah', ''));
+  
+  // Map capacity ranges to container classes
+  if (numericCapacity >= 50 && numericCapacity < 70) {
+    return document.querySelector('.s60');
+  } else if (numericCapacity >= 70 && numericCapacity < 80) {
+    return document.querySelector('.s70');
+  } else if (numericCapacity >= 80 && numericCapacity < 90) {
+    return document.querySelector('.s80');
+  } else if (numericCapacity >= 90 && numericCapacity < 100) {
+    return document.querySelector('.s90');
+  } else if (numericCapacity >= 100 && numericCapacity < 110) {
+    return document.querySelector('.s100');
+  } else if (numericCapacity >= 110) {
+    return document.querySelector('.s110');
+  }
+  
+  return null;
+};
 
-    // TODO: sort by real label `favorite choice` from db in the future
-    let idx = 0;
-
-    for (const { name, image_url, price_orig, price_discount } of ev.detail.prefetchedData) {
-      // TODO: sort by real label `favorite choice` from db in the future
-      if (idx > 7) {
-        break;
-      }
-      //
-      //
-      // <img class='gallery__cardImage' src="/goods_placeholder.svg" alt="${name}"/>
-      galleryContent += `
-    <div class='gallery__card'>
-      <img class='gallery__cardImage' src="${image_url}" alt="${name}"/>
-      <h3 class="gallery__cardName">${name}</h3>
-      <div class="gallery__cardPrices">
-        <del>${price_orig}<span>₴</span></del>
-        <ins>${price_discount}<span>₴<span></ins>
+const createProductCard = (p) => {
+  console.log(p.image_url)
+  return `
+    <div class="product-card" data-id="${p.id}">
+      <div class="product-image">
+        <img src="${p.image_url}" alt="${p.name}">
       </div>
-      <p class="rating--galleryCard">
-       <span class="rating__stars"> ⭐⭐⭐⭐⭐</span>
-       <span class="rating__reviewCount">0</span>
-       <span class="rating__reviewIcon">💬</span>
-      </p>
-      <div class="gallery__cardBuyBtn emoji--mono">
-        <button>
-          🛒
-        </button>
+
+      <div class="product-info">
+        <h3 class="product-name">${p.name}</h3>
+        <p class="product-type">${p.type}</p>
+
+        <div class="product-price">
+          ${p.price_old ? `<del class="price-old">${p.price_old.toFixed(1)}<span>₴</span></del>` : ''}
+          <span class="price-current">${p.price.toFixed(1)}<span>₴</span></span>
+        </div>
+
+        <div class="product-meta">
+          <span class="product-warranty"><span style="font-weight: bold;">Гарантія:</span> ${p.warranty} міс.</span>
+          <a href="${p.origin_website}" class="product-origin" target="_blank">
+            ${p.origin}
+          </a>
+        </div>
       </div>
     </div>
-        `;
+  `;
+};
 
-      // TODO: sort by real label `favorite choice` from db in the future
-      ++idx;
+/**
+ * Main function to distribute product cards into their respective galleries.
+ */
+const renderProducts = (products) => {
+  // Clear existing content first
+  document.querySelectorAll('.s60, .s70, .s80, .s90, .s100, .s110').forEach(container => {
+    if (container) container.innerHTML = '';
+  });
+
+  products.forEach((p) => {
+    const cardHtml = createProductCard(p);
+    const container = getContainerForCapacity(p.capacity);
+    
+    if (container) {
+      container.innerHTML += cardHtml;
+    } else {
+      console.warn(`No container found for capacity: ${p.capacity}`);
     }
-    gallery.innerHTML = galleryContent;
-  }
-});
+  });
+};
 
-export { html, css, preFetch };
+// Event listener for route changes
+const handleRouteChange = (ev) => {
+  // Wait for DOM to be ready
+  setTimeout(() => {
+    renderProducts(products);
+  }, 0);
+};
+
+// Use addEventListener instead of window.on
+window.addEventListener(ROUTE_CHANGED_EVENT, handleRouteChange);
+
+export { html, css };
+
