@@ -9,11 +9,17 @@ export default function reloadContent(html, css) {
 
     // TODO: research why is appendingChild is more beneficial
     // than just overriding mainElement innerHtml?
-    const contentElement = document.createElement('div');
-    contentElement.style.width = '100%';
-    contentElement.style.height = '100%';
-    contentElement.innerHTML = html;
-    mainElement.appendChild(contentElement);
+    // const contentElement = document.createElement('div');
+    // contentElement.style.width = '100%';
+    // contentElement.style.height = '100%';
+    // contentElement.innerHTML = html;
+    // mainElement.appendChild(contentElement);
+
+
+// Use HTML template element
+const contentElement = document.createElement('template');
+contentElement.innerHTML = html;
+mainElement.appendChild(contentElement.content.cloneNode(true));
 
     // mainElement.innerHTML = html;
 

@@ -5,15 +5,72 @@
 @use 'styles/home__hero.scss';
 
 .home {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: center;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
 
-  width: 100%;
+  grid-template-areas:
+    "hero auto diagnostics"
+    "hero ups diagnostics";
+
+  padding: 35px 0;
+
+  height: 1fr;
+  width: 100%; // Add this line
 }
 
-.container--home {
-  @extend .container;
+.home__hero {
+  grid-area: hero;
+  text-align: center;
+  padding: 50px;
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+.home__autoBat,
+.home__upsBat,
+.home__diagnostics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: transparent;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  p {
+    position: absolute;
+    left: 0;
+    z-index: 2; // Ensure text appears above image
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; // Position absolutely to fill the container
+    top: 0;
+    left: 0;
+    z-index: 1; // Behind the text
+  }
+}
+
+// Individual section positioning
+.home__autoBat {
+  grid-area: auto;
+  // Remove the specific img styles since they're now handled above
+}
+
+.home__upsBat {
+  grid-area: ups;
+}
+
+.home__diagnostics {
+  grid-area: diagnostics;
+  flex-direction: row;
+  text-align: left;
 }
 

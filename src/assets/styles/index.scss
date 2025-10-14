@@ -11,18 +11,19 @@ html {
   overscroll-behavior: none;
   overflow-x: hidden;
 
-  font-family: $font-primary, sans-serif;
-
   body {
     overflow-x: hidden;
 
+    font-family: $font-primary, sans-serif;
     font-weight: 400;
+    font-color: $color-primary;
     /* color: $color-blck-rich; */
 
     background-color: $color-background;
 
     main {
-      min-height: 60vh;
+      display: flex;
+      min-height: 80vh;
       width: 100vw;
     }
 
