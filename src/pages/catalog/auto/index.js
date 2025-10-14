@@ -70,7 +70,7 @@ const createProductCard = (p) => {
           </div>
           <div class="spec-item">
             <span class="spec-label">Струм:</span>
-            <span class="spec-value">${p.current}A</span>
+            <span class="spec-value">${p.current}A (EN)</span>
           </div>
           <div class="spec-item">
             <span class="spec-label">Полярність:</span>
