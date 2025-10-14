@@ -1,7 +1,11 @@
 # AVAK GROUP Front-end
 
 * router lacks support for nested routes and also dynamic routes
-* 
+
+* set subdomains for both accum and fertilizers 
+* make buy button send bought items to viber as message, so we reach out back
+* add map 
+
 
 ## Overview
 
@@ -80,3 +84,4 @@ TODO
 <!-- update-submodules-default: -->
 <!-- 	git submodule update --init --recursive --remote --merge -->
 <!---->
+

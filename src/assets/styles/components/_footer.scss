@@ -3,7 +3,7 @@
 
 .footer {
   display: grid;
-  grid-template-areas: 'logo about rules contacts .';
+  grid-template-areas: 'logo about rules contacts map';
   grid-template-columns: 15% 20% 20% 45%;
   gap: 20px;
 
@@ -86,4 +86,16 @@
 
 .footer__contacts {
   grid-area: contacts;
+}
+
+.footer__map {
+  grid-area: map;
+
+  .footer__MapIframe {
+    margin-top: 10px;
+    width: 300px; // Fixed width instead of 80%
+    height: 200px; // Fixed height instead of 50%
+    border-radius: 10px;
+    border: 1px solid red; // Temporary border to see if iframe exists
+  }
 }
