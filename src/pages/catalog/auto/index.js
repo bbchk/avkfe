@@ -33,69 +33,34 @@ const createProductCard = (p) => {
   // TODO: use env variable
   p.image_url = `/assets/public/${p.image_url}`;
 
-  // Helper function to format polarity display
-  const formatPolarities = (polarities) => {
-    const polarityMap = {
-      left_plus: 'Л+',
-      right_plus: 'П+',
-      universal_asia: 'Азія',
-      universal_euro: 'Євро',
-    };
-    return polarities.map((p) => polarityMap[p] || p).join(', ');
-  };
-
-  // Check if polarities are available
-  const hasAvailablePolarities =
-    p.available_polarities && p.available_polarities.length > 0;
-
-  const availablePolaritiesText = hasAvailablePolarities
-    ? formatPolarities(p.available_polarities)
-    : 'Немає в наявності';
-
   return `
-    <div class="product-card ${!hasAvailablePolarities ? 'out-of-stock' : ''}" data-id="${p.id}">
-      <div class="product-image">
-        <img src="${p.image_url}" alt="${p.name}">
-        ${!hasAvailablePolarities ? '<div class="out-of-stock-badge">Немає в наявності</div>' : ''}
-      </div>
+<div class="carBat" data-id="${p.id}">
+  <div class="carBat__image">
+    <img src="${p.image_url}" alt="${p.name}">
+  </div>
 
-      <div class="product-info">
-        <h3 class="product-name">${p.name}</h3>
-        <p class="product-type">${p.type}</p>
+  <div class="carBat__info">
+    <h3 class="carBat__name">${p.name}</h3>
+    <p class="carBat__type">${p.type}</p>
 
-        <div class="product-specs">
-          <div class="spec-item">
-            <span class="spec-label">Ємність:</span>
-            <span class="spec-value">${p.capacity}Ah</span>
-          </div>
-          <div class="spec-item">
-            <span class="spec-label">Струм:</span>
-            <span class="spec-value">${p.current}A (EN)</span>
-          </div>
-          <div class="spec-item">
-            <span class="spec-label">Полярність:</span>
-            <span class="spec-value ${!hasAvailablePolarities ? 'unavailable' : ''}">${availablePolaritiesText}</span>
-          </div>
-        </div>
-
-        <div class="product-price">
-          ${p.price_old ? `<del class="price-old">${p.price_old.toFixed(1)}<span>₴</span></del>` : ''}
-          <span class="price-current">${p.price.toFixed(1)}<span>₴</span></span>
-        </div>
-
-        <div class="product-meta">
-          <span class="product-warranty"><span style="font-weight: bold;">Гарантія:</span> ${p.warranty} міс.</span>
-          <a href="${p.origin_website}" class="product-origin" target="_blank">
-            ${p.origin}
-          </a>
-        </div>
-
-        <button class="order-button ${!hasAvailablePolarities ? 'disabled' : ''}"
-                ${!hasAvailablePolarities ? 'disabled' : ''}>
-          ${hasAvailablePolarities ? '🛒' : 'Немає в наявності'}
-        </button>
-      </div>
+    <div class="carBat__specs">
+      <span>${p.capacity} Ah</span>
+      <span>${p.current} A(EN)</span>
     </div>
+
+    <div class="carBat__price">
+      ${p.price_old ? `<del class="carBat__price--old">${p.price_old}<span>₴</span></del>` : ''}
+      <span class="carBat__price--current">${p.price}<span>₴</span></span>
+    </div>
+
+    <div class="carBat__meta">
+      <span class="carBat__warranty"><strong>Гарантія:</strong> ${p.warranty} міс.</span>
+      <a href="${p.origin_website}" class="carBat__origin" target="_blank">${p.origin}</a>
+    </div>
+
+    <button class="carBat__orderBtn">🛒</button>
+  </div>
+</div>
   `;
 };
 /**

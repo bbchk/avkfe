@@ -1,10 +1,15 @@
 # AVAK GROUP Front-end
 
+p1
 * router lacks support for nested routes and also dynamic routes
 
 * set subdomains for both accum and fertilizers 
 * make buy button send bought items to viber as message, so we reach out back
 * add map 
+
+
+p2
+* I would like to add button for regulating gallery
 
 
 ## Overview

@@ -10,7 +10,7 @@
     "available_polarities": ["left_plus", "right_plus"],
     "price": 4300.0,
     "warranty": 24,
-    "origin": "Болгарія, Monbat group",
+    "origin": "Болгарія, Monbat",
     "origin_website": "https://eurokraftbattery.com/light-vehicles/gold/"
   },
   {
@@ -24,7 +24,7 @@
     "available_polarities": ["right_plus"],
     "price": 4100.0,
     "warranty": 24,
-    "origin": "Болгарія, Monbat group",
+    "origin": "Болгарія, Monbat",
     "origin_website": "https://eurokraftbattery.com/light-vehicles/gold/"
   },
   {
@@ -38,7 +38,7 @@
     "available_polarities": ["left_plus", "right_plus"],
     "price": 4250.0,
     "warranty": 24,
-    "origin": "Болгарія, Monbat group",
+    "origin": "Болгарія, Monbat",
     "origin_website": "https://eurokraftbattery.com/light-vehicles/silver/"
   },
   {
@@ -81,7 +81,7 @@
     "available_polarities": ["right_plus"],
     "price": 4950.0,
     "warranty": 24,
-    "origin": "Словенія, TAB d.d. company",
+    "origin": "Словенія, TAB d.d.",
     "origin_website": "https://www.tab.si/products/vesna_power/"
   },
   {
