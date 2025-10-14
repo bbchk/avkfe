@@ -5,7 +5,10 @@ p1
 
 * set subdomains for both accum and fertilizers 
 * make buy button send bought items to viber as message, so we reach out back
-* add map 
+* add accessories (charging systems, etc. etc.), look up what akum sells
+* make header stick when scrolling up and dissapear when scrolling down
+* Прийом відпрацьованих свинцевих АКБ додати
+* scrape akum for car batteries and all the metadata
 
 
 p2
