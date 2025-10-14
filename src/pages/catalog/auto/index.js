@@ -71,7 +71,6 @@ const renderProducts = (products) => {
   products.forEach((p) => {
     const cardHtml = createProductCard(p);
     const container = getContainerForCapacity(p.capacity);
-    
     if (container) {
       container.innerHTML += cardHtml;
     } else {
