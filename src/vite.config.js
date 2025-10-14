@@ -16,7 +16,7 @@ export default defineConfig({
   // plugins: [Inspect()],
   base: '/',
   build: {
-    outDir: resolve(__dirname, '../docs'),
+    outDir: resolve(__dirname, './docs'),
     // sourcemap: true,
     // emptyOutDir: true
     minify: true,
