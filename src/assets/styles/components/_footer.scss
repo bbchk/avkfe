@@ -2,10 +2,8 @@
 @use '@styles/utils' as *;
 
 .footer {
-  display: grid;
-  grid-template-areas: 'logo about rules contacts map';
-  grid-template-columns: 15% 20% 20% 45%;
-  gap: 20px;
+  display: flex;
+  justify-content: center;
 
   min-height: 350px;
 
@@ -15,56 +13,68 @@
 
   padding: 2rem 0;
 
-  section {
-    width: 100%;
 
-    font-size: 1.1em;
-    text-align: left;
-    line-height: 2;
+  /* @include media($size-tablet) { */
+  /*   grid-template-areas: */
+  /*     'logo .' */
+  /*     'about rules' */
+  /*     'contacts .'; */
+  /*   gap: 30px; */
+  /**/
+  /*   grid-template-columns: 1fr 1fr; */
+  /*   grid-template-rows: 150px repeat(2, max-content); */
+  /**/
+  /*   padding: 0 5rem; */
+  /*   padding-bottom: 2rem; */
+  /**/
+  /*   font-size: 1.3rem; */
+  /**/
+  /*   section { */
+  /*     display: flex; */
+  /*     flex-flow: column nowrap; */
+  /*     justify-content: flex-start; */
+  /*   } */
+  /* } */
+  /**/
+  /* @include media($size-mobile) { */
+  /*   display: flex; */
+  /*   flex-flow: column nowrap; */
+  /*   justify-content: center; */
+  /*   align-items: center; */
+  /*   text-align: center; */
+  /**/
+  /*   width: max-content; */
+  /**/
+  /*   padding: 1rem; */
+  /*   margin: 0 auto; */
+  /**/
+  /*   font-size: 1.3rem; */
+  /* } */
+}
 
-    h5 {
-      display: block;
-      font-size: 1.4em;
-    }
-  }
+  .footer__container {
+    display: grid;
+    grid-template-areas: 'logo about rules contacts map';
+    grid-template-columns: 0.5fr 1fr 1fr 0.7fr 1fr;
+    /* 45 55 */
+    grid-template-rows: 1fr;
+    gap: 20px;
 
-  @include media($size-tablet) {
-    grid-template-areas:
-      'logo .'
-      'about rules'
-      'contacts .';
-    gap: 30px;
-
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px repeat(2, max-content);
-
-    padding: 0 5rem;
-    padding-bottom: 2rem;
-
-    font-size: 1.3rem;
+    max-width: 80%;
 
     section {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-start;
+      width: 100%;
+
+      font-size: 1.1em;
+      text-align: left;
+      line-height: 2;
+
+      h5 {
+        display: block;
+        font-size: 1.4em;
+      }
     }
   }
-
-  @include media($size-mobile) {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    width: max-content;
-
-    padding: 1rem;
-    margin: 0 auto;
-
-    font-size: 1.3rem;
-  }
-}
 
 .footerLogo {
   grid-area: logo;

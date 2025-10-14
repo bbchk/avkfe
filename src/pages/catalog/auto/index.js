@@ -59,11 +59,12 @@ const createProductCard = (p) => {
       <a href="${p.origin_website}" class="carBat__origin" target="_blank">${p.origin}</a>
     </div>
 
-    <button class="carBat__orderBtn">🛒</button>
   </div>
 </div>
   `;
 };
+
+    // <button class="carBat__orderBtn">🛒</button>
 /**
  * Main function to distribute product cards into their respective galleries.
  */
