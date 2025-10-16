@@ -1,8 +1,8 @@
 # AVAK GROUP Front-end
 
-p1
+* include sizes to specs
+* need to update olx 
 * router lacks support for nested routes and also dynamic routes
-
 * set subdomains for both accum and fertilizers 
 * make buy button send bought items to viber as message, so we reach out back
 * add accessories (charging systems, etc. etc.), look up what akum sells
@@ -13,6 +13,12 @@ p1
 
 p2
 * I would like to add button for regulating gallery
+||||||| parent of 1e4cf90 (feat)
+* add map 
+=======
+* add map 
+* integrate ability to export catalog of goods as price list document
+>>>>>>> 1e4cf90 (feat)
 
 
 ## Overview
