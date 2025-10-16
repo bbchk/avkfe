@@ -1,11 +1,22 @@
 # AVAK GROUP Front-end
 
+* find out all the batteries manufecturer code (for all the companies)
+    * put it near accumulator themselves
+    * find out what other product lines current manufacturers have
+
+create list of standard questions to ask every person who comes:
+* start/stop ?
+* for yourself? you want good one?
+* etc. 
+
+* we need ready (prepped) catalog for all other options that we can suggest
+
 * need to update olx account itself and also posts
     * make one photo collage with working utk, new accumulators and somehting else 
     * Прийом відпрацьованих свинцевих АКБ додати
 
+* include sizes to specs (include manufacturer number to specs?)
 
-* include sizes to specs
 * router lacks support for nested routes and also dynamic routes
 * set subdomains for both accum and fertilizers 
 
@@ -23,6 +34,8 @@ create patterns for automate response
 Звісно, заїжджайте.
 Ми знаходимося при в’їзді у Вінницю по Немирівському шосе, не доїжджаючи до АЗС БРСМ
 Ось посилання на гугл мапу для зручнішої навігації: https://maps.app.goo.gl/Xv8UuSQWiou2GtJz9
+
+if person asks for a specific model -> suggest very similar things (and explain similarity)
 
 p2
 * I would like to add button for regulating gallery
