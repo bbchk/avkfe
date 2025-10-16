@@ -12,11 +12,15 @@ learn:
 
 * we need ready (prepped) catalog for all other options that we can suggest
 
+
+
 for bohdana:
 * need to update olx account itself and also posts
     * make one photo collage with working utk, new accumulators and somehting else 
     * Прийом відпрацьованих свинцевих АКБ додати
 
+
+* we need to correct polarities and photos 
 
 * include working hours to footer
 * include sizes to specs (include manufacturer number to specs?)
