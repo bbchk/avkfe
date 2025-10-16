@@ -6,7 +6,7 @@
     "capacity": 50,
     "current": 420,
     "type": "Кислотний",
-    "polarities": ["R+"],
+    "polarities": ["L+", "R+"],
     "price": 2000,
     "warranty": 24,
     "origin": "Болгарія, Monbat",
@@ -143,4 +143,3 @@
     "origin_website": "https://www.autopart.pl/en"
   }
 ]
-
