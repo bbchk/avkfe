@@ -1,15 +1,28 @@
 # AVAK GROUP Front-end
 
+* need to update olx account itself and also posts
+    * make one photo collage with working utk, new accumulators and somehting else 
+    * Прийом відпрацьованих свинцевих АКБ додати
+
+
 * include sizes to specs
-* need to update olx 
 * router lacks support for nested routes and also dynamic routes
 * set subdomains for both accum and fertilizers 
+
 * make buy button send bought items to viber as message, so we reach out back
 * add accessories (charging systems, etc. etc.), look up what akum sells
 * make header stick when scrolling up and dissapear when scrolling down
-* Прийом відпрацьованих свинцевих АКБ додати
+
 * scrape akum for car batteries and all the metadata
 
+create patterns for automate response
+Доброго дня
+Ми уточнили розміри. Наразі в самому магазині за 175 на 175 доступний EUROKRAFT GOLD 60Ah 600A за ціною 2450.0₴ від Болгарії, Monbat. На нього даємо два роки гарантії
+11:57
+
+Звісно, заїжджайте.
+Ми знаходимося при в’їзді у Вінницю по Немирівському шосе, не доїжджаючи до АЗС БРСМ
+Ось посилання на гугл мапу для зручнішої навігації: https://maps.app.goo.gl/Xv8UuSQWiou2GtJz9
 
 p2
 * I would like to add button for regulating gallery
