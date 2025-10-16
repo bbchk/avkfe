@@ -21,3 +21,12 @@
   opacity: $opacity;
   pointer-events: none;
 }
+
+@mixin truncate_lines_after($number_of_lines, $line_height: 1.2rem) {
+  display: -webkit-box;
+  -webkit-line-clamp: $number_of_lines;
+  -webkit-box-orient: vertical;
+  line-height: $line_height;
+  max-height: $line_height * $number_of_lines;
+  overflow: hidden;
+}

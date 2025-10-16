@@ -46,7 +46,7 @@ const createProductCard = (p) => {
     <div class="carBat__specs">
       <span>${p.capacity} Ah</span>
       <span>${p.current} A(EN)</span>
-      <span>${p.polarities.join("/")}</span>
+      <span>${p.polarities.join('/')}</span>
     </div>
 
     <div class="carBat__price">
@@ -59,12 +59,12 @@ const createProductCard = (p) => {
       <a href="${p.origin_website}" class="carBat__origin" target="_blank">${p.origin}</a>
     </div>
 
+    <button class="carBat__orderBtn">🛒</button>
   </div>
 </div>
   `;
 };
 
-    // <button class="carBat__orderBtn">🛒</button>
 /**
  * Main function to distribute product cards into their respective galleries.
  */

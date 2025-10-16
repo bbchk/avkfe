@@ -1,5 +1,8 @@
 # AVAK GROUP Front-end
 
+<!-- include photo of cut car battery in website and explain car battery structure -->
+<!-- incorporate blog to website -->
+
 learn:
 * find out all the batteries manufecturer code (for all the companies)
     * put it near accumulator themselves
@@ -20,6 +23,7 @@ for bohdana:
     * Прийом відпрацьованих свинцевих АКБ додати
 
 
+clamp on car battert name, so card is not enlraged by it
 * we need to correct polarities and photos 
 
 * include working hours to footer

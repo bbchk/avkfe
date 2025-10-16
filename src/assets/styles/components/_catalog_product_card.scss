@@ -110,6 +110,9 @@
   font-weight: 600;
   color: #222;
   margin: 0;
+
+  @include truncate_lines_after(1);
+  /* width: 500px; */
 }
 
 .carBat__type {
@@ -184,6 +187,8 @@
 }
 
 .carBat__orderBtn {
+  @include inactive(100%, 0.5);
+
   grid-area: buy;
 
   align-self: center;
