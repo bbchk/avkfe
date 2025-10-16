@@ -18,19 +18,18 @@ for bohdana:
     * Прийом відпрацьованих свинцевих АКБ додати
 
 
+* include working hours to footer
 * include sizes to specs (include manufacturer number to specs?)
-
-* router lacks support for nested routes and also dynamic routes
-* set subdomains for both accum and fertilizers 
-
 * make buy button send bought items to viber as message, so we reach out back
 
-* make header stick when scrolling up and dissapear when scrolling down
+* set subdomains for both accum and fertilizers 
 
 * scrape akum for car batteries and all the metadata
 * add accessories (charging systems, etc. etc.), look up what akum sells
 
-create patterns for automate response
+
+
+* create patterns for automate response
 Доброго дня
 Ми уточнили розміри. Наразі в самому магазині за 175 на 175 доступний EUROKRAFT GOLD 60Ah 600A за ціною 2450.0₴ від Болгарії, Monbat. На нього даємо два роки гарантії
 11:57
@@ -49,6 +48,14 @@ p2
 * add map 
 * integrate ability to export catalog of goods as price list document
 >>>>>>> 1e4cf90 (feat)
+
+
+
+
+
+
+
+
 
 
 ## Overview

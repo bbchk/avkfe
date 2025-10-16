@@ -15,3 +15,9 @@
 
   text-overflow: ellipsis;
 }
+
+@mixin inactive($grayscale, $opacity) {
+  filter: grayscale($grayscale);
+  opacity: $opacity;
+  pointer-events: none;
+}

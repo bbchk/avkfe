@@ -1,4 +1,5 @@
-@use '@styles/settings/index' as *; @use '@styles/components/index' as *;
+@use '@styles/settings/index' as *;
+@use '@styles/components/index' as *;
 @use '@styles/utils' as *;
 
 @use 'styles/home__hero.scss';
@@ -9,8 +10,8 @@
   grid-template-rows: 1fr 1fr;
 
   grid-template-areas:
-    "hero auto diagnostics"
-    "hero ups diagnostics";
+    'hero auto diagnostics'
+    'hero ups diagnostics';
 
   padding: 35px 0;
 
@@ -39,16 +40,27 @@
   font-size: 1.1rem;
   cursor: pointer;
 
-   &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 40%;
-      background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
-      z-index: 1;
+  &:hover {
+    span {
+      /* TODO: make up with a better effect */
+      /* color: red; */
+      /* transition: color 0.25s ease; */
+      /* color: $color-highlight; */
+      text-decoration: underline;
+      text-underline-offset: 0.5rem;
     }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+    z-index: 1;
+  }
 
   span {
     position: absolute;
@@ -69,7 +81,6 @@
     top: 0;
     left: 0;
     z-index: 1;
-
   }
 }
 
@@ -81,6 +92,7 @@
 
 .home__upsBat {
   grid-area: ups;
+  @include inactive(80%, 0.5);
 }
 
 .home__diagnostics {
