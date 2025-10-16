@@ -1,19 +1,22 @@
 # AVAK GROUP Front-end
 
+learn:
 * find out all the batteries manufecturer code (for all the companies)
     * put it near accumulator themselves
     * find out what other product lines current manufacturers have
 
-create list of standard questions to ask every person who comes:
-* start/stop ?
-* for yourself? you want good one?
-* etc. 
+* create list of standard questions to ask every person who comes:
+    * start/stop ?
+    * for yourself? you want good one?
+    * etc. 
 
 * we need ready (prepped) catalog for all other options that we can suggest
 
+for bohdana:
 * need to update olx account itself and also posts
     * make one photo collage with working utk, new accumulators and somehting else 
     * Прийом відпрацьованих свинцевих АКБ додати
+
 
 * include sizes to specs (include manufacturer number to specs?)
 
@@ -21,10 +24,11 @@ create list of standard questions to ask every person who comes:
 * set subdomains for both accum and fertilizers 
 
 * make buy button send bought items to viber as message, so we reach out back
-* add accessories (charging systems, etc. etc.), look up what akum sells
+
 * make header stick when scrolling up and dissapear when scrolling down
 
 * scrape akum for car batteries and all the metadata
+* add accessories (charging systems, etc. etc.), look up what akum sells
 
 create patterns for automate response
 Доброго дня

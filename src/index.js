@@ -2,6 +2,8 @@ import './assets/styles/index.scss';
 
 import './utils/dom.utils.js';
 
+import utils from './utils/index.export.js';
+
 // TODO: introduce logging
 import logger from './config/logger.js';
 
@@ -12,10 +14,11 @@ window._app = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  logger.debug({Router}, "Router init")
+  logger.debug({ Router }, 'Router init');
   window._app.router.init();
-});
 
+  utils.effects.header.init('.header');
+});
 
 // TODO: implement all catchers below
 // process.on('uncaughtException', (err) => {

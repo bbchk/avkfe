@@ -7,9 +7,9 @@ import { ROUTE_CHANGED_EVENT } from '/config/constants';
 
 import { fetchProducts } from '/services/api.service';
 
-async function preFetch() {
-  return await fetchProducts();
-}
+// async function preFetch() {
+//   return await fetchProducts();
+// }
 
 window.on(ROUTE_CHANGED_EVENT, (ev) => {
   const prefetchedData = ev.detail.prefetchedData;
@@ -24,4 +24,4 @@ window.on(ROUTE_CHANGED_EVENT, (ev) => {
   }
 });
 
-export { html, css, preFetch };
+export { html, css };
