@@ -1,7 +1,7 @@
 [
   {
     "id": "2",
-    "imageUrl": "monbat-eurocraft-silver-50ah-euro.webp",
+    "imageUrl": "monbat-eurokraft-silver-50ah-euro.webp",
     "name": "Eurokraft Silver",
     "capacity": 50,
     "cca": 420,
@@ -10,27 +10,37 @@
       {
         "polarity": true,
         "inStock": true,
-        "dimensions": { "l": 175, "w": 100, "h": 100, "tag": "Compact" }
+        "dimensions": { "l": 207, "w": 175, "h": 190, "tag": "Standard" }
       },
       {
         "polarity": true,
         "inStock": true,
-        "dimensions": { "l": 190, "w": 110, "h": 100, "tag": "Extended" }
+        "dimensions": { "l": 207, "w": 175, "h": 175, "tag": "Low profile" }
+      },
+      {
+        "polarity": false,
+        "inStock": true,
+        "dimensions": {
+          "l": 207,
+          "w": 175,
+          "h": 190,
+          "tag": "Reversed polarity"
+        }
       }
     ],
-    "price": 2000,
+    "price": 1980,
     "warranty": 24,
     "manufacturer": {
       "country": "Болгарія",
       "brand": "Monbat",
       "website": "https://eurokraftbattery.com/"
     },
-    "tags": ["discount"],
+    "tags": ["low profile"],
     "htmlSnippet": "<div><div>"
   },
   {
     "id": "3",
-    "imageUrl": "monbat-eurocraft-silver-60ah-euro.png",
+    "imageUrl": "monbat-eurokraft-silver-60ah-euro.webp",
     "name": "Eurokraft Silver",
     "capacity": 60,
     "cca": 560,
@@ -38,10 +48,21 @@
     "variants": [
       {
         "polarity": true,
-        "dimensions": { "l": 190, "w": 110, "h": 175, "tag": "Standard" }
+        "inStock": true,
+        "dimensions": { "l": 242, "w": 175, "h": 190, "tag": "Standard" }
+      },
+      {
+        "polarity": false,
+        "inStock": true,
+        "dimensions": {
+          "l": 242,
+          "w": 175,
+          "h": 190,
+          "tag": "Reversed polarity"
+        }
       }
     ],
-    "price": 2350,
+    "price": 2380,
     "warranty": 24,
     "manufacturer": {
       "country": "Болгарія",
@@ -121,8 +142,8 @@
     "htmlSnippet": "<div><div>"
   },
   {
-    "id": "7",
-    "imageUrl": "monbat-eurocraft-gold-60ah-euro.webp",
+    "id": "4",
+    "imageUrl": "monbat-eurokraft-gold-60ah-euro.webp",
     "name": "Eurokraft Gold",
     "capacity": 60,
     "cca": 600,
@@ -130,10 +151,26 @@
     "variants": [
       {
         "polarity": true,
-        "dimensions": { "l": 190, "w": 110, "h": 175, "tag": "Standard" }
+        "inStock": true,
+        "dimensions": { "l": 242, "w": 175, "h": 190, "tag": "Standard" }
+      },
+      {
+        "polarity": true,
+        "inStock": true,
+        "dimensions": { "l": 242, "w": 175, "h": 175, "tag": "Low profile" }
+      },
+      {
+        "polarity": false,
+        "inStock": true,
+        "dimensions": {
+          "l": 242,
+          "w": 175,
+          "h": 190,
+          "tag": "Reversed polarity"
+        }
       }
     ],
-    "price": 2450,
+    "price": 2480,
     "warranty": 24,
     "manufacturer": {
       "country": "Болгарія",
@@ -213,7 +250,7 @@
     "htmlSnippet": "<div><div>"
   },
   {
-    "id": "11",
+    "id": "5",
     "imageUrl": "monbat-eurokraft-silver-62ah-euro.webp",
     "name": "Eurokraft Silver",
     "capacity": 62,
@@ -222,10 +259,21 @@
     "variants": [
       {
         "polarity": true,
-        "dimensions": { "l": 190, "w": 110, "h": 175, "tag": "Standard" }
+        "inStock": true,
+        "dimensions": { "l": 242, "w": 175, "h": 190, "tag": "Standard" }
+      },
+      {
+        "polarity": false,
+        "inStock": true,
+        "dimensions": {
+          "l": 242,
+          "w": 175,
+          "h": 190,
+          "tag": "Reversed polarity"
+        }
       }
     ],
-    "price": 2500,
+    "price": 2530,
     "warranty": 24,
     "manufacturer": {
       "country": "Болгарія",
@@ -254,6 +302,59 @@
       "country": "Польща",
       "brand": "Autopart",
       "website": "https://www.autopart.pl/en"
+    },
+    "tags": [],
+    "htmlSnippet": "<div><div>"
+  },
+ {
+    "id": "6",
+    "imageUrl": "monbat-eurokraft-gold-60ah-euro.webp",
+    "name": "Eurokraft Gold",
+    "capacity": 62,
+    "cca": 620,
+    "type": "Кислотний",
+    "variants": [
+      {
+        "polarity": true,
+        "inStock": true,
+        "dimensions": { "l": 242, "w": 175, "h": 190, "tag": "Standard" }
+      },
+      {
+        "polarity": false,
+        "inStock": true,
+        "dimensions": { "l": 242, "w": 175, "h": 190, "tag": "Reversed polarity" }
+      }
+    ],
+    "price": 2650,
+    "warranty": 24,
+    "manufacturer": {
+      "country": "Болгарія",
+      "brand": "Monbat",
+      "website": "https://eurokraftbattery.com/"
+    },
+    "tags": [],
+    "htmlSnippet": "<div><div>"
+  },
+ {
+    "id": "6",
+    "imageUrl": "monbat-eurokraft-gold-60ah-euro.webp",
+    "name": "Eurokraft Gold",
+    "capacity": 65,
+    "cca": 640,
+    "type": "Кислотний",
+    "variants": [
+      {
+        "polarity": true,
+        "inStock": true,
+        "dimensions": { "l": 242, "w": 175, "h": 190, "tag": "Standard" }
+      }
+    ],
+    "price": 2650,
+    "warranty": 24,
+    "manufacturer": {
+      "country": "Болгарія",
+      "brand": "Monbat",
+      "website": "https://eurokraftbattery.com/"
     },
     "tags": [],
     "htmlSnippet": "<div><div>"

@@ -3,6 +3,10 @@
 <!-- include photo of cut car battery in website and explain car battery structure -->
 <!-- incorporate blog to website -->
 
+p2
+- find necessary photos
+- separate specs on product card
+
 we need to account for both batteries that have several dimensions and same price, and only one dimension
 tooltips on specs of car batteries
 

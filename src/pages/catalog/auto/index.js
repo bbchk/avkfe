@@ -3,6 +3,7 @@ import css from './index.scss?inline';
 
 import { ROUTE_CHANGED_EVENT } from '/config/constants';
 
+// TODO:
 // const data = import.meta.glob('/assets/data/*.json', { eager: true });
 const data = import.meta.glob('/assets/data/ah60.json', { eager: true });
 const products = Object.values(data).flatMap((m) => m.default);
@@ -47,6 +48,7 @@ const createProductCard = (p) => {
     <div class="carBat__specs">
       <span>${p.capacity} Ah</span>
       <span>${p.cca} A(EN)</span>
+      <span>${p.polarity == null ? 'R+ / L+' : p.polarity ? 'R+' : 'L+'}</span>
     </div>
 
     <div class="carBat__price">
