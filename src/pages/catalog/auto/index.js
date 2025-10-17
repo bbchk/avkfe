@@ -3,7 +3,8 @@ import css from './index.scss?inline';
 
 import { ROUTE_CHANGED_EVENT } from '/config/constants';
 
-const data = import.meta.glob('/assets/data/*.json', { eager: true });
+// const data = import.meta.glob('/assets/data/*.json', { eager: true });
+const data = import.meta.glob('/assets/data/ah60.json', { eager: true });
 const products = Object.values(data).flatMap((m) => m.default);
 
 // Function to get container based on capacity
@@ -31,12 +32,12 @@ const getContainerForCapacity = (capacity) => {
 
 const createProductCard = (p) => {
   // TODO: use env variable
-  p.image_url = `/assets/public/${p.image_url}`;
+  p.imageUrl = `/assets/public/${p.imageUrl}`;
 
   return `
 <div class="carBat" data-id="${p.id}">
   <div class="carBat__image">
-    <img src="${p.image_url}" alt="${p.name}">
+    <img src="${p.imageUrl}" alt="${p.name}">
   </div>
 
   <div class="carBat__info">
@@ -45,8 +46,7 @@ const createProductCard = (p) => {
 
     <div class="carBat__specs">
       <span>${p.capacity} Ah</span>
-      <span>${p.current} A(EN)</span>
-      <span>${p.polarities.join('/')}</span>
+      <span>${p.cca} A(EN)</span>
     </div>
 
     <div class="carBat__price">
@@ -56,7 +56,7 @@ const createProductCard = (p) => {
 
     <div class="carBat__meta">
       <span class="carBat__warranty"><strong>Гарантія:</strong> ${p.warranty} міс.</span>
-      <a href="${p.origin_website}" class="carBat__origin" target="_blank">${p.origin}</a>
+      <a href="${p.manufacturer.website}" class="carBat__origin" target="_blank">${p.manufacturer.country}, ${p.manufacturer.brand}</a>
     </div>
 
     <button class="carBat__orderBtn">🛒</button>

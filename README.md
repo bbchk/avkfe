@@ -3,6 +3,15 @@
 <!-- include photo of cut car battery in website and explain car battery structure -->
 <!-- incorporate blog to website -->
 
+we need to account for both batteries that have several dimensions and same price, and only one dimension
+tooltips on specs of car batteries
+
+make badges: {asia model, low profile}
+
+so we go with extensible product cards on hover (click temporarily on mobile) and just display badge (low profile)
+
+instead of bloating product card, we develop individual page for every car battery with it's tailored html and detailed specs
+
 learn:
 * find out all the batteries manufecturer code (for all the companies)
     * put it near accumulator themselves
