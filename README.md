@@ -4,7 +4,7 @@
 <!-- incorporate blog to website -->
 
 p2
-- find necessary photos
+- find necessary photos (convert all to webp)
 - separate specs on product card
 
 we need to account for both batteries that have several dimensions and same price, and only one dimension
