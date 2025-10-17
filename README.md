@@ -13,6 +13,15 @@ learn:
     * for yourself? you want good one?
     * etc. 
 
+create a paper bouklet with different groups (60ah, 70ah, etc...), and empty places for prices
+
+we need to set fucking bosch and varta (at least one model), so people see we sell them as well 
+
+create list of standard questions to ask every person who comes:
+* start/stop ?
+* for yourself? you want good one?
+* etc. 
+
 * we need ready (prepped) catalog for all other options that we can suggest
 
 
@@ -22,6 +31,13 @@ for bohdana:
     * make one photo collage with working utk, new accumulators and somehting else 
     * Прийом відпрацьованих свинцевих АКБ додати
 
+<<<<<<< HEAD
+||||||| parent of d0402e6 (fix-the-issue)
+* include sizes to specs (include manufacturer number to specs?)
+=======
+* include (low profile badge) for those that <= 175 in height ?
+* include sizes to specs (include manufacturer number to specs?)
+>>>>>>> d0402e6 (fix-the-issue)
 
 clamp on car battert name, so card is not enlraged by it
 * we need to correct polarities and photos 
