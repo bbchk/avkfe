@@ -13,6 +13,10 @@ learn:
     * for yourself? you want good one?
     * etc. 
 
+* general thoughts
+    * there are 3 main ways people can reach out: come, phone call, platforms (e.g. olx)
+    we need to make sure that all 3 ways have their specific requirements fulfilled   
+
 create a paper bouklet with different groups (60ah, 70ah, etc...), and empty places for prices
 
 we need to set fucking bosch and varta (at least one model), so people see we sell them as well 
