@@ -5,7 +5,7 @@
     "name": "Eurokraft Silver",
     "capacity": 50,
     "cca": 420,
-    "type": "Кислотний",
+    "type": "Свинцево-Кислотний",
     "variants": [
       {
         "polarity": true,
@@ -44,7 +44,7 @@
     "name": "Eurokraft Silver",
     "capacity": 60,
     "cca": 560,
-    "type": "Кислотний",
+    "type": "Свинцево-Кислотний",
     "variants": [
       {
         "polarity": true,

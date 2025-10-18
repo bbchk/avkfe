@@ -48,7 +48,7 @@ const createProductCard = (p) => {
     <div class="carBat__specs">
       <span>${p.capacity} Ah</span>
       <span>${p.cca} A(EN)</span>
-      <span>${p.polarity == null ? 'R+ / L+' : p.polarity ? 'R+' : 'L+'}</span>
+      <span>${p.polarity == null ? 'П+ / Л+' : p.polarity ? 'П+' : 'Л+'}</span>
     </div>
 
     <div class="carBat__price">
