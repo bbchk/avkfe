@@ -6,37 +6,56 @@
     "capacity": 50,
     "cca": 420,
     "type": "Свинцево-Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "inStock": true,
-        "dimensions": { "l": 207, "w": 175, "h": 190, "tag": "Standard" }
-      },
-      {
-        "polarity": true,
-        "inStock": true,
-        "dimensions": { "l": 207, "w": 175, "h": 175, "tag": "Low profile" }
-      },
-      {
-        "polarity": false,
-        "inStock": true,
-        "dimensions": {
-          "l": 207,
-          "w": 175,
-          "h": 190,
-          "tag": "Reversed polarity"
-        }
-      }
-    ],
     "price": 1980,
     "warranty": 24,
-    "manufacturer": {
-      "country": "Болгарія",
-      "brand": "Monbat",
-      "website": "https://eurokraftbattery.com/"
-    },
-    "tags": ["low profile"],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/silver/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "inStock": true,
+    "length": 207,
+    "width": 175,
+    "height": 190
+  },
+  {
+    "id": "2",
+    "imageUrl": "monbat-eurokraft-silver-50ah-euro.webp",
+    "name": "Eurokraft Silver",
+    "capacity": 50,
+    "cca": 420,
+    "type": "Свинцево-Кислотний",
+    "price": 1980,
+    "warranty": 24,
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/silver/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "inStock": true,
+    "length": 207,
+    "width": 175,
+    "height": 175,
+    "tags": ["Низький"]
+  },
+  {
+    "id": "2",
+    "imageUrl": "monbat-eurokraft-silver-50ah-euro.webp",
+    "name": "Eurokraft Silver",
+    "capacity": 50,
+    "cca": 420,
+    "type": "Свинцево-Кислотний",
+    "price": 1980,
+    "warranty": 24,
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/silver/",
+    "htmlSnippet": "<div><div>",
+    "polarity": false,
+    "inStock": true,
+    "length": 207,
+    "width": 175,
+    "height": 190
   },
   {
     "id": "3",
@@ -45,32 +64,36 @@
     "capacity": 60,
     "cca": 560,
     "type": "Свинцево-Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "inStock": true,
-        "dimensions": { "l": 242, "w": 175, "h": 190, "tag": "Standard" }
-      },
-      {
-        "polarity": false,
-        "inStock": true,
-        "dimensions": {
-          "l": 242,
-          "w": 175,
-          "h": 190,
-          "tag": "Reversed polarity"
-        }
-      }
-    ],
     "price": 2380,
     "warranty": 24,
-    "manufacturer": {
-      "country": "Болгарія",
-      "brand": "Monbat",
-      "website": "https://eurokraftbattery.com/"
-    },
-    "tags": [],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/silver/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "inStock": true,
+    "length": 242,
+    "width": 175,
+    "height": 190
+  },
+  {
+    "id": "3",
+    "imageUrl": "monbat-eurokraft-silver-60ah-euro.png",
+    "name": "Eurokraft Silver",
+    "capacity": 60,
+    "cca": 560,
+    "type": "Свинцево-Кислотний",
+    "price": 2380,
+    "warranty": 24,
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/silver/",
+    "htmlSnippet": "<div><div>",
+    "polarity": false,
+    "inStock": true,
+    "length": 242,
+    "width": 175,
+    "height": 190
   },
   {
     "id": "4",
@@ -79,21 +102,16 @@
     "capacity": 62,
     "cca": 590,
     "type": "Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "dimensions": { "l": 190, "w": 110, "h": 175, "tag": "Standard" }
-      }
-    ],
     "price": 2650,
     "warranty": 24,
-    "manufacturer": {
-      "country": "Казахстан",
-      "brand": "Kainar",
-      "website": "https://kainar.kz/"
-    },
-    "tags": [],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "length": 190,
+    "width": 110,
+    "height": 175
   },
   {
     "id": "5",
@@ -102,21 +120,16 @@
     "capacity": 65,
     "cca": 640,
     "type": "Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "dimensions": { "l": 190, "w": 110, "h": 175, "tag": "Standard" }
-      }
-    ],
     "price": 2950,
     "warranty": 24,
-    "manufacturer": {
-      "country": "Казахстан",
-      "brand": "Kainar",
-      "website": "https://kainar.kz/"
-    },
-    "tags": [],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "length": 190,
+    "width": 110,
+    "height": 175
   },
   {
     "id": "6",
@@ -125,21 +138,16 @@
     "capacity": 60,
     "cca": 520,
     "type": "Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "dimensions": { "l": 190, "w": 110, "h": 175, "tag": "Standard" }
-      }
-    ],
     "price": 2200,
     "warranty": 24,
-    "manufacturer": {
-      "country": "Казахстан",
-      "brand": "Kainar",
-      "website": "https://kainar.kz/"
-    },
-    "tags": [],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "length": 190,
+    "width": 110,
+    "height": 175
   },
   {
     "id": "4",
@@ -148,37 +156,55 @@
     "capacity": 60,
     "cca": 600,
     "type": "Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "inStock": true,
-        "dimensions": { "l": 242, "w": 175, "h": 190, "tag": "Standard" }
-      },
-      {
-        "polarity": true,
-        "inStock": true,
-        "dimensions": { "l": 242, "w": 175, "h": 175, "tag": "Low profile" }
-      },
-      {
-        "polarity": false,
-        "inStock": true,
-        "dimensions": {
-          "l": 242,
-          "w": 175,
-          "h": 190,
-          "tag": "Reversed polarity"
-        }
-      }
-    ],
     "price": 2480,
     "warranty": 24,
-    "manufacturer": {
-      "country": "Болгарія",
-      "brand": "Monbat",
-      "website": "https://eurokraftbattery.com/"
-    },
-    "tags": [],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/gold/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "inStock": true,
+    "length": 242,
+    "width": 175,
+    "height": 190
+  },
+  {
+    "id": "4",
+    "imageUrl": "monbat-eurokraft-gold-60ah-euro.webp",
+    "name": "Eurokraft Gold",
+    "capacity": 60,
+    "cca": 600,
+    "type": "Кислотний",
+    "price": 2480,
+    "warranty": 24,
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/gold/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "inStock": true,
+    "length": 242,
+    "width": 175,
+    "height": 175
+  },
+  {
+    "id": "4",
+    "imageUrl": "monbat-eurokraft-gold-60ah-euro.webp",
+    "name": "Eurokraft Gold",
+    "capacity": 60,
+    "cca": 600,
+    "type": "Кислотний",
+    "price": 2480,
+    "warranty": 24,
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/gold/",
+    "htmlSnippet": "<div><div>",
+    "polarity": false,
+    "inStock": true,
+    "length": 242,
+    "width": 175,
+    "height": 190
   },
   {
     "id": "8",
@@ -187,21 +213,16 @@
     "capacity": 62,
     "cca": 600,
     "type": "Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "dimensions": { "l": 190, "w": 110, "h": 175, "tag": "Standard" }
-      }
-    ],
     "price": 2850,
     "warranty": 24,
-    "manufacturer": {
-      "country": "Польща",
-      "brand": "Autopart",
-      "website": "https://www.autopart.pl/en"
-    },
-    "tags": [],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Польща",
+    "manufacturerBrand": "Autopart",
+    "manufacturerWebsite": "https://www.autopart.pl/en",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "length": 190,
+    "width": 110,
+    "height": 175
   },
   {
     "id": "9",
@@ -210,21 +231,16 @@
     "capacity": 60,
     "cca": 600,
     "type": "Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "dimensions": { "l": 200, "w": 130, "h": 200, "tag": "Asia" }
-      }
-    ],
     "price": 3320,
     "warranty": 36,
-    "manufacturer": {
-      "country": "Словенія",
-      "brand": "TAB d.d.",
-      "website": "https://www.tab.si/products/vesna_power/"
-    },
-    "tags": [],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Словенія",
+    "manufacturerBrand": "TAB d.d.",
+    "manufacturerWebsite": "https://www.tab.si/products/vesna_power/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "length": 200,
+    "width": 130,
+    "height": 200
   },
   {
     "id": "10",
@@ -233,21 +249,16 @@
     "capacity": 65,
     "cca": 600,
     "type": "Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "dimensions": { "l": 200, "w": 130, "h": 200, "tag": "Asia" }
-      }
-    ],
     "price": 2850,
     "warranty": 24,
-    "manufacturer": {
-      "country": "Казахстан",
-      "brand": "Kainar",
-      "website": "https://kainar.kz/"
-    },
-    "tags": [],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "length": 200,
+    "width": 130,
+    "height": 200
   },
   {
     "id": "5",
@@ -256,32 +267,36 @@
     "capacity": 62,
     "cca": 600,
     "type": "Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "inStock": true,
-        "dimensions": { "l": 242, "w": 175, "h": 190, "tag": "Standard" }
-      },
-      {
-        "polarity": false,
-        "inStock": true,
-        "dimensions": {
-          "l": 242,
-          "w": 175,
-          "h": 190,
-          "tag": "Reversed polarity"
-        }
-      }
-    ],
     "price": 2530,
     "warranty": 24,
-    "manufacturer": {
-      "country": "Болгарія",
-      "brand": "Monbat",
-      "website": "https://eurokraftbattery.com/"
-    },
-    "tags": [],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/silver/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "inStock": true,
+    "length": 242,
+    "width": 175,
+    "height": 190
+  },
+  {
+    "id": "5",
+    "imageUrl": "monbat-eurokraft-silver-62ah-euro.webp",
+    "name": "Eurokraft Silver",
+    "capacity": 62,
+    "cca": 600,
+    "type": "Кислотний",
+    "price": 2530,
+    "warranty": 24,
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/silver/",
+    "htmlSnippet": "<div><div>",
+    "polarity": false,
+    "inStock": true,
+    "length": 242,
+    "width": 175,
+    "height": 190
   },
   {
     "id": "12",
@@ -290,73 +305,73 @@
     "capacity": 60,
     "cca": 540,
     "type": "Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "dimensions": { "l": 190, "w": 110, "h": 175, "tag": "Standard" }
-      }
-    ],
     "price": 2700,
     "warranty": 24,
-    "manufacturer": {
-      "country": "Польща",
-      "brand": "Autopart",
-      "website": "https://www.autopart.pl/en"
-    },
-    "tags": [],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Польща",
+    "manufacturerBrand": "Autopart",
+    "manufacturerWebsite": "https://www.autopart.pl/en",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "length": 190,
+    "width": 110,
+    "height": 175
   },
- {
+  {
     "id": "6",
     "imageUrl": "monbat-eurokraft-gold-60ah-euro.webp",
     "name": "Eurokraft Gold",
     "capacity": 62,
     "cca": 620,
     "type": "Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "inStock": true,
-        "dimensions": { "l": 242, "w": 175, "h": 190, "tag": "Standard" }
-      },
-      {
-        "polarity": false,
-        "inStock": true,
-        "dimensions": { "l": 242, "w": 175, "h": 190, "tag": "Reversed polarity" }
-      }
-    ],
     "price": 2650,
     "warranty": 24,
-    "manufacturer": {
-      "country": "Болгарія",
-      "brand": "Monbat",
-      "website": "https://eurokraftbattery.com/"
-    },
-    "tags": [],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/gold/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "inStock": true,
+    "length": 242,
+    "width": 175,
+    "height": 190
   },
- {
+  {
+    "id": "6",
+    "imageUrl": "monbat-eurokraft-gold-60ah-euro.webp",
+    "name": "Eurokraft Gold",
+    "capacity": 62,
+    "cca": 620,
+    "type": "Кислотний",
+    "price": 2650,
+    "warranty": 24,
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/gold/",
+    "htmlSnippet": "<div><div>",
+    "polarity": false,
+    "inStock": true,
+    "length": 242,
+    "width": 175,
+    "height": 190
+  },
+  {
     "id": "6",
     "imageUrl": "monbat-eurokraft-gold-60ah-euro.webp",
     "name": "Eurokraft Gold",
     "capacity": 65,
     "cca": 640,
     "type": "Кислотний",
-    "variants": [
-      {
-        "polarity": true,
-        "inStock": true,
-        "dimensions": { "l": 242, "w": 175, "h": 190, "tag": "Standard" }
-      }
-    ],
     "price": 2650,
     "warranty": 24,
-    "manufacturer": {
-      "country": "Болгарія",
-      "brand": "Monbat",
-      "website": "https://eurokraftbattery.com/"
-    },
-    "tags": [],
-    "htmlSnippet": "<div><div>"
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/gold/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "inStock": true,
+    "length": 242,
+    "width": 175,
+    "height": 190
   }
 ]
+

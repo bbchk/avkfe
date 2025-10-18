@@ -41,47 +41,24 @@
 
     object-fit: contain;
   }
-}
 
-.carBat__polarity {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 1;
 
-  gap: 0.3rem;
-  margin-top: 0.6rem;
+  .carBat__dimensions {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
 
-  position: absolute;
-  left: 10px;
+    z-index: 5;
 
-  span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .carBat__l {
+    }
 
-    width: 1.6rem;
-    height: 1.6rem;
-    border-radius: 50%;
+    .carBat__w {
+    }
 
-    font-weight: 700;
-    font-size: 1rem;
-    color: #fff;
-  }
-
-  &--left {
-    top: 40px;
-  }
-
-  &--right {
-    top: 10px;
-  }
-
-  &Pos {
-    background-color: #dc3545; // red
-  }
-
-  &Neg {
-    background-color: #0078d7; // blue
+    .carBat__h {
+    }
   }
 }
 
@@ -93,12 +70,19 @@
 .carBat__info {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-rows: 0.5fr 0.5fr 1fr 1.5fr;
+  grid-template-rows: 0.5fr 0.5fr 1.5fr 1fr;
   grid-template-areas:
     'name price'
     'type price'
     'specs specs'
     'meta buy';
+  /* grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1.5fr; */
+  /* grid-template-areas: */
+  /*   'name price' */
+  /*   'type price' */
+  /*   'specs specs' */
+  /*   'dimensions .' */
+  /*   'meta buy'; */
   gap: 0.7rem 1rem;
 
   padding: 1.2rem;
@@ -146,21 +130,84 @@
 .carBat__specs {
   grid-area: specs;
 
-  display: flex;
-  justify-content: space-evenly;
-  background: #f8f9fa;
-  padding: 0.6rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
 
-  /* position: relative; */
-  /* right: 0%; */
+  grid-template-areas:
+    'capacity cca polarity '
+    'dimensions dimensions dimensions';
+
+  /* grid-template-areas: */
+  /*   'capacity cca polarity '; */
+
+  gap: 1rem 0;
+  padding: 0.5rem 0;
 
   font-family: $font-mono;
   font-weight: 600;
   margin-inline: -1.2rem;
+  text-align: center;
 
-  span {
-    text-align: center;
+  background: #f8f9fa;
+
+  & > * {
+    /* border: 1px solid #ccc; */
+    /* padding: 4px; */
   }
+
+  & > p {
+    font-size: 1.7rem;
+
+    span {
+      color: $color-secondary;
+      font-size: 0.6em;
+    }
+  }
+}
+
+.carBat__specsDimensions {
+  grid-area: dimensions;
+
+
+  /* align-self: start; */
+  /* justify-self: flex-start; */
+  font-size: 1.2rem;
+
+  .carBat__specsLength,
+  .carBat__specsWidth,
+  .carBat__specsHeight {
+    display: inline;
+
+    span {
+      color: $color-secondary;
+      font-size: 0.6em;
+    }
+  }
+
+  /* .carBat__specsLength { */
+  /*   grid-area: length; */
+  /* } */
+  /**/
+  /* .carBat__specsWidth { */
+  /*   grid-area: width; */
+  /* } */
+  /**/
+  /* .carBat__specsHeight { */
+  /*   grid-area: height; */
+  /* } */
+}
+
+.carBat__specsCapacity {
+  grid-area: capacity;
+}
+
+.carBat__specsCCA {
+  grid-area: cca;
+}
+
+.carBat__specsPolarity {
+  grid-area: polarity;
 }
 
 .carBat__meta {
