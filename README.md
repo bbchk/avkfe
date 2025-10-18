@@ -3,6 +3,7 @@
 <!-- include photo of cut car battery in website and explain car battery structure -->
 <!-- incorporate blog to website -->
 
+place text in line on dimensions badge
 
 asia euro and low profile
 group akb by capacity
