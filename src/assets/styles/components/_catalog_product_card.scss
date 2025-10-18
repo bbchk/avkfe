@@ -45,20 +45,39 @@
   z-index: 1;
 
   .carBat__dimensions {
-    position: absolute;
-    bottom: -10px;
-    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 
     z-index: 5;
+    position: absolute;
+    bottom: 0;
 
-    .carBat__l {
-    }
+    padding: 0.3rem;
 
-    .carBat__w {
-    }
+    height: 1.5rem;
+    width: 100%;
 
-    .carBat__h {
+    background: rgba(248, 249, 250, 0.95);
+
+    svg {
+      display: block;
+
+      width: 2rem;
+      height: auto;
     }
+  }
+}
+
+.carBat__dimensionsValues {
+  padding: 0 0 0 0.2rem;
+
+  font-family: $font-mono;
+  font-weight: 600;
+  font-size: 1.1rem;
+
+  span {
+    color: $color-secondary;
   }
 }
 
@@ -70,19 +89,12 @@
 .carBat__info {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-rows: 0.5fr 0.5fr 1.5fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
   grid-template-areas:
     'name price'
     'type price'
     'specs specs'
     'meta buy';
-  /* grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1.5fr; */
-  /* grid-template-areas: */
-  /*   'name price' */
-  /*   'type price' */
-  /*   'specs specs' */
-  /*   'dimensions .' */
-  /*   'meta buy'; */
   gap: 0.7rem 1rem;
 
   padding: 1.2rem;
@@ -130,19 +142,12 @@
 .carBat__specs {
   grid-area: specs;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
-  grid-template-areas:
-    'capacity cca polarity '
-    'dimensions dimensions dimensions';
-
-  /* grid-template-areas: */
-  /*   'capacity cca polarity '; */
-
-  gap: 1rem 0;
-  padding: 0.5rem 0;
+  /* gap: 1rem 0; */
+  /* padding: 0.5rem 0; */
 
   font-family: $font-mono;
   font-weight: 600;
@@ -150,11 +155,6 @@
   text-align: center;
 
   background: #f8f9fa;
-
-  & > * {
-    /* border: 1px solid #ccc; */
-    /* padding: 4px; */
-  }
 
   & > p {
     font-size: 1.7rem;
@@ -164,50 +164,6 @@
       font-size: 0.6em;
     }
   }
-}
-
-.carBat__specsDimensions {
-  grid-area: dimensions;
-
-
-  /* align-self: start; */
-  /* justify-self: flex-start; */
-  font-size: 1.2rem;
-
-  .carBat__specsLength,
-  .carBat__specsWidth,
-  .carBat__specsHeight {
-    display: inline;
-
-    span {
-      color: $color-secondary;
-      font-size: 0.6em;
-    }
-  }
-
-  /* .carBat__specsLength { */
-  /*   grid-area: length; */
-  /* } */
-  /**/
-  /* .carBat__specsWidth { */
-  /*   grid-area: width; */
-  /* } */
-  /**/
-  /* .carBat__specsHeight { */
-  /*   grid-area: height; */
-  /* } */
-}
-
-.carBat__specsCapacity {
-  grid-area: capacity;
-}
-
-.carBat__specsCCA {
-  grid-area: cca;
-}
-
-.carBat__specsPolarity {
-  grid-area: polarity;
 }
 
 .carBat__meta {

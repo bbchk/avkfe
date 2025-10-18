@@ -36,42 +36,28 @@ const createProductCard = (p) => {
   // TODO: use env variable
   p.imageUrl = `/assets/public/${p.imageUrl}`;
 
+
+        // <!-- Background circle -->
+        // <circle cx="60" cy="60" r="55" fill="#f8f9fa" />
   return `
 <div class="carBat" data-id="${p.id}">
   <div class="carBat__image">
     <img src="${p.imageUrl}" alt="${p.name}">
 
-    <svg width="80" height="80" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" class="carBat__dimensions">
-      <g transform="translate(20, 15)">
-        <!-- Background circle -->
-        <circle cx="60" cy="60" r="55" fill="#f8f9fa" />
-
-        <!-- Arrowhead definition -->
+    <div class="carBat__dimensions">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="carBat__dimensions__svg">
         <defs>
           <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
             <path d="M0,0 L6,3 L0,6 L1,3 Z" fill="currentColor" />
           </marker>
         </defs>
 
-        <!-- Axes lines (shorter arrows) -->
-        <line x1="30" y1="90" x2="55" y2="90" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/> <!-- X: Length -->
-        <line x1="30" y1="90" x2="30" y2="65" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/> <!-- Y: Height -->
-        <line x1="30" y1="90" x2="50" y2="70" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/> <!-- Z: Width -->
-
-        <!-- Labels (keep same size) -->
-        <text x="60" y="92" font-family="Roboto Mono, monospace" font-size="1rem" font-weight="700" fill="#000">
-          ${p.length}<tspan font-size="0.8rem">Д</tspan>
-        </text>
-
-        <text x="50" y="65" font-family="Roboto Mono, monospace" font-size="1rem" font-weight="700" fill="#000">
-          ${p.width}<tspan font-size="0.8rem">Ш</tspan>
-        </text>
-
-        <text x="10" y="52" font-family="Roboto Mono, monospace" font-size="1rem" font-weight="700" fill="#000">
-          ${p.height}<tspan font-size="0.8rem">В</tspan>
-        </text>
-      </g>
-    </svg>
+        <line x1="20" y1="80" x2="85" y2="80" stroke="#000" stroke-width="5" marker-end="url(#arrow)"/>
+        <line x1="20" y1="80" x2="60" y2="40" stroke="#000" stroke-width="5" marker-end="url(#arrow)"/>
+        <line x1="20" y1="80" x2="20" y2="10" stroke="#000" stroke-width="5" marker-end="url(#arrow)"/>
+      </svg>
+      <p class="carBat__dimensionsValues">${p.length}<span>/</span>${p.width}<span>/</span>${p.height}</p>
+    </div>
   </div>
 
   <div class="carBat__info">
@@ -79,15 +65,9 @@ const createProductCard = (p) => {
     <p class="carBat__type">${p.type}</p>
 
     <div class="carBat__specs">
-      <p class="carBat__specsCapacity">${p.capacity}<span>Ah</span></p>
-      <p class="carBat__specsCCA">${p.cca}<span>A(EN)</span></p>
-      <p class="carBat__specsPolarity">${p.polarity ? 'R+' : 'L+'}</p>
-
-      <div class="carBat__specsDimensions">
-        <p class="carBat__specsLength">${p.length}<span>Д</span></p>
-        <p class="carBat__specsWidth">${p.width}<span>Ш</span></p>
-        <p class="carBat__specsHeight">${p.height}<span>В</span></p>
-      </div>
+      <p>${p.capacity}<span>Ah</span></p>
+      <p>${p.cca}<span>A(EN)</span></p>
+      <p>${p.polarity ? 'R+' : 'L+'}</p>
     </div>
 
 
