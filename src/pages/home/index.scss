@@ -99,4 +99,6 @@
   grid-area: diagnostics;
   flex-direction: row;
   text-align: left;
+
+  @include inactive(80%, 0.5);
 }

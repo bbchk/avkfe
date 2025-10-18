@@ -1,4 +1,5 @@
 @use '@styles/settings/index' as *;
+@use '@styles/utils' as *;
 
 .header {
   display: flex;
@@ -79,12 +80,11 @@
   }
 
   &--diagnostics {
+    @include inactive(80%, 0.5);
   }
 
   &--catalogUps {
-    filter: grayscale(100%);
-    opacity: 0.5;
-    pointer-events: none;
+    @include inactive(80%, 0.5);
 
     /* transition: all 0.3s ease; */
     /* &:hover { */
