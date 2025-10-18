@@ -4,8 +4,8 @@ import css from './index.scss?inline';
 import { ROUTE_CHANGED_EVENT } from '/config/constants';
 
 // TODO:
-// const data = import.meta.glob('/assets/data/*.json', { eager: true });
-const data = import.meta.glob('/assets/data/ah60.json', { eager: true });
+const data = import.meta.glob('/assets/data/*.json', { eager: true });
+// const data = import.meta.glob('/assets/data/ah60.json', { eager: true });
 const products = Object.values(data).flatMap((m) => m.default);
 
 // Function to get container based on capacity

@@ -89,10 +89,10 @@
 .carBat__info {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.1fr 1fr 1fr;
   grid-template-areas:
     'name price'
-    'type price'
+    'type type'
     'specs specs'
     'meta buy';
   gap: 0.7rem 1rem;
