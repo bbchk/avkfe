@@ -4,14 +4,14 @@
 /* --------- TABLET --------- */
 
 @include media($size-tablet) {
-  .home {
+  .home.home {
     display: grid;
-    grid-template-columns: 0.7fr 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
     grid-template-areas:
-      'hero auto diagnostics'
-      'hero ups diagnostics';
+      'hero diagnostics'
+      'auto ups';
 
     padding: 35px 0;
 
@@ -19,7 +19,6 @@
   }
 
   .home__hero {
-
     p {
     }
   }

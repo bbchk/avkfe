@@ -10,8 +10,6 @@ function initHeaderEffects(selector = '.header') {
   let prevScrollPos = window.pageYOffset;
   const headerBottom = header.offsetTop + header.offsetHeight;
 
-  console.log(headerBottom);
-
   const main = $("main");
   const mainTop = headerBottom;
   main.style.marginTop = `${mainTop}px`;
