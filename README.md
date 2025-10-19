@@ -1,9 +1,13 @@
 # AVAK GROUP Front-end
 
+* optimize: 
+    * load responsive styles only when size of viewport is corresponding
+
 <!-- include photo of cut car battery in website and explain car battery structure -->
 <!-- incorporate blog to website -->
 
 fix pics on remote, fix mobile view of every page, fix metadata pages
+try to bump normal size of font and see how website looks like
 
 correct dimesntions
 place text in line on dimensions badge

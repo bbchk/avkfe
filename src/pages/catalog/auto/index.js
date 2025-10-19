@@ -33,7 +33,6 @@ const getContainerForCapacity = (capacity) => {
 
 
 const createProductCard = (p) => {
-  // TODO: use env variable
   p.imageUrl = `/${p.imageUrl}`;
 
   return `
