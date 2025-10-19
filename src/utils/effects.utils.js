@@ -10,6 +10,12 @@ function initHeaderEffects(selector = '.header') {
   let prevScrollPos = window.pageYOffset;
   const headerBottom = header.offsetTop + header.offsetHeight;
 
+  console.log(headerBottom);
+
+  const main = $("main");
+  const mainTop = headerBottom;
+  main.style.top = `${mainTop}px`;
+
   function onScroll() {
     const currentScrollPos = window.pageYOffset;
 
@@ -19,7 +25,7 @@ function initHeaderEffects(selector = '.header') {
     if (isScrollingUp || isBeforeHeader) {
       header.style.top = '0';
     } else {
-      header.style.top = '-7.2rem';
+      header.style.top = `-${headerBottom}px`;
     }
 
     prevScrollPos = currentScrollPos;

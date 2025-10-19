@@ -1,0 +1,51 @@
+@use '@styles/settings/index' as *;
+@use '@styles/utils' as *;
+
+/* --------- TABLET --------- */
+
+@include media($size-tablet) {
+  .header {
+    grid-template-columns: 0.7fr 2fr 3fr 1.5fr;
+    grid-template-areas:
+      'logo logo logo logo'
+      'wip wip wip wip';
+  }
+}
+
+@include media($size-tablet) {
+  .header {
+  }
+
+  .header__logo {
+  }
+
+  .header__nav {
+    display: none;
+    ul {
+    }
+  }
+
+  .header__navItem {
+    &--catalog {
+    }
+
+    &--diagnostics {
+    }
+
+    &--catalogUps {
+    }
+  }
+
+  .header__navItem--contacts {
+    p {
+    }
+  }
+
+  .header__wip {
+  }
+}
+
+/* --------- MOBILE --------- */
+
+/* @include media($size-mobile) { */
+/* } */

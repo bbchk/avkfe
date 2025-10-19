@@ -1,19 +1,15 @@
 @use '@styles/settings/index' as *;
 @use '@styles/utils' as *;
 
-@use '@styles/components/header/_header_pseudoclasses.scss' as *;
-@use '@styles/components/header/_header_responsive.scss' as *;
-
 .header {
   align-items: center;
 
   display: grid;
   grid-template-columns: 0.7fr 2fr 3fr 1.5fr;
-  grid-template-rows: 5rem 1.5rem;
+  grid-template-rows: 5rem auto;
   grid-template-areas:
     'logo nav nav nav'
     'wip wip wip wip';
-  /* gap: 20px; */
 
   position: fixed;
   top: 0;
@@ -27,11 +23,11 @@
   overflow: clip;
 
   border-bottom: 2px solid $color-downplay;
-
 }
 
 .header__logo {
   grid-area: logo;
+  justify-self: center;
 
   display: flex;
   flex-flow: row nowrap;
@@ -40,28 +36,8 @@
   padding: 0 30px;
 
   span {
-    /* font-family: $font-pacifico; */
     font-size: 3rem;
     font-weight: 500;
-    /* color: $color-blu-dasl; */
-  }
-
-  &:hover {
-    span {
-      /* color: $color-blu-dasl; */
-    }
-  }
-
-  @media only screen and (width < 1200px) {
-    span {
-      display: none;
-    }
-  }
-
-  @media only screen and (width < 300px) {
-    img {
-      display: none;
-    }
   }
 }
 
@@ -112,11 +88,8 @@
 
 .header__wip {
   grid-area: wip;
-  /* position: absolute; */
-  /* top:80px; */
 
   width: 100%;
-  /* margin-top: 80px; */
   padding: 4px;
 
   text-align: center;
@@ -126,3 +99,4 @@
 
   background: $color-downplay;
 }
+
