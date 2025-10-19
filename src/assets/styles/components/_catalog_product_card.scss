@@ -220,30 +220,3 @@
     background: $color-confirm;
   }
 }
-
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-  .carBat {
-    max-width: 100%;
-  }
-
-  .carBat__info {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'name'
-      'type'
-      'price'
-      'specs'
-      'meta'
-      'buy';
-  }
-
-  .carBat__price {
-    align-items: flex-start;
-  }
-
-  .carBat__order-btn {
-    width: 100%;
-    justify-self: stretch;
-  }
-}
