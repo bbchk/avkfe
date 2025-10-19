@@ -1,5 +1,7 @@
 # AVAK GROUP Front-end
 
+style error page
+
 * optimize: 
     * load responsive styles only when size of viewport is corresponding
 
