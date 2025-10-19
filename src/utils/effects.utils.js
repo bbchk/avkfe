@@ -25,7 +25,7 @@ function initHeaderEffects(selector = '.header') {
     if (isScrollingUp || isBeforeHeader) {
       header.style.top = '0';
     } else {
-      header.style.top = `-${headerBottom}px`;
+      header.style.top = `-${headerBottom+15}px`;
     }
 
     prevScrollPos = currentScrollPos;

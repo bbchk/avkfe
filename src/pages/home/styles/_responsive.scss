@@ -1,0 +1,26 @@
+@use '@styles/settings/index' as *;
+@use '@styles/utils' as *;
+
+/* --------- TABLET --------- */
+
+@include media($size-tablet) {
+  .home {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+      'hero auto diagnostics'
+      'hero ups diagnostics';
+
+    padding: 35px 0;
+
+    width: 100%;
+  }
+
+  .home__hero {
+
+    p {
+    }
+  }
+}
