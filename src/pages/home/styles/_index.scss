@@ -52,13 +52,12 @@
 
   span {
     position: absolute;
-    left: 1.5rem;
+    left: 1vw;
     bottom: 1.5rem;
     z-index: 2;
     color: $color-background;
 
-    font-width: 600;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem); // [Min size, Fluid size, Max size]
   }
 
   img {
@@ -75,7 +74,6 @@
 // Individual section positioning
 .home__autoBat {
   grid-area: auto;
-  // Remove the specific img styles since they're now handled above
 }
 
 .home__upsBat {
@@ -85,8 +83,6 @@
 
 .home__diagnostics {
   grid-area: diagnostics;
-  flex-direction: row;
-  text-align: left;
 
   @include inactive(80%, 0.5);
 }
