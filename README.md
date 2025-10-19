@@ -3,6 +3,8 @@
 <!-- include photo of cut car battery in website and explain car battery structure -->
 <!-- incorporate blog to website -->
 
+fix pics on remote, fix mobile view of every page, fix metadata pages
+
 correct dimesntions
 place text in line on dimensions badge
 

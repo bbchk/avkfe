@@ -34,11 +34,8 @@ const getContainerForCapacity = (capacity) => {
 
 const createProductCard = (p) => {
   // TODO: use env variable
-  p.imageUrl = `/assets/public/${p.imageUrl}`;
+  p.imageUrl = `/${p.imageUrl}`;
 
-
-        // <!-- Background circle -->
-        // <circle cx="60" cy="60" r="55" fill="#f8f9fa" />
   return `
 <div class="carBat" data-id="${p.id}">
   <div class="carBat__image">
