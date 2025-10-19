@@ -1,0 +1,70 @@
+@use '@styles/settings/index' as *;
+@use '@styles/utils' as *;
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  min-height: 350px;
+
+  margin: 20px 0;
+  border-top: 2px solid $color-downplay;
+  overflow: clip;
+
+  padding: 2rem 0;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-areas: 'logo about rules contacts map';
+  grid-template-columns: 0.5fr 1fr 1fr 0.7fr 1fr;
+  /* 45 55 */
+  grid-template-rows: 1fr;
+  gap: 20px;
+
+  max-width: 80%;
+
+  section {
+    width: 100%;
+
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 2;
+
+    h5 {
+      display: block;
+      font-size: 1.4em;
+    }
+  }
+}
+
+.footer__logo {
+  grid-area: logo;
+  img {
+    justify-self: center;
+  }
+}
+
+.footer__about {
+  grid-area: about;
+}
+
+.footer__rules {
+  grid-area: rules;
+}
+
+.footer__contacts {
+  grid-area: contacts;
+}
+
+.footer__map {
+  grid-area: map;
+
+  .footer__MapIframe {
+    margin-top: 10px;
+    width: 300px; // Fixed width instead of 80%
+    height: 200px; // Fixed height instead of 50%
+    border-radius: 10px;
+    border: 1px solid red; // Temporary border to see if iframe exists
+  }
+}

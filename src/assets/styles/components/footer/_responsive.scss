@@ -1,0 +1,79 @@
+@use '@styles/settings/index' as *;
+@use '@styles/utils' as *;
+
+@include media($size-tablet) {
+  .footer {
+  }
+
+  .footer__container {
+    grid-template-areas:
+      'map map'
+      'contacts contacts'
+      'rules rules'
+      'about about'
+      'logo logo';
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px repeat(2, max-content);
+    gap: 20px;
+
+    max-width: 80%;
+  }
+
+  .footer__container section {
+    width: 100%;
+    border-top: 2px solid $color-downplay;
+
+    &.footer__map,
+    &.footer__logo {
+      border-top: none;
+    }
+
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 2;
+
+    h5 {
+      display: block;
+      font-size: 1.4em;
+    }
+  }
+
+  .footer__logo {
+  }
+
+  .footer__about {
+  }
+
+  .footer__rules {
+  }
+
+  .footer__contacts {
+  }
+
+  .footer__map {
+    .footer__MapIframe {
+    }
+  }
+
+  .footer__container {
+  }
+}
+
+@include media($size-mobile) {
+}
+
+/* @include media($size-mobile) { */
+/*   display: flex; */
+/*   flex-flow: column nowrap; */
+/*   justify-content: center; */
+/*   align-items: center; */
+/*   text-align: center; */
+/**/
+/*   width: max-content; */
+/**/
+/*   padding: 1rem; */
+/*   margin: 0 auto; */
+/**/
+/*   font-size: 1.3rem; */
+/* } */
