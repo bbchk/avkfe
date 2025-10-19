@@ -14,7 +14,7 @@ function initHeaderEffects(selector = '.header') {
 
   const main = $("main");
   const mainTop = headerBottom;
-  main.style.top = `${mainTop}px`;
+  main.style.marginTop = `${mainTop}px`;
 
   function onScroll() {
     const currentScrollPos = window.pageYOffset;
