@@ -7,6 +7,10 @@ style error page
 
 <!-- include photo of cut car battery in website and explain car battery structure -->
 <!-- incorporate blog to website -->
+prepare phrases to convince people to come:
+Усі акумулятори проходять пре продажну перевірку, ми запевненін що вони будуть довго служити
+надаємо гарантію, ми на ринку вже 25 років, займаємось тільки тими виробниками в яких впевнені
+самі діагностуємо і відновлюємо акумулятори, тому розуміємся які кращі, гірші, які вам будуть служити, а якщо будете берегти то ще довше
 
 fix pics on remote, fix mobile view of every page, fix metadata pages
 try to bump normal size of font and see how website looks like
