@@ -47,10 +47,14 @@
 
 .footer__about {
   grid-area: about;
+
+  @include inactive(80%, 0.5);
 }
 
 .footer__rules {
   grid-area: rules;
+
+  @include inactive(80%, 0.5);
 }
 
 .footer__contacts {

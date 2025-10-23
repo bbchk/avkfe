@@ -4,19 +4,20 @@
 @forward './variables/_sizes.scss' as size-*;
 
 /* ---------- COLORS --------------- */
-$color-primary: color.$blu-indigo;
-$color-secondary: color.$wh-oldsilv;
+$color-primary: color.$blue-indigo;
 
-$color-logo: color.$blu-azure;
+$color-secondary: color.$white-old-silver;
 
-$color-downplay: color.$wh-platinum;
-$color-highlight: color.$blu-azure;
+$color-logo: color.$blue-azure;
 
-$color-confirm: color.$gr-ao;
-$color-decline: color.$rd-decapink;
+$color-downplay: color.$white-platinum;
+$color-highlight: color.$blue-azure;
 
-$color-text: color.$blck-rich;
-$color-background: color.$wh-cultured;
+$color-confirm: color.$green-ao;
+$color-decline: color.$red-deep-pink;
+
+$color-text: color.$black-rich;
+$color-background: color.$white-cultured;
 
 /* ---------- FONTS --------------- */
 $font-primary: font.$raleway;
@@ -27,8 +28,13 @@ $font-mono: font.$roboto-mono;
 $font-emoji: font.$noto-emoji;
 
 /* ============================ */
-/* Placeholder / reference variables
-   — define later when adding state colors etc. */
+
+/* $primary-color: #004d99; */
+/* $secondary-color: #ffcc00; */
+/* $text-color: #333; */
+/* $background-color: #f4f4f4; */
+
+/* — define later when adding state colors etc. */
 
 /*
 $color-error: color.$rd-error;
