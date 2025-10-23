@@ -1,0 +1,132 @@
+
+```
+[
+  {
+    "id": "13",
+    "imageUrl": "autopart-fortis-75ah-euro.webp",
+    "name": "Fortis",
+    "capacity": 75,
+    "cca": 720,
+    "type": "Свинцево-Кислотний",
+    "price": 3600.9,
+    "warranty": 24,
+    "manufacturerCountry": "Польша",
+    "manufacturerBrand": "Autopart",
+    "manufacturerWebsite": "https://www.autopart.pl/en",
+    "htmlSnippet": "<div><div>",
+    "length": 0,
+    "width": 0,
+    "height": 0,
+    "polarity": true,
+    "inStock": true
+  },
+  {
+    "id": "14",
+    "imageUrl": "monbat-eurokraft-agm-75ah-euro.png",
+    "name": "Eurokraft AGM",
+    "capacity": 75,
+    "cca": 760,
+    "type": "AGM",
+    "price": 6350.0,
+    "warranty": 24,
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/agm/",
+    "htmlSnippet": "<div><div>",
+    "length": 0,
+    "width": 0,
+    "height": 0,
+    "polarity": true,
+    "inStock": true
+  },
+  {
+    "id": "15",
+    "imageUrl": "kainar-index-77ah-euro.webp",
+    "name": "Kainar",
+    "capacity": 77,
+    "cca": 750,
+    "type": "Свинцево-Кислотний",
+    "price": 3450.0,
+    "warranty": 24,
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
+    "htmlSnippet": "<div><div>",
+    "length": 0,
+    "width": 0,
+    "height": 0,
+    "polarity": true,
+    "inStock": true
+  },
+  {
+    "id": "16",
+    "imageUrl": "tab-vesna-premium-75ah-euro.webp",
+    "name": "Vesna Premium",
+    "capacity": 75,
+    "cca": 720,
+    "type": "Свинцево-Кислотний",
+    "price": 4300.0,
+    "warranty": 24,
+    "manufacturerCountry": "Словенія",
+    "manufacturerBrand": "TAB d.d.",
+    "manufacturerWebsite": "https://www.tab.si/products/vesna_premium/",
+    "htmlSnippet": "<div><div>",
+    "length": 0,
+    "width": 0,
+    "height": 0,
+    "polarity": true,
+    "inStock": true
+  },
+  {
+    "id": "17",
+    "imageUrl": "monbat-eurokraft-75ah-asia.webp",
+    "name": "Eurokraft Gold (Asia)",
+    "capacity": 75,
+    "cca": 720,
+    "type": "Свинцево-Кислотний",
+    "price": 3450.0,
+    "warranty": 24,
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/gold/",
+    "htmlSnippet": "<div><div>",
+    "length": 0,
+    "width": 0,
+    "height": 0,
+    "polarity": true,
+    "inStock": true
+  }
+]
+
+
+```
+
+
+```
+570 86 04	АКБ   70Ah EUROKRAFT AGM (-/+) EN760  278x175x190		*****			6,670
+575 87 04	АКБ   75Ah  STARTER GE (-/+) EN700  278x175x190		*****			3,160
+575 87 02	АКБ   75Ah  STARTER GE (+/-) EN700  278x175x190		***			3,160
+575 85 04	АКБ   75Ah EUROKRAFT EFB (-/+) EN720  278x175x190		*			4,770
+575 82 04	АКБ   75Ah EUROKRAFT SILVER (-/+) EN720  278x175x190		*****			3,400
+577 82 04	АКБ   77Ah EUROKRAFT  SILVER (-/+) EN760  278x175x190		*****	*****	21.11.2025	3,260
+577 82 06	АКБ   77Ah EUROKRAFT  SILVER (-/+) низький EN760  278x175x175		*****			3,260
+577 83 04	АКБ   77Ah EUROKRAFT GOLD (-/+) EN760  278x175x190		*****	*****	21.11.2025	3,390
+578 84 04	АКБ   78Ah EUROKRAFT PLATINUM (-/+) EN800 278x175x190					3,650
+577 76 04	АКБ   77Ah  MAXIMUS Premium (-/+) EN800 (18,6кг)  278x175x190		*****	*****	01.11.2025	3,620	3,036.00
+577 76 02	АКБ   77Ah  MAXIMUS Premium (+/-) EN800 (18,6кг)  278x175x190					3,620	3,036.00
+577 72 04	АКБ   77Ah   I STAR Standard (-/+) EN760(18,7кг) 278x175x190		*****	*****	01.11.2025	3,350	2,814.00
+577 72 02	АКБ   77Ah   I STAR Standard (+/-) EN760(18,7кг) 278x175x190		*****	*****	20.11.2025	3,350	2,814.00
+575 74 04	АКБ  75Ah  I STAR ASIA (-/+)  EN720 D26 258х173х220		**	*****	10.11.2025	3,190
+575 74 02	АКБ  75Ah  I STAR ASIA (+/-)  EN720 D26 258х173х220		*****	*****	20.11.2025	3,190
+575 73 04	АКБ   75Ah  CRONA (-/+)EN700 (17,5 кг) (278x175x190		*****	*****	01.11.2025	3,000
+575 73 02	АКБ   75Ah  CRONA (+/-) EN700 (17,5 кг)  278x175x190		*****	*****	10.11.2025	3,000
+575 78 02	АКБ   75Ач  KAINAR  (-/+) EN690  278x175x190		*****			3,570
+575 78 04	АКБ   75Ач  KAINAR  (+/-) EN690  278x175x190		*****			3,570
+575 73 02	АКБ   75Ач  KAINAR EFB (-/+) EN730 (19 кг)  278x175x190		*****	*****	20.11.2025	4,620
+577 78 04	АКБ   77Ah   KAINAR (-/+) EN750 278x175x190		*****			3,660
+577 78 02	АКБ   77Ah   KAINAR (+/-) EN750 278x175x190		***			3,660
+575 79 04	АКБ  75Ah  KAINAR ASIA (-/+) EN640 258х173х220			*****	10.11.2025	3,480
+575 79 02	АКБ  75Ah  KAINAR ASIA (+/-) EN640 258х173х220		*****	*****	01.11.2025	3,480
+```
+
+please create json objects for missing ones
