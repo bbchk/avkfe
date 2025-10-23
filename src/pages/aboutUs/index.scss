@@ -1,10 +1,9 @@
 .aboutPage {
+  /* TODO: move these colors to index */
   $primary-color: #004d99;
   $secondary-color: #ffcc00;
   $text-color: #333;
   $background-color: #f4f4f4;
-  $container-width: 1200px;
-  $padding-base: 20px;
 
   display: grid;
   grid-template-areas:
@@ -93,7 +92,6 @@
   }
 }
 
-// Commitment section
 .aboutPage__commitment {
   grid-area: commitment;
 
