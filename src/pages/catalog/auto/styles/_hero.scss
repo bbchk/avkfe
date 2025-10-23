@@ -1,0 +1,19 @@
+@use '@styles/settings/index' as *;
+@use '@styles/utils' as *;
+
+.catalog__hero{
+  grid-area: hero;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  p {
+    max-width: 70%;
+    height: min-content;
+
+    font-size: 2rem;
+  }
+}
