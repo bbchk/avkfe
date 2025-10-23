@@ -25,15 +25,15 @@ async function go(route, addToHistory = true) {
 
   reloadContent(html, css);
 
-  let prefetchedData = null;
-  if (preFetch) {
-    prefetchedData = await preFetch();
-  }
-
   window.scrollTo({
     top: 0,
     behavior: 'instant',
   });
+
+  let prefetchedData = null;
+  if (preFetch) {
+    prefetchedData = await preFetch();
+  }
 
   window.dispatchEvent(
     new CustomEvent(ROUTE_CHANGED_EVENT, {
