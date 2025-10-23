@@ -1,11 +1,8 @@
 @use 'settings/reset.scss' as *;
 @use 'settings/normalize.scss' as *;
 @use 'settings/index' as *;
-
 @use 'components/index' as *;
-
 @use 'utils' as *;
-
 
 html {
   overscroll-behavior: none;
@@ -14,37 +11,23 @@ html {
   body {
     overflow-x: hidden;
 
-    font-family: $font-primary, sans-serif;
+    font-family: $font-primary;
     font-weight: 400;
     color: $color-text-primary;
 
     background-color: $color-bg-primary;
-
-    main {
-      display: flex;
-
-      min-height: 80vh;
-      width: 100vw;
-    }
-
-    a {
-      cursor: pointer;
-      /* TODO: create general styles for all the links */
-
-      color: $color-link-primary;
-    }
-  }
-
-  .emoji--color {
-    font-family: 'Noto Color Emoji', serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .emoji--mono {
-    font-family: 'Noto Emoji', serif;
-    font-weight: 400;
-    font-style: normal;
   }
 }
 
+#pageContainer {
+  display: flex;
+
+  min-height: 80vh;
+  width: 100vw;
+}
+
+/* TODO: create general styles for all the links */
+a.inLink {
+  cursor: pointer;
+  color: $color-link-primary;
+}
