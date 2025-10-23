@@ -1,0 +1,40 @@
+[
+  {
+    "id": "29",
+    "imageUrl": "monbat-eurokraft-hd-230ah-euro.png",
+    "name": "Eurokraft Heavy Duty",
+    "capacity": 230,
+    "cca": 1500,
+    "type": "Кислотний",
+    "price": 10200.0,
+    "warranty": 12,
+    "manufacturerCountry": "Болгарія",
+    "manufacturerBrand": "Monbat",
+    "manufacturerWebsite": "https://eurokraftbattery.com/heavy-duty-vehicles/hd/",
+    "htmlSnippet": "",
+    "polarity": true,
+    "inStock": true,
+    "length": 0,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "id": "31",
+    "imageUrl": "autopart-carbon-190ah-euro.webp",
+    "name": "Carbon",
+    "capacity": 190,
+    "cca": 1250,
+    "type": "Кислотний",
+    "price": 7550.0,
+    "warranty": 12,
+    "manufacturerCountry": "Польша",
+    "manufacturerBrand": "Autopart",
+    "manufacturerWebsite": "https://www.autopart.pl/en",
+    "htmlSnippet": "",
+    "polarity": true,
+    "inStock": true,
+    "length": 0,
+    "width": 0,
+    "height": 0
+  }
+]
