@@ -1,5 +1,6 @@
 # AVAK GROUP Front-end
 
+sticker for ktc, how many volts when came, what's the satus, list of work done?, etc.
 live stream of what's going on with your battery/auto
 
 let's create web-scraper again? 
