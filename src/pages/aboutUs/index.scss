@@ -1,4 +1,4 @@
-.AboutPage {
+.aboutPage {
   $primary-color: #004d99;
   $secondary-color: #ffcc00;
   $text-color: #333;
@@ -53,90 +53,6 @@
     }
   }
 
-  &__company {
-    grid-area: company;
-  }
-
-  &__about {
-    grid-area: about;
-  }
-
-  &__whyUs {
-    grid-area: whyUs;
-
-    &-highlight {
-      font-style: italic;
-      font-weight: 500;
-      font-size: 1.1em;
-      color: darken($text-color, 10%);
-    }
-  }
-
-  &__development {
-    grid-area: development;
-
-    strong {
-      color: $primary-color;
-    }
-  }
-
-  &__partnersList {
-    grid-area: partnersList;
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-
-    li {
-      color: $text-color;
-      background-color: lighten($secondary-color, 25%);
-      padding: 10px 15px;
-      border-radius: 4px;
-      font-weight: 500;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: darken(lighten($secondary-color, 25%), 5%);
-      }
-    }
-  }
-
-  // Brands section
-  &__brandsList {
-    grid-area: brandsList;
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-
-    li {
-      background-color: $background-color;
-      padding: 10px 15px;
-      border-radius: 4px;
-      font-weight: 500;
-      color: $primary-color;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: darken($background-color, 5%);
-      }
-    }
-  }
-
-  // Commitment section
-  &__commitment {
-    grid-area: commitment;
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  // Responsive
   @media (max-width: 768px) {
     grid-template-areas:
       'company'
@@ -147,11 +63,42 @@
       'commitment';
 
     grid-template-columns: 1fr;
+  }
+}
 
-    &__brandsList,
-    &__partnersList {
-      grid-template-columns: 1fr;
-    }
+.aboutPage__company {
+  grid-area: company;
+}
+
+.aboutPage__about {
+  grid-area: about;
+}
+
+.aboutPage__whyUs {
+  grid-area: whyUs;
+
+  &-highlight {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: darken(#333, 10%);
+  }
+}
+
+.aboutPage__development {
+  grid-area: development;
+
+  strong {
+    color: #004d99;
+  }
+}
+
+// Commitment section
+.aboutPage__commitment {
+  grid-area: commitment;
+
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 
