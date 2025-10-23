@@ -1,6 +1,6 @@
 # AVAK GROUP Front-end
 
-style error page
+style eerror page
 
 * optimize: 
     * load responsive styles only when size of viewport is corresponding
@@ -144,89 +144,148 @@ p2
 
 
 
+rror page
+
+* optimize: 
+    * load responsive styles only when size of viewport is corresponding
+
+<!-- include photo of cut car battery in website and explain car battery structure -->
+<!-- incorporate blog to website -->
+prepare phrases to convince people to come:
+Усі акумулятори проходять пре продажну перевірку, ми запевненін що вони будуть довго служити
+надаємо гарантію, ми на ринку вже 25 років, займаємось тільки тими виробниками в яких впевнені
+самі діагностуємо і відновлюємо акумулятори, тому розуміємся які кращі, гірші, які вам будуть служити, а якщо будете берегти то ще довше
+
+fix pics on remote, fix mobile view of every page, fix metadata pages
+try to bump normal size of font and see how website looks like
+
+correct dimesntions
+place text in line on dimensions badge
+
+asia euro and low profile
+group akb by capacity
+
+could we determine on just people's car what car battery the need?
+
+talk to gpt on how to put dimensions into the card
+
+is there standards to car battery sizes?
+what are the names and signs?
+
+we can extract from avak.in.ua descriptions of individula car batteries as well
+
+
+such characteristics should be on landing page
+Характеристики
+Основні
+
+Виробник	TAB
+Країна виробник	Словенія
+
+Висота	200 мм
+Довжина	245 мм
+Ширина	160 мм
+Гарантійний термін	24 міс
+Ємність акумулятору	75 А. г
+
+Індикатор заряду акумулятора	Так
+
+Напруга акумулятору	12 В
+Обслуговування	Необслуговувані
+
+Полярність	0" (+ праворуч)
+
+Стан	Новий
+Тип акумулятора	Свинцево-кислотні (SLA)
+
+p2
+- find necessary photos (convert all to webp)
+- separate specs on product card
+
+we need to account for both batteries that have several dimensions and same price, and only one dimension
+tooltips on specs of car batteries
+
+make badges: {asia model, low profile}
+
+so we go with extensible product cards on hover (click temporarily on mobile) and just display badge (low profile)
+
+instead of bloating product card, we develop individual page for every car battery with it's tailored html and detailed specs
+
+learn:
+* find out all the batteries manufecturer code (for all the companies)
+    * put it near accumulator themselves
+    * find out what other product lines current manufacturers have
+
+* create list of standard questions to ask every person who comes:
+    * start/stop ?
+    * for yourself? you want good one?
+    * etc. 
+
+* general thoughts
+    * there are 3 main ways people can reach out: come, phone call, platforms (e.g. olx)
+    we need to make sure that all 3 ways have their specific requirements fulfilled   
+
+create a paper bouklet with different groups (60ah, 70ah, etc...), and empty places for prices
+
+we need to set fucking bosch and varta (at least one model), so people see we sell them as well 
+
+create list of standard questions to ask every person who comes:
+* start/stop ?
+* for yourself? you want good one?
+* etc. 
+
+* we need ready (prepped) catalog for all other options that we can suggest
 
 
 
+for bohdana:
+* need to update olx account itself and also posts
+    * make one photo collage with working utk, new accumulators and somehting else 
+    * Прийом відпрацьованих свинцевих АКБ додати
+
+<<<<<<< HEAD
+||||||| parent of d0402e6 (fix-the-issue)
+* include sizes to specs (include manufacturer number to specs?)
+=======
+* include (low profile badge) for those that <= 175 in height ?
+* include sizes to specs (include manufacturer number to specs?)
+>>>>>>> d0402e6 (fix-the-issue)
+
+clamp on car battert name, so card is not enlraged by it
+* we need to correct polarities and photos 
+
+* include working hours to footer
+* include sizes to specs (include manufacturer number to specs?)
+* make buy button send bought items to viber as message, so we reach out back
+
+* set subdomains for both accum and fertilizers 
+
+* scrape akum for car batteries and all the metadata
+* add accessories (charging systems, etc. etc.), look up what akum sells
 
 
 
-## Overview
+* create patterns for automate response
+Доброго дня
+Ми уточнили розміри. Наразі в самому магазині за 175 на 175 доступний EUROKRAFT GOLD 60Ah 600A за ціною 2450.0₴ від Болгарії, Monbat. На нього даємо два роки гарантії
+11:57
 
-The **Live World ** is a e-commerce front-end application. TODO...
+Звісно, заїжджайте.
+Ми знаходимося при в’їзді у Вінницю по Немирівському шосе, не доїжджаючи до АЗС БРСМ
+Ось посилання на гугл мапу для зручнішої навігації: https://maps.app.goo.gl/Xv8UuSQWiou2GtJz9
 
-### Tech stack
+if person asks for a specific model -> suggest very similar things (and explain similarity)
 
-front-end jv
-
-vanilla.js
-redis
-logging system
-
-back-end separate application 
-
-RoR
-psql
-
-### Dependent Services
-
-- **TODO**  
-  Repository: [link](https://git.internetbrands.com/smb-portal/smb-portal.git)
-
-## Development
-
-### Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- [Docker](https://www.docker.com/)
-- [Docker](https://www.docker.com/)
-- [Make](https://www.gnu.org/software/make/)
-
-## Installation & Configuration
-
-1. **Clone the Repository**
-
-   ```sh
-   git clone TODOJ 
-   cd TODO 
-   ```
-
-2. **Run the Automated Setup**
-
-   ```bash
-   make setup
-   ```
-
-   After the setup is complete, the application will be running and accessible.
-
-3. **Verify the application is running**
-   - **API:** `http://localhost:8080`
-   - **Swagger Docs:** `http://localhost:8080/api-docs`
+p2
+* I would like to add button for regulating gallery
+||||||| parent of 1e4cf90 (feat)
+* add map 
+=======
+* add map 
+* integrate ability to export catalog of goods as price list document
+>>>>>>> 1e4cf90 (feat)
 
 
-### Configuration
-
-After running `make setup`, the environment files `.env` from defaults in Makefile and `./src/.env` from `./src/.env.example` created. 
-These copied `.env` files are gitignored, allowing you to modify them as needed.
-
-> **NOTE:** After change in any env file, to restart the application container with changed configuration, please run:
-
-```bash
-make up
-```
-
-### Testing
-
-To run tests, please use: 
-
-```sh
-TODO
-```
-
-<!-- # TODO: what flags are necessary then? -->
-<!-- update-submodules-default: -->
-<!-- 	git submodule update --init --recursive --remote --merge -->
-<!---->
 
 
 
