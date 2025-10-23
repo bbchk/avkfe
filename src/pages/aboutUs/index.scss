@@ -1,79 +1,87 @@
-// Змінні
-$primary-color: #004d99; // Темно-синій, професійний колір
-$secondary-color: #ffcc00; // Жовтий/золотий для акцентів
-$text-color: #333;
-$background-color: #f4f4f4;
-$container-width: 1200px;
-$padding-base: 20px;
+.AboutPage {
+  $primary-color: #004d99;
+  $secondary-color: #ffcc00;
+  $text-color: #333;
+  $background-color: #f4f4f4;
+  $container-width: 1200px;
+  $padding-base: 20px;
 
-// Міксін для контейнера
-@mixin container {
-    max-width: $container-width;
-    margin: 0 auto;
-    padding: 0 $padding-base;
-}
+  display: grid;
+  grid-template-areas:
+    'company about whyUs'
+    'development commitment .';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
 
-// Загальні стилі
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: $text-color;
-    background-color: $background-color;
-    margin: 0;
-}
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $background-color;
 
-h1, h2, h3 {
+  margin: 0 auto;
+  padding: 1rem;
+
+  h1,
+  h2,
+  h3 {
     color: $primary-color;
     margin-top: 0;
-}
+  }
 
-.container {
-    @include container;
-}
+  section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 
-// Стилі Main Content
-main {
-    padding: $padding-base 0 40px 0;
-
-    section {
-        background-color: white;
-        padding: 30px;
-        margin-bottom: 30px;
-        border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-
-        h2 {
-            border-bottom: 2px solid $secondary-color;
-            padding-bottom: 10px;
-            margin-bottom: 25px;
-            font-size: 1.8em;
-        }
-
-        h3 {
-            font-size: 1.4em;
-            margin-bottom: 15px;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
+    h2 {
+      border-bottom: 2px solid $secondary-color;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-size: 1.8em;
     }
-}
 
-// Специфічні елементи
-.why-us {
-    background-color: lighten($primary-color, 65%); // Дуже світлий синій
-    border-left: 5px solid $primary-color;
-
-    .highlight {
-        font-style: italic;
-        font-weight: 500;
-        font-size: 1.1em;
-        color: darken($text-color, 10%);
+    h3 {
+      font-size: 1.4em;
+      margin-bottom: 15px;
     }
-}
 
-.brands-list, .partners-list {
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__company {
+    grid-area: company;
+  }
+
+  &__about {
+    grid-area: about;
+  }
+
+  &__whyUs {
+    grid-area: whyUs;
+
+    &-highlight {
+      font-style: italic;
+      font-weight: 500;
+      font-size: 1.1em;
+      color: darken($text-color, 10%);
+    }
+  }
+
+  &__development {
+    grid-area: development;
+
+    strong {
+      color: $primary-color;
+    }
+  }
+
+  &__partnersList {
+    grid-area: partnersList;
     list-style: none;
     padding: 0;
     margin: 20px 0;
@@ -82,29 +90,68 @@ main {
     gap: 10px;
 
     li {
-        background-color: $background-color;
-        padding: 10px 15px;
-        border-radius: 4px;
-        font-weight: 500;
-        color: $primary-color;
-        transition: background-color 0.3s;
+      color: $text-color;
+      background-color: lighten($secondary-color, 25%);
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background-color 0.3s;
 
-        &:hover {
-            background-color: darken($background-color, 5%);
-        }
+      &:hover {
+        background-color: darken(lighten($secondary-color, 25%), 5%);
+      }
     }
-}
+  }
 
-.partners-list {
+  // Brands section
+  &__brandsList {
+    grid-area: brandsList;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+
     li {
-        color: $text-color;
-        background-color: lighten($secondary-color, 25%);
+      background-color: $background-color;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-weight: 500;
+      color: $primary-color;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($background-color, 5%);
+      }
     }
+  }
+
+  // Commitment section
+  &__commitment {
+    grid-area: commitment;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Responsive
+  @media (max-width: 768px) {
+    grid-template-areas:
+      'company'
+      'about'
+      'whyUs'
+      'development'
+      'partnersList'
+      'commitment';
+
+    grid-template-columns: 1fr;
+
+    &__brandsList,
+    &__partnersList {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
-// Адаптивність для менших екранів
-@media (max-width: 768px) {
-    .brands-list, .partners-list {
-        grid-template-columns: 1fr;
-    }
-}
