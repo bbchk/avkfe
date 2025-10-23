@@ -16,7 +16,7 @@
 .button--primary {
   @extend .button;
 
-  color: $color-secondary;
+  color: $color-downplay;
 
   /* padding: 0.5em 1em; */
   /**/
@@ -26,7 +26,7 @@
 
   &:hover {
     color: $color-primary;
-    background-color: $color-secondary;
+    background-color: $color-downplay;
   }
 }
 
@@ -35,10 +35,10 @@
 
   color: $color-primary;
 
-  background-color: $color-secondary;
+  background-color: $color-downplay;
 
   &:hover {
-    color: $color-secondary;
+    color: $color-downplay;
     background-color: $color-primary;
     border-color: $color-primary;
   }

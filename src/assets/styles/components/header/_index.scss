@@ -22,7 +22,7 @@
 
   overflow: clip;
 
-  border-bottom: 2px solid $color-downplay;
+  border-bottom: 2px solid rgba($color-downplay, 0.2);
 }
 
 .header__logo {
@@ -97,6 +97,6 @@
   font-weight: 600;
   font-family: $font-mono;
 
-  background: $color-downplay;
+  background: rgba($color-downplay, 0.2);
 }
 

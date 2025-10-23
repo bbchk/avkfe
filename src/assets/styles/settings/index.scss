@@ -4,46 +4,34 @@
 @forward './variables/_sizes.scss' as size-*;
 
 /* ---------- COLORS --------------- */
+
 $color-primary: color.$blue-indigo;
+$color-secondary: color.$yellow-tangerine;
 
-$color-secondary: color.$white-old-silver;
-
-$color-logo: color.$blue-azure;
-
-$color-downplay: color.$white-platinum;
-$color-highlight: color.$blue-azure;
+$color-downplay: color.$white-old-silver;
 
 $color-confirm: color.$green-ao;
 $color-decline: color.$red-deep-pink;
 
-$color-text: color.$black-rich;
-$color-background: color.$white-cultured;
-
-/* ---------- FONTS --------------- */
-$font-primary: font.$raleway;
-$font-secondary: font.$noto-serif;
-
-$font-decor: font.$pacifico;
-$font-mono: font.$roboto-mono;
-$font-emoji: font.$noto-emoji;
-
-/* ============================ */
-
-/* $primary-color: #004d99; */
-/* $secondary-color: #ffcc00; */
-/* $text-color: #333; */
-/* $background-color: #f4f4f4; */
-
-/* — define later when adding state colors etc. */
-
-/*
 $color-error: color.$rd-error;
 $color-success: color.$gr-success;
 $color-warning: color.$yl-warning;
 $color-info: color.$blu-info;
 
-$color-hover: color.$wh-hover;
-$color-active: color.$wh-active;
-$color-disabled: color.$gr-disabled;
-$color-focused: color.$bl-focused;
-*/
+$color-text-primary: color.$black-rich;
+$color-text-secondary: color.$gray-dark-charcoal;
+
+$color-background: color.$white-cultured;
+
+
+
+/* ---------- FONTS --------------- */
+$font-primary: font.$raleway;
+$font-secondary: font.$roboto-slab;
+
+$font-mono: font.$roboto-mono;
+$font-emoji: font.$noto-emoji;
+$font-color-emoji: font.$noto-color-emoji;
+
+/* ============================ */
+
