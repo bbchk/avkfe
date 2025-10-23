@@ -21,15 +21,19 @@ async function go(route, addToHistory = true) {
     path = `/pages/error/index.js`;
   }
 
-
   const { html, css, preFetch } = await pages[path]();
 
   reloadContent(html, css);
 
   let prefetchedData = null;
-  if(preFetch){
+  if (preFetch) {
     prefetchedData = await preFetch();
   }
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'instant',
+  });
 
   window.dispatchEvent(
     new CustomEvent(ROUTE_CHANGED_EVENT, {
