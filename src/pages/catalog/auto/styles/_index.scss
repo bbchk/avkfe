@@ -24,19 +24,7 @@
   position: relative;
 
   width: 100%;
-  height: auto;
-
-  img {
-    width: 100%;
-    height: 100%;
-
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    object-fit: cover;
-  }
+  height: 100%;
 
   &::after {
     content: '';
@@ -49,7 +37,7 @@
     z-index: 1;
   }
 
-  div { 
+  div {
     z-index: 2;
     position: absolute;
     left: 1vw;
@@ -69,14 +57,32 @@
 .catalog__hero {
   grid-area: hero;
 }
+
 .catalog__light {
   grid-area: light;
+  background-image: url('/catalog--auto__light.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .catalog__semiLight {
   grid-area: semiLight;
+  background-image: url('/catalog--auto__semiLight.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .catalog__heavy {
   grid-area: heavy;
+  background-image: url('/catalog--auto__heavy3.jpg');
+  background-size: cover;
+  background-position: 55% bottom;
+  background-repeat: no-repeat;
+
+  &::after {
+    height: 50%;
+  }
 }
+

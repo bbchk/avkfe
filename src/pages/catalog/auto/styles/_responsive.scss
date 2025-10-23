@@ -1,0 +1,49 @@
+@use '@styles/settings/index' as *;
+@use '@styles/utils' as *;
+
+/* --------- TABLET --------- */
+
+@include media($size-tablet) {
+  .catalog--auto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+      'hero light'
+      'semiLight heavy';
+
+    padding: 35px 0;
+
+    width: 100%;
+  }
+
+  .catalog--auto a {
+    div {
+      font-size: 0;
+      width: 100%;
+    }
+
+    span {
+      display: block;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    &::after {
+      /* height: 60%; */
+    }
+  }
+
+  .catalog__light {
+    background-position: 30% bottom;
+  }
+
+  .catalog__semiLight {
+    background-position: 15% bottom;
+  }
+
+  .catalog__heavy {
+    background-position: center;
+  }
+}

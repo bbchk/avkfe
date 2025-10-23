@@ -1,5 +1,10 @@
 # AVAK GROUP Front-end
 
+clamp on bat name in product card
+
+correct footer map at phone 
+we can place info 🛈 symbols and tooltips on e.g. how to pick correct size of car battry
+
 constuructor of car battery based on fuel type, engine combustion space, etc. model of vehicle (have a base of them) based on year, model, manufacturer, etc.
 
 batteries are unique by it's size and optinally of course by price (if polarify is same, then same entry diff variants) 

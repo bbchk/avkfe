@@ -11,9 +11,9 @@
   text-align: center;
 
   p {
-    max-width: 70%;
+    max-width: 80%;
     height: min-content;
 
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
   }
 }
