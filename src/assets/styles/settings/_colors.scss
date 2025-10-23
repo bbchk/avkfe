@@ -4,11 +4,9 @@ $black-rich: #040d12;
 $black-gunmetal: #2b3137;
 
 /* -------------------------------------------------- gray -------------------------------------------------- */
-
 $gray-dark-charcoal: #333333;
 
 /* -------------------------------------------------- white -------------------------------------------------- */
-$white-cultured-light: #f4f4f4;
 $white-cultured: #f5f5f5;
 $white-bone: #eae4dd;
 $white-light-silver: #d5dadd;
@@ -32,9 +30,13 @@ $blue-azure: #007fff;
 $yellow-banana: #ffe234;
 $yellow-bright-sun: #ffd43b;
 $yellow-tangerine: #ffcc00;
+$yellow-mikado: #ffc107;
+
+/* -------------------------------------------------- orange -------------------------------------------------- */
+
+$orange-dark: #ff8c00;
 
 /* -------------------------------------------------- green -------------------------------------------------- */
-
 $green-charleston: #222831;
 $green-ao: #008000;
 $green-medium-bud: #c8e59b;
@@ -50,11 +52,49 @@ $green-sushi: #8db84e;
 $green-pastel: #75a959;
 $green-conifer: #9bcf53;
 $green-sulu: #969a8f;
+$green-american: #28a745;
 
 /* -------------------------------------------------- red -------------------------------------------------- */
 $red-spanish-pink: #ffbfbf;
 $red-deep-pink: #ff3131;
 $red-sun-cycle: #f84147;
+$red-rusty: #dc3545;
+$red-cardinal: #c82333;
 
 /* -------------------------------------------------- purple -------------------------------------------------- */
 $purple-iris: #5d3fd3;
+
+
+
+
+/* ---------- BRAND COLORS --------------- */
+$primary: $blue-usafa;
+$secondary: $yellow-tangerine;
+
+/* ---------- SEMANTIC COLORS --------------- */
+
+/* Utility colors */
+$downplay: $white-old-silver;
+/* $color-highlight: $white-old-silver; */
+
+/* Action colors */
+$confirm: $green-ao;
+$decline: $red-deep-pink;
+$destruct: $red-cardinal;
+
+/* Status colors */
+$status-success: $green-american;
+$status-error: $red-rusty;
+$status-warning: $yellow-mikado;
+$status-info: $blue-de-france;
+
+/* Text colors */
+$text-primary: $black-rich;
+$text-secondary: $gray-dark-charcoal;
+
+/* Link colors */
+$link-primary: $gray-dark-charcoal;
+$link-secondary: $gray-dark-charcoal;
+
+/* Background colors */
+$bg-primary: $white-cultured;

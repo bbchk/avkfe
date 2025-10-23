@@ -16,9 +16,9 @@ html {
 
     font-family: $font-primary, sans-serif;
     font-weight: 400;
-    /* color: $color-primary; */
+    color: $color-text-primary;
 
-    background-color: $color-background;
+    background-color: $color-bg-primary;
 
     main {
       display: flex;
@@ -31,7 +31,7 @@ html {
       cursor: pointer;
       /* TODO: create general styles for all the links */
 
-      /* color: $color-blck-rich; */
+      color: $color-link-primary;
     }
   }
 

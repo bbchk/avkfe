@@ -1,10 +1,8 @@
-.aboutPage {
-  /* TODO: move these colors to index */
-  $primary-color: #004d99;
-  $secondary-color: #ffcc00;
-  $text-color: #333;
-  $background-color: #f4f4f4;
+@use '@styles/settings/index' as *;
+@use '@styles/components/index' as *;
+@use '@styles/utils' as *;
 
+.aboutPage {
   display: grid;
   grid-template-areas:
     'company about whyUs'
@@ -13,10 +11,10 @@
   grid-template-rows: 1fr 1fr;
   gap: 20px;
 
-  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  color: $text-color;
-  background-color: $background-color;
+  font-weight: 500;
+  color: $color-text-primary;
+  background-color: rgba($color-bg-primary, 0.5);
 
   margin: 0 auto;
   padding: 1rem;
@@ -24,7 +22,8 @@
   h1,
   h2,
   h3 {
-    color: $primary-color;
+    font-weight: 600;
+    color: $color-primary;
     margin-top: 0;
   }
 
@@ -36,7 +35,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 
     h2 {
-      border-bottom: 2px solid rgba($color-downplay, 0.2);
+      border-bottom: 2px solid $color-secondary;
       padding-bottom: 10px;
       margin-bottom: 25px;
       font-size: 1.8em;
@@ -80,7 +79,7 @@
     font-style: italic;
     font-weight: 500;
     font-size: 1.1em;
-    color: darken(#333, 10%);
+    color: darken($color-text-secondary, 10%);
   }
 }
 
@@ -88,7 +87,7 @@
   grid-area: development;
 
   strong {
-    color: #004d99;
+    color: $color-primary;
   }
 }
 
@@ -99,4 +98,3 @@
     margin-bottom: 0;
   }
 }
-

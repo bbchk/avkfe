@@ -55,7 +55,7 @@
     left: 1vw;
     bottom: 1.5rem;
     z-index: 2;
-    color: $color-background;
+    color: $color-bg-primary;
 
     font-size: clamp(1.5rem, 5vw, 2rem); // [Min size, Fluid size, Max size]
   }
