@@ -1,5 +1,7 @@
 # AVAK GROUP Front-end
 
+live stream of what's going on with your battery/auto
+
 let's create web-scraper again? 
 can we revisit already existing one?
 
