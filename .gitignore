@@ -5,3 +5,4 @@ vendor
 Thumbs.db
 src/.phpunit.result.cache
 .vscode
+docs
