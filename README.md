@@ -1,5 +1,13 @@
 # AVAK GROUP Front-end
 
+constuructor of car battery based on fuel type, engine combustion space, etc. model of vehicle (have a base of them) based on year, model, manufacturer, etc.
+
+batteries are unique by it's size and optinally of course by price (if polarify is same, then same entry diff variants) 
+
+we make home page for auto as well not to go with catalog for now.
+
+we need to introduce tags for size (low profile) 
+
 sticker for ktc, how many volts when came, what's the satus, list of work done?, etc.
 live stream of what's going on with your battery/auto
 
