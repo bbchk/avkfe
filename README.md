@@ -1,5 +1,7 @@
 # AVAK GROUP Front-end
 
+set watermarks on photos automatically
+
 clamp on bat name in product card
 
 correct footer map at phone 
