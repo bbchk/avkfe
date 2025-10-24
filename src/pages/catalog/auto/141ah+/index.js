@@ -5,7 +5,7 @@ import createCarBatteryCard from '/components/carBatteryCard.js';
 
 import { ROUTE_CHANGED_EVENT } from '/config/constants';
 
-const data = import.meta.glob('/assets/data/ah190.json', {
+const data = import.meta.glob('/assets/data/ah{190,210,230}.json', {
   eager: true,
 });
 const carBats = Object.values(data).map((v) => v.default);
@@ -13,7 +13,7 @@ const carBats = Object.values(data).map((v) => v.default);
 const handleRouteChange = () => {
   const pageContainer = document.querySelector(".catalog--auto");
 
-  const ahGroups = [190];
+  const ahGroups = [190,210,230];
 
   const catalogHtml = carBats.map((batteryGroup, index) => {
     const sectionClass = `s${ahGroups[index]}`;
