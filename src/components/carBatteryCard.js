@@ -23,7 +23,7 @@ const createCarBatteryCard = (p) => {
   </div>
 
   <div class="carBat__info">
-    <h3 class="carBat__name">${p.name}</h3>
+    <p class="carBat__name">${p.name}</p>
     <p class="carBat__type">${p.type}</p>
 
     <div class="carBat__specs">
