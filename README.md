@@ -1,6 +1,9 @@
 # AVAK GROUP Front-end
 
-<!-- inProcess state -->
+<!-- ⚙️ Approach 5 — Client-side static search index (e.g., Fuse.js) -->
+<!-- what's this/ -->
+
+implement inProcess state
 
 set watermarks on photos automatically
 

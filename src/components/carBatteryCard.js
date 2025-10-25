@@ -3,6 +3,8 @@ const createCarBatteryCard = (p) => {
 
   return `
 <div class="carBat" data-id="${p.id}">
+
+    <p>${p?.tags}<p>
   <div class="carBat__image">
     <img src="${p.imageUrl}" alt="${p.name}">
 
@@ -29,7 +31,7 @@ const createCarBatteryCard = (p) => {
     <div class="carBat__specs">
       <p>${p.capacity}<span>Ah</span></p>
       <p>${p.cca}<span>A(EN)</span></p>
-      <p>${p.polarity ? 'R+' : 'L+'}</p>
+      <p>${p.polarity !== null ? (p.polarity ? 'R+' : 'L+') : "R+/L+"}</p>
     </div>
 
 
@@ -43,10 +45,11 @@ const createCarBatteryCard = (p) => {
       <a href="${p.manufacturerWebsite}" class="carBat__origin" target="_blank">${p.manufacturerCountry}, ${p.manufacturerBrand}</a>
     </div>
 
-    <button class="carBat__orderBtn">🛒</button>
   </div>
 </div>
   `;
 };
+
+    // <button class="carBat__orderBtn">🛒</button>
 
 export default createCarBatteryCard;
