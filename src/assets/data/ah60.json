@@ -61,7 +61,7 @@
   },
   {
     "id": "5",
-    "imageUrl": "Акумулятор автомобільний 42Аг Азія (-_+) I STAR АКБ 186х129х220.jpg",
+    "imageUrl": "Акумулятор автомобільний 42Аг Азія (+_-) I STAR АКБ 186х129х220.jpg",
     "name": "I STAR Asia",
     "capacity": 42,
     "cca": 350,
@@ -80,7 +80,7 @@
   },
   {
     "id": "6",
-    "imageUrl": "Акумулятор автомобільний 42Аг Азія (+_-) I STAR АКБ 186х129х220.jpg",
+    "imageUrl": "Акумулятор автомобільний 42Аг Азія (-_+) I STAR АКБ 186х129х220.jpg",
     "name": "I STAR Asia",
     "capacity": 42,
     "cca": 350,
@@ -137,7 +137,7 @@
   },
   {
     "id": "1",
-    "imageUrl": "Акумулятор автомобільний 42Аг Азія (-_+) I STAR АКБ 186х129х220.jpg",
+    "imageUrl": "kainar_42ah_330ah_asia_L+.webp",
     "name": "KAINAR Asia",
     "capacity": 42,
     "cca": 330,
@@ -156,7 +156,7 @@
   },
   {
     "id": "2",
-    "imageUrl": "Акумулятор стартерний  6СТ-42 АПЗ KAINAR Азія Тонка Клема  (-_+).jpg",
+    "imageUrl": "kainar_42ah_330ah_asia.webp",
     "name": "KAINAR Asia",
     "capacity": 42,
     "cca": 330,
@@ -175,7 +175,7 @@
   },
   {
     "id": "6",
-    "imageUrl": "Акумулятор автомобільний 60Аг (-_+) CRONA АКБ 242x175x190.jpg",
+    "imageUrl": "crona_60ah_520A_L+.webp",
     "name": "CRONA (червоний)",
     "capacity": 60,
     "cca": 520,
@@ -213,7 +213,7 @@
   },
   {
     "id": "6",
-    "imageUrl": "kainar-crona-optima-60ah-euro.webp",
+    "imageUrl": "placeholder.jpg",
     "name": "Crona Optimum",
     "capacity": 60,
     "cca": 520,
@@ -225,6 +225,24 @@
     "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
     "polarity": true,
+    "length": 190,
+    "width": 110,
+    "height": 175
+  },
+  {
+    "id": "6",
+    "imageUrl": "kainar-crona-optima-60ah-euro.webp",
+    "name": "Crona Optimum",
+    "capacity": 60,
+    "cca": 520,
+    "type": "Кислотний",
+    "price": 2200,
+    "warranty": 24,
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
+    "htmlSnippet": "<div><div>",
+    "polarity": false,
     "length": 190,
     "width": 110,
     "height": 175
@@ -403,7 +421,7 @@
   },
   {
     "id": "4",
-    "imageUrl": "Акумулятор стартерний  60Ah  (-_+) низький EUROKRAFT GOLD.jpg",
+    "imageUrl": "eurokraft_low_profille-60ah-600a.webp",
     "name": "Eurokraft Gold",
     "capacity": 60,
     "cca": 600,
@@ -632,7 +650,7 @@
   },
   {
     "id": "3",
-    "imageUrl": "Акумулятор стартерний  6СТ-50 АПЗ KAINAR Азія Тонка Клема  (-_+).jpg",
+    "imageUrl": "kainar_50ah_narrow_asia.jpg",
     "name": "KAINAR Asia",
     "capacity": 50,
     "cca": 450,
@@ -643,7 +661,7 @@
     "manufacturerBrand": "Kainar",
     "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
-    "polarity": false,
+    "polarity": true,
     "inStock": true,
     "length": 236,
     "width": 129,
@@ -669,7 +687,7 @@
   },
   {
     "id": "8",
-    "imageUrl": "Акумулятор стартерний  6СТ-60 АПЗ (-_+) KAINAR.jpg",
+    "imageUrl": "Акумулятор стартерний 6СТ-60 АПЗ (+_-) KAINAR.jpg",
     "name": "KAINAR",
     "capacity": 60,
     "cca": 550,
