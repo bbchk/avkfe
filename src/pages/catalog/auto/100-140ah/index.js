@@ -25,7 +25,7 @@ const handleRouteChange = () => {
     const capacity = ahGroups[index];
     const cardsHtml = batteryGroup.map(battery => createCarBatteryCard(battery)).join('');
     return `
-      <h3 class="catalog__capacityHeader">${capacity} Ah<span></h3>
+      <h3 class="catalog__capacityHeader" id="${capacity}Ah">${capacity} Ah<span></h3>
       <section class="${sectionClass}">${cardsHtml}</section>
     `;
   }).join('<hr />');

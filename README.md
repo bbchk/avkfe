@@ -1,5 +1,7 @@
 # AVAK GROUP Front-end
 
+<!-- inProcess state -->
+
 set watermarks on photos automatically
 
 clamp on bat name in product card
