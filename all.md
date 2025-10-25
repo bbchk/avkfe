@@ -1,21 +1,3 @@
-
-
-  <section class="AboutPage__brands">
-    <h3>Пропоновані Марки Акумуляторів</h3>
-    <ul class="AboutPage__brandsList">
-      <li>TOPLA</li>
-      <li>WESTA</li>
-      <li>G-PARD</li>
-      <li>ROCKET</li>
-      <li>HIGH POWER MAX</li>
-      <li>FORTIS</li>
-      <li>VESNA</li>
-      <li>ISTA</li>
-      <li>A-MEGA</li>
-    </ul>
-  </section>
-
-
 ## КУПИТИ АКУМУЛЯТОРИ У ВІННИЦІ З ГАРАНТІЄЮ ЯКОСТІ ВІД «ТОВ АВАК»
 
 Компанія **АВАК** — виробник професійного обладнання для обслуговування, а також постачальник і реалізатор автомобільних акумуляторів у місті Вінниця з 2001 року.
