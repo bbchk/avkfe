@@ -4,15 +4,14 @@
 .carBat {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   background: #fff;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 
   overflow: hidden;
 
-  min-width: 320px;
-  max-width: 400px;
+  /* min-width: 320px; */
+  width: 320px;
 
   font-family: system-ui, sans-serif;
   position: relative;
@@ -95,8 +94,8 @@
 /* === INFO GRID === */
 .carBat__info {
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: 0.5fr 0.1fr 1fr 1fr;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 2.5rem 0.1fr 1fr 1fr;
   grid-template-areas:
     'name price'
     'type type'
@@ -104,18 +103,20 @@
     'meta buy';
   gap: 0.7rem 1rem;
 
+  /* padding: 0 1.2rem 1.2rem; */
   padding: 1.2rem;
 }
 
 .carBat__name {
   grid-area: name;
+  align-self: center;
+
   font-size: 1.1rem;
   font-weight: 600;
   color: #222;
   margin: 0;
 
-  @include truncate_lines_after(1);
-  /* width: 500px; */
+  @include truncate_lines_after(2);
 }
 
 .carBat__type {
