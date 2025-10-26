@@ -2,7 +2,7 @@
   {
     "id": "580 83 06",
     "imageUrl": "Акумулятор автомобільний 80 А·год (-_+) GOLD АКБ 278x175x175.jpg",
-    "name": "Gurokraft Gold",
+    "name": "Gurokraft Gold (Низький)",
     "capacity": 80,
     "cca": 800,
     "type": "Свинцево-Кислотний",
@@ -77,28 +77,6 @@
     "height": 190,
     "polarity": true,
     "inStock": true
-  },
-  {
-    "id": "580 83 07",
-    "imageUrl": "Акумулятор автомобільний 80 А·год (-_+) GOLD АКБ 310x175x175.jpg",
-    "name": "Eurokraft Gold",
-    "capacity": 80,
-    "cca": 800,
-    "type": "Свинцево-Кислотний",
-    "price": 4160.0,
-    "warranty": 24,
-    "manufacturerCountry": "Болгарія",
-    "manufacturerBrand": "Monbat",
-    "manufacturerWebsite": "https://eurokraftbattery.com/light-vehicles/gold/",
-    "htmlSnippet": null,
-    "length": 310,
-    "width": 175,
-    "height": 175,
-    "polarity": true,
-    "inStock": true,
-    "tags": [
-      "low"
-    ]
   },
   {
     "id": "585 83 07",
