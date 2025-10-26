@@ -1,5 +1,7 @@
 # AVAK GROUP Front-end
 
+rename photos accordignly, just for cleaner look
+
 <!-- ⚙️ Approach 5 — Client-side static search index (e.g., Fuse.js) -->
 <!-- what's this/ -->
 
