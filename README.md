@@ -4,6 +4,7 @@
 <!-- what's this/ -->
 
 implement inProcess state
+implement image fallback 
 
 implment tags and inStock view for product card
 
