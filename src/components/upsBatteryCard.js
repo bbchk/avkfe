@@ -1,4 +1,3 @@
-
 const createUpsBatteryCard = (p) => {
   const FALLBACK_IMAGE_URL = '/goods_placeholder.svg'; // Assuming 'placeholder.jpg' is your default image
   p.imageUrl = p.imageUrl ? `/${p.imageUrl}` : FALLBACK_IMAGE_URL;
@@ -16,6 +15,7 @@ const createUpsBatteryCard = (p) => {
 
     <div class="carBat__specs">
       <p>${p.capacity}<span>Ah</span></p>
+      <p>${p.power}<span>Wh</span></p>
       <p class="carBat__polarity">${p.polarity !== null ? (p.polarity ? 'R<span>+<span>' : 'L<span>+<span>') : 'R<span>+</span>,L<span>+<span>'}</p>
     </div>
 
