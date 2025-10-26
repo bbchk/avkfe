@@ -1,0 +1,68 @@
+[
+  {
+    "id": "5",
+    "imageUrl": "Акумулятор автомобільний 42Аг Азія (+_-) I STAR АКБ 186х129х220.jpg",
+    "name": "I STAR Asia",
+    "capacity": 42,
+    "cca": 350,
+    "type": "Кислотний",
+    "price": 1980,
+    "warranty": 24,
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
+    "htmlSnippet": "<div><div>",
+    "polarity": null,
+    "inStock": true,
+    "length": 186,
+    "width": 129,
+    "height": 220,
+    "tags": [
+      "narrow"
+    ]
+  },
+  {
+    "id": "1",
+    "imageUrl": "kainar_42ah_330ah_asia_L+.webp",
+    "name": "KAINAR Asia",
+    "capacity": 42,
+    "cca": 330,
+    "type": "Кислотний",
+    "price": 2160,
+    "warranty": 24,
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
+    "htmlSnippet": "<div><div>",
+    "polarity": null,
+    "inStock": true,
+    "length": 186,
+    "width": 129,
+    "height": 220,
+    "tags": [
+      "narrow"
+    ]
+  },
+  {
+    "id": "7",
+    "imageUrl": "istart_45ah_L+.webp",
+    "name": "I STAR Asia",
+    "capacity": 45,
+    "cca": 400,
+    "type": "Кислотний",
+    "price": 2110,
+    "warranty": 24,
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
+    "htmlSnippet": "<div><div>",
+    "polarity": null,
+    "inStock": true,
+    "length": 236,
+    "width": 128,
+    "height": 223,
+    "tags": [
+      "narrow"
+    ]
+  }
+]
