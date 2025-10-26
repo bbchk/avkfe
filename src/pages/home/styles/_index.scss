@@ -82,5 +82,6 @@
 
 .home__diagnostics {
   grid-area: diagnostics;
+  @include inactive(70%, 0.7);
 
 }

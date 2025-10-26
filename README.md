@@ -1,13 +1,16 @@
 # AVAK GROUP Front-end
 
+узгодити контент сторінки Про Нас і Діагностики
+
+set individual h1 on every page
 create individual meta element on every page for better SEO
 
-investigate photo load issue
+nvestigate photo load issue
 
 rename photos accordignly, just for cleaner look
 
-<!-- ⚙️ Approach 5 — Client-side static search index (e.g., Fuse.js) -->
-<!-- what's this/ -->
+⚙️ Approach 5 — Client-side static search index (e.g., Fuse.js)
+what's this/
 
 implement inProcess state
 implement image fallback 
