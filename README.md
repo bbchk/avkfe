@@ -1,5 +1,7 @@
 # AVAK GROUP Front-end
 
+investigate photo load issue
+
 rename photos accordignly, just for cleaner look
 
 <!-- ⚙️ Approach 5 — Client-side static search index (e.g., Fuse.js) -->
