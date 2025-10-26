@@ -31,7 +31,7 @@ const createCarBatteryCard = (p) => {
     <div class="carBat__specs">
       <p>${p.capacity}<span>Ah</span></p>
       <p>${p.cca}<span>A(EN)</span></p>
-      <p>${p.polarity !== null ? (p.polarity ? 'R+' : 'L+') : "R+/L+"}</p>
+      <p class="carBat__polarity">${p.polarity !== null ? (p.polarity ? 'R<span>+<span>' : 'L<span>+<span>') : "R<span>+</span>,L<span>+<span>"}</p>
     </div>
 
 
