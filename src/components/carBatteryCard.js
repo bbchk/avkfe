@@ -1,12 +1,12 @@
 const createCarBatteryCard = (p) => {
-  const FALLBACK_IMAGE_URL = '/goods_placeholder.svg'; // Assuming 'placeholder.jpg' is your default image
-  p.imageUrl = p.imageUrl ? `/${p.imageUrl}` : FALLBACK_IMAGE_URL;
-  // ${p?.tags ? `<span class="carBat_tag">${p.tags?.[0]}<p>` : ''}
+  const FALLBACK_IMAGE_URL = '/goods_placeholder.svg';
+  const imageUrl = `/${p.imageUrl}` ?? FALLBACK_IMAGE_URL;
+
   return `
 <div class="carBat" data-id="${p.id}">
 
   <div class="carBat__image">
-    <img src="${p.imageUrl}" alt="${p.name}">
+    <img src="${imageUrl}" alt="${p.name}">
 
     <div class="carBat__dimensions">
       <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="carBat__dimensions__svg">
@@ -50,6 +50,8 @@ const createCarBatteryCard = (p) => {
   `;
 };
 
+// TODO
 // <button class="carBat__orderBtn">🛒</button>
+// ${p?.tags ? `<span class="carBat_tag">${p.tags?.[0]}<p>` : ''}
 
 export default createCarBatteryCard;

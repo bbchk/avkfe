@@ -6,6 +6,8 @@ import { fetchProducts } from '/services/api.service';
 
 const pages = import.meta.glob('/pages/**/index.js');
 
+// TODO: if it's same path as current, don't add to history (noticeed on reload)
+
 async function go(route, addToHistory = true) {
   console.log(route)
   console.log("we are in go functoin")
