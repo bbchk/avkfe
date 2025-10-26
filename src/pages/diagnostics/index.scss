@@ -1,3 +1,124 @@
 @use '@styles/settings/index' as *;
 @use '@styles/components/index' as *;
 @use '@styles/utils' as *;
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: $color-bg-primary;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: $font-primary; // Apply primary font
+}
+
+h1 {
+  color: $color-primary;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+h2,
+h3 {
+  color: $color-status-info;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed $color-downplay;
+}
+
+.diagnostics p,
+.diagnostics li {
+  text-align: justify;
+}
+
+.highlight {
+  font-weight: bold;
+  color: $color-destruct; /* Червоний для ключових слів, як сульфатація, $red-cardinal */
+}
+
+.service-list,
+.selection-list {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.service-info {
+  background-color: lighten($color-status-info, 30%); /* Lighten $status-info for background */
+  border-left: 5px solid $color-status-info; /* $blue-de-france */
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid $color-downplay; /* $white-old-silver for light gray border */
+  padding: 12px;
+  text-align: left;
+}
+
+.price-table th {
+  background-color: $color-primary; /* $blue-usafa */
+  color: white; /* Text color is white against dark blue */
+  font-weight: bold;
+}
+
+.price-table tr:nth-child(even) {
+  background-color: lighten($color-bg-primary, 5%); /* Slightly lighter than main background */
+}
+
+.note {
+  font-style: italic;
+  color: $color-text-secondary; /* $gray-dark-charcoal for general secondary text */
+  margin-top: 15px;
+}
+
+.warning {
+  color: $color-status-error; /* $red-rusty */
+  font-weight: bold;
+}
+
+.cta {
+  text-align: center;
+  padding: 20px;
+  background-color: $color-confirm; /* $green-ao */
+  color: white; /* Text color is white against green */
+  font-size: 1.2rem;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.cta a {
+  color: white; /* Link color is white for contrast */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.table-of-contents {
+  border: 1px solid $color-downplay; /* $white-old-silver */
+  padding: 15px;
+  margin-bottom: 25px;
+  background-color: lighten($color-bg-primary, 1%); /* Very slight light background */
+  border-radius: 4px;
+}
+
+.table-of-contents ul {
+  list-style: none;
+  padding: 0;
+}
+
+.table-of-contents a {
+  color: $color-status-info; /* $blue-de-france */
+  text-decoration: none;
+}
+
+.table-of-contents a:hover {
+  text-decoration: underline;
+}

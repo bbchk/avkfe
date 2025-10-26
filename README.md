@@ -1,5 +1,7 @@
 # AVAK GROUP Front-end
 
+create individual meta element on every page for better SEO
+
 investigate photo load issue
 
 rename photos accordignly, just for cleaner look
