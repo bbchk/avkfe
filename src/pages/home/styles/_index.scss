@@ -78,11 +78,9 @@
 
 .home__upsBat {
   grid-area: ups;
-  @include inactive(80%, 0.5);
 }
 
 .home__diagnostics {
   grid-area: diagnostics;
 
-  @include inactive(80%, 0.5);
 }

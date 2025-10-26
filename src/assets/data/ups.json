@@ -1,1 +1,60 @@
-[]
+[
+  {
+    "id": "730 78 02",
+    "imageUrl": "e-liesure-tab-100ah-ups-r+.jpg",
+    "name": "TAB HD12-100 E.Leisure Clever",
+    "capacity": 100,
+    "power": 1280,
+    "type": " LiFePO4",
+    "price": 20400.0,
+    "warranty": 24,
+    "manufacturerCountry": "Словенія",
+    "manufacturerBrand": "TAB d.d.",
+    "manufacturerWebsite": "https://www.tab.si/tab-e-leisure-batteries/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "inStock": true,
+    "length": 330,
+    "width": 173,
+    "height": 212
+  },
+  {
+    "id": "730 78 02",
+    "imageUrl": "e-leisure-150ah-tab-ups-euro-r+.png",
+    "name": "TAB HD12-150 E.Leisure Clever",
+    "capacity": 100,
+    "power": 1920,
+    "type": " LiFePO4",
+    "price": 20400.0,
+    "warranty": 24,
+    "manufacturerCountry": "Словенія",
+    "manufacturerBrand": "TAB d.d.",
+    "manufacturerWebsite": "https://www.tab.si/tab-e-leisure-batteries/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "inStock": true,
+    "length": 483,
+    "width": 170,
+    "height": 238
+  },
+  {
+    "id": "730 78 02",
+    "imageUrl": "ultracell_100ah-ups-euro-R+.jpg",
+    "name": "Ultracell GEL",
+    "capacity": 100,
+    "power": 1920,
+    "type": " LiFePO4",
+    "price": 20400.0,
+    "warranty": 24,
+    "manufacturerCountry": "Словенія",
+    "manufacturerBrand": "TAB d.d.",
+    "manufacturerWebsite": "https://www.tab.si/tab-e-leisure-batteries/",
+    "htmlSnippet": "<div><div>",
+    "polarity": true,
+    "inStock": true,
+    "length": 328,
+    "width": 173,
+    "height": 232
+  }
+
+]

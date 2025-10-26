@@ -4,25 +4,12 @@
 
 .catalog--ups {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
+
+  background-color: #f5f6f7;
 
   margin: 0 auto;
   padding: 1rem;
-
-  hr {
-    border: none;
-    border-top: 1px solid #e0e0e0;
-    margin: 0;
-  }
-
-  section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    gap: 1.5rem;
-    padding: 2rem 0;
-    background-color: #f5f6f7;
-  }
 }

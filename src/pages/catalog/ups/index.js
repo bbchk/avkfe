@@ -1,7 +1,7 @@
 import html from './index.html?raw';
 import css from './index.scss?inline';
 
-import createCarBatteryCard from '/components/carBatteryCard.js';
+import createUpsBatteryCard from '/components/upsBatteryCard.js';
 
 import { ROUTE_CHANGED_EVENT } from '/config/constants';
 
@@ -17,14 +17,11 @@ const handleRouteChange = () => {
     return;
   }
 
-  const cardsHtml = data.default
-    .map((battery) => createCarBatteryCard(battery))
+  const cardsHtml = Object.values(data)[0].default
+    .map((battery) => createUpsBatteryCard(battery))
     .join('');
-  return `
-      <section class="ups">${cardsHtml}</section>
-    `;
 
-  pageContainer.innerHTML = catalogHtml;
+  pageContainer.innerHTML = cardsHtml;
 };
 
 window.addEventListener(ROUTE_CHANGED_EVENT, handleRouteChange);
