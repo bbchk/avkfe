@@ -1,4 +1,6 @@
 @use '@styles/settings/index' as *;
+@use '@styles/components/index' as *;
+@use '@styles/utils' as *;
 
 .error {
   display: flex;
@@ -28,7 +30,7 @@
 
   border-radius: 50%;
 
-  background: $color-downplay;
+  background: rgba($color-downplay, 0.1);
 }
 
 .error--telescope {
@@ -44,9 +46,9 @@
   font-size: 1.5em;
   font-family: $font-mono;
 
-  color: $color-text-primary;
+  color: $color-status-error;
 }
 
-.error__homeLink {
+.error__homeLink{
   font-size: 1.5em;
 }

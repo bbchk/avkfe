@@ -59,6 +59,10 @@
     flex-flow: row nowrap;
     gap: 30px;
   }
+
+  a {
+    color: $color-text-primary;
+  }
 }
 
 .header__navItem {

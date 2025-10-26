@@ -1,5 +1,12 @@
 # AVAK GROUP Front-end
 
+
+put more history of avak on aboutUs
+
+mention on auto catalog page that we do:
+проводить повну підготовку до введення в експлуатацію нових акумуляторів 
+photo our equipment for this
+
 узгодити контент сторінки Про Нас і Діагностики
 
 set individual h1 on every page
