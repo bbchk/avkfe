@@ -64,7 +64,7 @@
     height: 1.5rem;
     width: 100%;
 
-    background: rgba(248, 249, 250, 0.95);
+    background: rgba(248, 249, 250, 0.8);
 
     svg {
       display: block;
@@ -104,7 +104,8 @@
   gap: 0.7rem 1rem;
 
   /* padding: 0 1.2rem 1.2rem; */
-  padding: 1.2rem;
+  padding: 0.8rem;
+  padding-top: 0.3rem;
 }
 
 .carBat__name {
@@ -128,10 +129,8 @@
 
 .carBat__price {
   grid-area: price;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-self: center;
+  justify-self: center;
 
   &--old {
     color: #999;
