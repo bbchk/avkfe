@@ -1,6 +1,6 @@
 const createCarBatteryCard = (p) => {
-  const FALLBACK_IMAGE_URL = '/goods_placeholder.svg';
-  const imageUrl = `/${p.imageUrl}` ?? FALLBACK_IMAGE_URL;
+  const FALLBACK_IMAGE_URL = 'goods_placeholder.svg';
+  const imageUrl = `/${p.imageUrl ?? FALLBACK_IMAGE_URL}`;
 
   return `
 <div class="carBat" data-id="${p.id}">
