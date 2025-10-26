@@ -36,9 +36,7 @@
     "length": 207,
     "width": 175,
     "height": 175,
-    "tags": [
-      "Низький"
-    ]
+    "tags": ["low"]
   },
   {
     "id": "5",
@@ -50,14 +48,15 @@
     "price": 1980,
     "warranty": 24,
     "manufacturerCountry": "Казахстан",
-    "manufacturerBrand": "I STAR",
-    "manufacturerWebsite": "https://istarbattery.kz/",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
     "polarity": null,
     "inStock": true,
     "length": 186,
     "width": 129,
-    "height": 220
+    "height": 220,
+    "tags": ["narrow"]
   },
   {
     "id": "7",
@@ -69,14 +68,15 @@
     "price": 2110,
     "warranty": 24,
     "manufacturerCountry": "Казахстан",
-    "manufacturerBrand": "I STAR",
-    "manufacturerWebsite": "https://istarbattery.kz/",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
     "polarity": null,
     "inStock": true,
     "length": 236,
     "width": 128,
-    "height": 223
+    "height": 223,
+    "tags": ["narrow"]
   },
   {
     "id": "1",
@@ -95,7 +95,8 @@
     "inStock": true,
     "length": 186,
     "width": 129,
-    "height": 220
+    "height": 220,
+    "tags": ["narrow"]
   },
   {
     "id": "6",
@@ -106,9 +107,9 @@
     "type": "Кислотний",
     "price": 2170,
     "warranty": 24,
-    "manufacturerCountry": "Україна",
-    "manufacturerBrand": "Crona",
-    "manufacturerWebsite": "https://crona.ua/",
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
     "polarity": null,
     "inStock": true,
@@ -131,11 +132,9 @@
     "htmlSnippet": "<div><div>",
     "polarity": null,
     "length": 190,
-    "width": 110,
-    "height": 175,
-    "tags": [
-      "Низький"
-    ]
+    "width": 175,
+    "height": 190,
+    "tags": ["low"]
   },
   {
     "id": "1",
@@ -146,9 +145,9 @@
     "type": "Кислотний",
     "price": 2200,
     "warranty": 24,
-    "manufacturerCountry": "Україна",
-    "manufacturerBrand": "Maximus",
-    "manufacturerWebsite": "https://maximusbattery.ua/",
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
     "polarity": null,
     "inStock": true,
@@ -167,8 +166,8 @@
     "price": 2310,
     "warranty": 24,
     "manufacturerCountry": "Казахстан",
-    "manufacturerBrand": "I STAR",
-    "manufacturerWebsite": "https://istarbattery.kz/",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
     "polarity": null,
     "inStock": true,
@@ -205,14 +204,15 @@
     "price": 2490,
     "warranty": 24,
     "manufacturerCountry": "Казахстан",
-    "manufacturerBrand": "I STAR",
-    "manufacturerWebsite": "https://istarbattery.kz/",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
     "polarity": null,
     "inStock": true,
     "length": 236,
     "width": 129,
-    "height": 220
+    "height": 220,
+    "tags": ["narrow"]
   },
   {
     "id": "4",
@@ -251,9 +251,7 @@
     "length": 242,
     "width": 175,
     "height": 175,
-    "tags": [
-      "Низький"
-    ]
+    "tags": ["low"]
   },
   {
     "id": "5",
@@ -276,43 +274,21 @@
   },
   {
     "id": "4",
-    "imageUrl": "Акумулятор автомобільний 62Аг (-_+) I STAR АКБ 242x175x190.jpg",
-    "name": "I STAR Standard",
-    "capacity": 62,
-    "cca": 600,
-    "type": "Кислотний",
-    "price": 2590,
-    "warranty": 24,
-    "manufacturerCountry": "Казахстан",
-    "manufacturerBrand": "I STAR",
-    "manufacturerWebsite": "https://istarbattery.kz/",
-    "htmlSnippet": "<div><div>",
-    "polarity": null,
-    "inStock": true,
-    "length": 242,
-    "width": 175,
-    "height": 190
-  },
-  {
-    "id": "4",
     "imageUrl": "kainar-index-60ah-euro.jpg",
     "name": "Kainar",
     "capacity": 62,
-    "cca": 590,
+    "cca": 550,
     "type": "Кислотний",
-    "price": 2650,
+    "price": 2730,
     "warranty": 24,
     "manufacturerCountry": "Казахстан",
     "manufacturerBrand": "Kainar",
     "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
-    "polarity": true,
-    "length": 190,
-    "width": 110,
-    "height": 175,
-    "tags": [
-      "Низький"
-    ]
+    "polarity": null,
+    "length": 242,
+    "width": 175,
+    "height": 190
   },
   {
     "id": "6",
@@ -361,9 +337,9 @@
     "type": "Кислотний",
     "price": 2660,
     "warranty": 24,
-    "manufacturerCountry": "Україна",
-    "manufacturerBrand": "Maximus",
-    "manufacturerWebsite": "https://maximusbattery.ua/",
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
     "polarity": null,
     "inStock": true,
@@ -406,11 +382,8 @@
     "htmlSnippet": "<div><div>",
     "polarity": true,
     "length": 190,
-    "width": 110,
-    "height": 175,
-    "tags": [
-      "Низький"
-    ]
+    "width": 175,
+    "height": 190
   },
   {
     "id": "8",
@@ -460,8 +433,8 @@
     "price": 2840,
     "warranty": 24,
     "manufacturerCountry": "Казахстан",
-    "manufacturerBrand": "I STAR",
-    "manufacturerWebsite": "https://istarbattery.kz/",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
     "polarity": false,
     "inStock": true,
@@ -483,12 +456,9 @@
     "manufacturerWebsite": "https://www.autopart.pl/en",
     "htmlSnippet": "<div><div>",
     "polarity": true,
-    "length": 190,
-    "width": 110,
-    "height": 175,
-    "tags": [
-      "Низький"
-    ]
+    "length": 242,
+    "width": 175,
+    "height": 190
   },
   {
     "id": "10",
@@ -504,49 +474,28 @@
     "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
     "polarity": true,
-    "length": 200,
-    "width": 130,
-    "height": 200
+    "length": 230,
+    "width": 173,
+    "height": 220
   },
   {
     "id": "5",
-    "imageUrl": "Акумулятор автомобільний 65 А·год (-_+) GOLD АКБ 242x175x190.jpg",
+    "imageUrl": "kainar-maximus-65ah-euro.jpg",
     "name": "MAXIMUS Premium",
     "capacity": 65,
     "cca": 640,
     "type": "Кислотний",
     "price": 2940,
     "warranty": 24,
-    "manufacturerCountry": "Україна",
-    "manufacturerBrand": "Maximus",
-    "manufacturerWebsite": "https://maximusbattery.ua/",
+    "manufacturerCountry": "Казахстан",
+    "manufacturerBrand": "Kainar",
+    "manufacturerWebsite": "https://kainar.kz/",
     "htmlSnippet": "<div><div>",
     "polarity": null,
     "inStock": true,
     "length": 242,
     "width": 175,
     "height": 190
-  },
-  {
-    "id": "5",
-    "imageUrl": "kainar-maximus-65ah-euro.jpg",
-    "name": "Maximus",
-    "capacity": 65,
-    "cca": 640,
-    "type": "Кислотний",
-    "price": 2950,
-    "warranty": 24,
-    "manufacturerCountry": "Казахстан",
-    "manufacturerBrand": "Kainar",
-    "manufacturerWebsite": "https://kainar.kz/",
-    "htmlSnippet": "<div><div>",
-    "polarity": true,
-    "length": 190,
-    "width": 110,
-    "height": 175,
-    "tags": [
-      "Низький"
-    ]
   },
   {
     "id": "4",
@@ -581,8 +530,8 @@
     "manufacturerWebsite": "https://www.tab.si/products/vesna_power/",
     "htmlSnippet": "<div><div>",
     "polarity": true,
-    "length": 200,
-    "width": 130,
+    "length": 230,
+    "width": 173,
     "height": 200
   }
 ]
