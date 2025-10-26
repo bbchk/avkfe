@@ -14,9 +14,9 @@ const createUpsBatteryCard = (p) => {
     <p class="carBat__type">${p.type}</p>
 
     <div class="carBat__specs">
+      <p>${p.voltage}<span>V</span></p>
       <p>${p.capacity}<span>Ah</span></p>
       ${p.power ? `<p>${p.power}<span>Wh</span></p>` : ""}
-      <p class="carBat__polarity">${p.polarity !== null ? (p.polarity ? 'R<span>+<span>' : 'L<span>+<span>') : 'R<span>+</span>,L<span>+<span>'}</p>
     </div>
 
 
