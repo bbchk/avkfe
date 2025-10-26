@@ -7,6 +7,8 @@ import { fetchProducts } from '/services/api.service';
 const pages = import.meta.glob('/pages/**/index.js');
 
 async function go(route, addToHistory = true) {
+  console.log(route)
+  console.log("we are in go functoin")
   if (route === '/') {
     route = '/home';
   }
@@ -23,6 +25,9 @@ async function go(route, addToHistory = true) {
 
   const { html, css, preFetch } = await pages[path]();
 
+
+  console.log("we are in go functoin, reloading")
+  // console.log(html, css)
   reloadContent(html, css);
 
   window.scrollTo({

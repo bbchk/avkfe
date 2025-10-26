@@ -11,7 +11,7 @@ const data = import.meta.glob('/assets/data/ah{190,210,230}.json', {
 const carBats = Object.values(data).map((v) => v.default);
 
 const handleRouteChange = () => {
-  const pageContainer = document.querySelector(".catalog--auto");
+  const pageContainer = document.querySelector(".catalog--auto-141ah");
 
   const ahGroups = [190,210,230];
 

@@ -11,7 +11,7 @@ const data = import.meta.glob('/assets/data/ah{100,140}.json', {
 const carBats = Object.values(data).map((v) => v.default);
 
 const handleRouteChange = () => {
-  const pageContainer = document.querySelector(".catalog--auto");
+  const pageContainer = document.querySelector(".catalog--auto-100ah");
 
   if (!pageContainer) {
     console.error("Catalog container with class '.catalog--auto' not found.");

@@ -1,4 +1,5 @@
 export default function reloadContent(html, css) {
+  console.log("reload of content")
   const mainElement = $('#pageContainer');
   if (mainElement) {
     mainElement.innerHTML = '';
@@ -19,9 +20,9 @@ export default function reloadContent(html, css) {
 // Use HTML template element
 const contentElement = document.createElement('template');
 contentElement.innerHTML = html;
+
 mainElement.appendChild(contentElement.content.cloneNode(true));
 
-    // mainElement.innerHTML = html;
 
     // TODO: this needs to be off during development because of jumping after updating css
     // window.scrollY = 0;

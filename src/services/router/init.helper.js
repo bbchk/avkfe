@@ -8,6 +8,7 @@ export default async function init() {
   }
 
   window.on('popstate', (event) => {
+    console.log('popstate happened');
     this.go(event.state.route, false);
   });
 }
