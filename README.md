@@ -5,6 +5,8 @@
 
 implement inProcess state
 
+implment tags and inStock view for product card
+
 set watermarks on photos automatically
 
 clamp on bat name in product card

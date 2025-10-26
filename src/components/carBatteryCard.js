@@ -1,10 +1,10 @@
 const createCarBatteryCard = (p) => {
   p.imageUrl = `/${p.imageUrl}`;
 
+  // ${p?.tags ? `<span class="carBat_tag">${p.tags?.[0]}<p>` : ''}
   return `
 <div class="carBat" data-id="${p.id}">
 
-    <p>${p?.tags}<p>
   <div class="carBat__image">
     <img src="${p.imageUrl}" alt="${p.name}">
 
@@ -31,7 +31,7 @@ const createCarBatteryCard = (p) => {
     <div class="carBat__specs">
       <p>${p.capacity}<span>Ah</span></p>
       <p>${p.cca}<span>A(EN)</span></p>
-      <p class="carBat__polarity">${p.polarity !== null ? (p.polarity ? 'R<span>+<span>' : 'L<span>+<span>') : "R<span>+</span>,L<span>+<span>"}</p>
+      <p class="carBat__polarity">${p.polarity !== null ? (p.polarity ? 'R<span>+<span>' : 'L<span>+<span>') : 'R<span>+</span>,L<span>+<span>'}</p>
     </div>
 
 
@@ -50,11 +50,10 @@ const createCarBatteryCard = (p) => {
   `;
 };
 
-    // <button class="carBat__orderBtn">🛒</button>
+// <button class="carBat__orderBtn">🛒</button>
 //
 // remove duplicates that have only solely different polarity, set polarity to `null` in such objects. please pay attention to sizes of car battery, not to remove json object with same polarity, but different sizes
 // please sort it now by capacity, but same time for same capacity by price
 //set "low" tag on those who have 175 height
 
 export default createCarBatteryCard;
-

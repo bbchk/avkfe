@@ -21,6 +21,13 @@
 .carBat:hover {
 }
 
+.carBat_tag {
+  z-index: 10;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
 /* === IMAGE === */
 .carBat__image {
   position: relative;
