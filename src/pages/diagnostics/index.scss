@@ -2,8 +2,8 @@
 @use '@styles/components/index' as *;
 @use '@styles/utils' as *;
 
-// 🌿 General Blog Feel
 .page--diagnostics {
+  /* display: grid */
   margin: 40px auto;
   padding: 40px 50px;
 
@@ -15,7 +15,6 @@
   color: $color-text-primary;
 }
 
-// 📰 Header Area
 .diagnostics__header {
   text-align: center;
   padding-bottom: 20px;
@@ -34,9 +33,7 @@
     color: $color-secondary;
   }
 }
-
-// 📄 Section Styling
-.diagnostics__section {
+.page--diagnostics section {
   margin-bottom: 40px;
 
   p {
@@ -46,32 +43,13 @@
   }
 }
 
-.diagnostics__separator {
-  border: none;
-  height: 2px;
-  width: 60%;
-  margin: 50px auto;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    $color-secondary 40%,
-    transparent
-  );
-  opacity: 0.5;
+.diagnostics__section--sulfatation {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-// 🖼 Figure & Image
 .diagnostics__figure {
-  margin: 40px 0;
   text-align: center;
-  background-color: lighten($color-bg-primary, 5%);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-
-  &:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
 }
 
 .diagnostics__image {
