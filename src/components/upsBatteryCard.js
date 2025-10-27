@@ -7,6 +7,21 @@ const createUpsBatteryCard = (p) => {
 
   <div class="carBat__image">
     <img src="${imageUrl}" alt="${p.name}">
+
+    <div class="carBat__dimensions">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="carBat__dimensions__svg">
+        <defs>
+          <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L6,3 L0,6 L1,3 Z" fill="currentColor" />
+          </marker>
+        </defs>
+
+        <line x1="20" y1="80" x2="85" y2="80" stroke="#000" stroke-width="5" marker-end="url(#arrow)"/>
+        <line x1="20" y1="80" x2="60" y2="40" stroke="#000" stroke-width="5" marker-end="url(#arrow)"/>
+        <line x1="20" y1="80" x2="20" y2="10" stroke="#000" stroke-width="5" marker-end="url(#arrow)"/>
+      </svg>
+      <p class="carBat__dimensionsValues">${p.length}<span>/</span>${p.width}<span>/</span>${p.height}</p>
+    </div>
   </div>
 
   <div class="carBat__info">
