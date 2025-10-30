@@ -1,5 +1,4 @@
 export default function reloadContent(html, css) {
-  console.log("reload of content")
   const mainElement = $('#pageContainer');
   if (mainElement) {
     mainElement.innerHTML = '';
