@@ -2,6 +2,7 @@
 
 let's filter and sort these things
 
+is there aspect programming for javascript?
 
 put more history of avak on aboutUs
 
