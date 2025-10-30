@@ -64,37 +64,27 @@ $red-cardinal: #c82333;
 /* -------------------------------------------------- purple -------------------------------------------------- */
 $purple-iris: #5d3fd3;
 
-
 /* ========================================================================================================= */
 
-/* ---------- BRAND COLORS --------------- */
-$primary: $blue-usafa;
-$secondary: $yellow-tangerine;
+$color-primary: $blue-usafa;
+$color-secondary: $yellow-tangerine;
 
-/* ---------- SEMANTIC COLORS --------------- */
+$color-downplay: $white-old-silver;
+$color-highlight: $white-old-silver;
 
-/* Utility colors */
-$downplay: $white-old-silver;
-/* $color-highlight: $white-old-silver; */
+$color-confirm: $green-ao;
+$color-decline: $red-deep-pink;
+$color-destruct: $red-cardinal;
 
-/* Action colors */
-$confirm: $green-ao;
-$decline: $red-deep-pink;
-$destruct: $red-cardinal;
+$color-status-success: $green-american;
+$color-status-error: $red-rusty;
+$color-status-warning: $yellow-mikado;
+$color-status-info: $blue-de-france;
 
-/* Status colors */
-$status-success: $green-american;
-$status-error: $red-rusty;
-$status-warning: $yellow-mikado;
-$status-info: $blue-de-france;
+$color-text-primary: $black-rich;
+$color-text-secondary: $gray-dark-charcoal;
 
-/* Text colors */
-$text-primary: $black-rich;
-$text-secondary: $gray-dark-charcoal;
+$color-link-primary: $gray-dark-charcoal;
+$color-link-secondary: $gray-dark-charcoal;
 
-/* Link colors */
-$link-primary: $gray-dark-charcoal;
-$link-secondary: $gray-dark-charcoal;
-
-/* Background colors */
-$bg-primary: $white-cultured;
+$color-bg-primary: $white-cultured;
