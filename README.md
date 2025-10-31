@@ -1,5 +1,7 @@
 # AVAK GROUP Front-end
 
+make real business card 
+
 let's filter and sort these things
 
 is there aspect programming for javascript?

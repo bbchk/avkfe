@@ -25,7 +25,7 @@ app_image = avkfe
 
 # == Primary targets below ======================
 
-setup: create-network build install-deps up
+setup: create-network build install up
 
 build: .env
 	docker compose build
@@ -62,7 +62,7 @@ create-network:
 		APP_USER_ID="$(APP_USER_ID)"'
 	) .env
 
-install-deps:
+install:
 	docker compose run --no-deps --rm -w /var/www/app/src app -- pnpm install --frozen-lockfile
 
 # == QoL targets below ======================
@@ -92,7 +92,7 @@ help:
 	|
 	|   - .env                      Write .env files from .env.example ones OR prompt the user to overwrite them.
 	|   - create-network    	Creates external network.
-	|   - install-deps 			Run main container and install dependencies from lock file.
+	|   - install Run main container and install dependencies from lock file.
 	|   - $(compose_file_custom)   Creates custom docker compose file.
 	| ------------------------------
 	|  Quality of life:

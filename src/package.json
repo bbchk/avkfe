@@ -33,6 +33,7 @@
   },
   "license": "GNU",
   "dependencies": {
+    "loglevel": "^1.9.2",
     "pino": "^9.11.0"
   }
 }
