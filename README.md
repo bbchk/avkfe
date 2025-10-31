@@ -1,5 +1,8 @@
 # AVAK GROUP Front-end
 
+research robots.txt
+
+establish staging and production, move hostname
 make real business card 
 
 let's filter and sort these things
