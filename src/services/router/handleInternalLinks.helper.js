@@ -1,17 +1,17 @@
+let delegationSetup = false;
 
 export default function handleInternalLinks(inLinkClass) {
-  const internalLinks = $$(`a.${inLinkClass}`);
+  // Set up delegation only once
+  if (!delegationSetup) {
+    document.addEventListener('click', (event) => {
+      const target = event.target.closest(`a.${inLinkClass}`);
 
-  internalLinks.forEach((e) => {
-    const anchorElement = e;
-
-    anchorElement.on('click', (event) => {
-      event.preventDefault();
-
-      //TODO: create custom event for signaling of changing route to do some things asap
-      const url = new URL(anchorElement.href).pathname;
-
-      this.go(url);
+      if (target) {
+        event.preventDefault();
+        const url = new URL(target.href).pathname;
+        this.go(url);
+      }
     });
-  });
+    delegationSetup = true;
+  }
 }

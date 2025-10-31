@@ -5,6 +5,8 @@ import createUpsBatteryCard from '/components/upsBatteryCard.js';
 
 import { ROUTE_CHANGED_EVENT } from '/config/constants';
 
+// it is not fast enough to render the returned html how we try to handleRouteChange?
+
 const data = import.meta.glob('/assets/data/ups.json', {
   eager: true,
 });

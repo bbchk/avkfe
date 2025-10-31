@@ -14,7 +14,8 @@ window._app = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  logger.debug({ Router }, 'Router:init');
+  logger.debug('Router:init', { Router });
+
   window._app.router.init();
 
   utils.effects.header.init('.header');

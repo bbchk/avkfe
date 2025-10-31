@@ -1,4 +1,8 @@
+import logger from '@/config/logger.js';
+
 export default function reloadContent(html, css) {
+  logger.debug('Router:reloadContent', { html, css });
+
   const mainElement = $('#pageContainer');
   if (mainElement) {
     mainElement.innerHTML = '';
@@ -15,13 +19,11 @@ export default function reloadContent(html, css) {
     // contentElement.innerHTML = html;
     // mainElement.appendChild(contentElement);
 
+    // Use HTML template element
+    const contentElement = document.createElement('template');
+    contentElement.innerHTML = html;
 
-// Use HTML template element
-const contentElement = document.createElement('template');
-contentElement.innerHTML = html;
-
-mainElement.appendChild(contentElement.content.cloneNode(true));
-
+    mainElement.appendChild(contentElement.content.cloneNode(true));
 
     // TODO: this needs to be off during development because of jumping after updating css
     // window.scrollY = 0;

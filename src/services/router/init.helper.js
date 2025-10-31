@@ -1,3 +1,4 @@
+import logger from '@/config/logger.js';
 
 export default async function init() {
   try {
@@ -8,7 +9,7 @@ export default async function init() {
   }
 
   window.on('popstate', (event) => {
-    console.log('popstate happened');
+    logger.debug('Router:popstate');
     this.go(event.state.route, false);
   });
 }
