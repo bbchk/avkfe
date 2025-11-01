@@ -2,7 +2,11 @@
 
 website
 p1
+pick variants of akb from avto standart
+
 - make buy button send bought items to viber as message, so we reach out back
+
+
 we need to set fucking bosch and varta (at least one model), so people see we sell them as well
 implment tags and inStock view for product card
 research usage of jsx
@@ -49,6 +53,7 @@ incorporate blog to website
 
 general:
 p1
+set goods in google
 make real business card
 p2
 p3
