@@ -137,41 +137,5 @@
     "length": 522,
     "width": 240,
     "height": 218
-  },
-  {
-    "id": "140A",
-    "imageUrl": "goods_placeholder.svg",
-    "name": "АКБ 105Ah DECK AGM DEEP CYCLE  (-/+)  EN850 345x175x230",
-    "capacity": 105,
-    "type": "AGM",
-    "price": 8423.0,
-    "warranty": 12,
-    "manufacturerCountry": "Болгарія",
-    "manufacturerBrand": "Monbat",
-    "manufacturerWebsite": "https://www.monbat.com/",
-    "htmlSnippet": "<div><div>",
-    "polarity": false,
-    "inStock": true,
-    "length": 513,
-    "width": 189,
-    "height": 220
-  },
-  {
-    "id": "140A",
-    "imageUrl": "Акумулятор автомобільний 140Ah (-_+) DECK AGM DEEP CYCLE АКБ 513x189x220.jpg",
-    "name": "DECK AGM DEEP CYCLE",
-    "capacity": 140,
-    "type": "AGM",
-    "price": 8423.0,
-    "warranty": 12,
-    "manufacturerCountry": "Болгарія",
-    "manufacturerBrand": "Monbat",
-    "manufacturerWebsite": "https://www.monbat.com/",
-    "htmlSnippet": "<div><div>",
-    "polarity": false,
-    "inStock": true,
-    "length": 513,
-    "width": 189,
-    "height": 220
   }
 ]
