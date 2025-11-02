@@ -45,13 +45,13 @@ const createCarBatteryCard = (p) => {
       <a href="${p.manufacturerWebsite}" class="carBat__origin" target="_blank">${p.manufacturerCountry}, ${p.manufacturerBrand}</a>
     </div>
 
+    <button class="carBat__orderBtn">🛒</button>
   </div>
 </div>
   `;
 };
 
 // TODO
-// <button class="carBat__orderBtn">🛒</button>
 // ${p?.tags ? `<span class="carBat_tag">${p.tags?.[0]}<p>` : ''}
 
 export default createCarBatteryCard;

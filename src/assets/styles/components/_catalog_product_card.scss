@@ -202,15 +202,13 @@
 }
 
 .carBat__orderBtn {
-  @include inactive(100%, 0.5);
 
   grid-area: buy;
 
   align-self: center;
   justify-self: center;
 
-  /* background: #0078d7; */
-  border: 2px solid $color-confirm;
+  /* border: 2px solid $color-confirm; */
   color: $color-confirm;
 
   font-family: $font-emoji;
