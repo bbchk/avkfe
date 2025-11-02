@@ -5,6 +5,9 @@ p1
 pick variants of akb from avto standart
 
 - make buy button send bought items to viber as message, so we reach out back
+- we need cart that that saves items locally in browser
+we need cart dialog
+we need header button
 
 
 we need to set fucking bosch and varta (at least one model), so people see we sell them as well

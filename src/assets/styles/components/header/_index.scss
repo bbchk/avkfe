@@ -8,7 +8,7 @@
   grid-template-columns: 0.7fr 2fr 3fr 1.5fr;
   grid-template-rows: 5rem auto;
   grid-template-areas:
-    'logo nav nav nav'
+    'logo nav nav cart'
     'wip wip wip wip';
 
   position: fixed;
@@ -88,6 +88,12 @@
     display: inline;
     line-height: 15px;
   }
+}
+
+.header__cartContainer {
+  grid-area: cart;
+  background: red;
+
 }
 
 .header__wip {
