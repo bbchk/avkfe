@@ -5,49 +5,25 @@ import './utils/dom.utils.js';
 import utils from './utils/index.export.js';
 
 // TODO: introduce logging
-import logger from './config/logger.js';
+import logger from '@/config/logger.js';
 
 import { Router } from './services/router/index.service.js';
+import { ui } from './services/ui/index.ui.service.js';
 
 window._app = {
   router: Router,
+  ui: ui,
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+document.on('DOMContentLoaded', () => {
   logger.debug('Router:init', { Router });
 
   window._app.router.init();
 
   utils.effects.header.init('.header');
-});
 
-// TODO: implement all catchers below
-// process.on('uncaughtException', (err) => {
-//   // log the exception
-//   logger.fatal(err, 'uncaught exception detected');
-//   // shutdown the server gracefully
-//   server.close(() => {
-//     process.exit(1); // then exit
-//   });
-//
-//   // If a graceful shutdown is not achieved after 1 second,
-//   // shut down the process completely
-//   setTimeout(() => {
-//     process.abort(); // exit immediately and generate a core dump file
-//   }, 1000).unref()
-//   process.exit(1);
-// });
-//
-//
-// const cleanupSignals = ['SIGINT', 'SIGTERM', 'SIGTSTP', 'SIGQUIT']
-// cleanupSignals.forEach((signal) => {
-//   process.on(signal, () => {
-//     ml.info(`Received ${signal}`)
-//     cleanup(server)
-//   })
-// })
-//
-// process.on('unhandledRejection', (err) => {
-//   ml.error(err.message)
-//   cleanup(server, ERROR_EXIT_CODE)
-// })
+  $('#cartBtn').on('click', () => {
+    logger.debug("cartBtn:click");
+    window._app.ui.openModal('cart');
+  });
+});

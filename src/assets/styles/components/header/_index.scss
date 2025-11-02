@@ -23,6 +23,9 @@
   overflow: clip;
 
   border-bottom: 2px solid rgba($color-downplay, 0.2);
+
+  font-family: $font-primary;
+  font-size: 1.2rem;
 }
 
 .header__logo {
@@ -34,11 +37,6 @@
   gap: 15px;
 
   padding: 0 30px;
-
-  span {
-    font-size: 3rem;
-    font-weight: 500;
-  }
 }
 
 .header__nav {
@@ -50,9 +48,6 @@
 
   width: 100%;
   padding: 0 20px;
-
-  font-family: $font-primary;
-  font-size: 1.2rem;
 
   ul {
     display: flex;
@@ -76,24 +71,19 @@
   }
 }
 
-.header__navItem--contacts {
-  display: flex;
-  gap: 20px;
-
-
-  font-family: $font-mono;
-  font-size: 1.5rem;
-
-  p {
-    display: inline;
-    line-height: 15px;
-  }
-}
-
 .header__cartContainer {
   grid-area: cart;
-  background: red;
 
+  color: purple;
+
+  font-weight: 600;
+  font-size: 1.3em;
+  font-family: $font-emoji;
+
+  button {
+    margin: 0 10px;
+    padding: 15px;
+  }
 }
 
 .header__wip {
@@ -109,4 +99,3 @@
 
   background: rgba($color-downplay, 0.2);
 }
-
