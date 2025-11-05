@@ -4,6 +4,8 @@ website
 p1
 pick variants of akb from avto standart
 
+setup odoo and pull products from odoo on website
+
 - make buy button send bought items to viber as message, so we reach out back
 - we need cart that that saves items locally in browser
 we need cart dialog
