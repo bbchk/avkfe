@@ -50,41 +50,44 @@ style eerror page
 include photo of cut car battery in website and explain car battery structure
 incorporate blog to website
 create auto messages sender
+- Прийом відпрацьованих свинцевих АКБ додати
 
 general:
 p1
 find out what we need for sending akb via nova post  
 set goods in google
 make real business card
+
+metal brush both terminal and connector
+soapy water and wipe down place for batteries
+
+batteries are fixed because:
+    it reduces vibration
+    it does not become projectile in an accident that could damage other parts of system or just flew out
+
+
+never put tools on top of battery to prevent short curcuit
+
+short curcuit in batteries happen due to heat and vibration
+
+we need at least one agm/gel powerfull charher 
+
 p2
 p3
 
-sticker for ktc on battery after ktc, how many volts when came, what's the satus, list of work done?, etc.
-live stream of what's going on with your battery/auto
-
-- prepare phrases to convince people to come:
-Усі акумулятори проходять пре продажну перевірку, ми запевненін що вони будуть довго служити
-надаємо гарантію, ми на ринку вже 25 років, займаємось тільки тими виробниками в яких впевнені
-самі діагностуємо і відновлюємо акумулятори, тому розуміємся які кращі, гірші, які вам будуть служити, а якщо будете берегти то ще довше
-learn:
 
 - find out all the batteries manufecturer code (for all the companies)
   - put it near accumulator themselves
   - find out what other product lines current manufacturers have
 
-- create list of standard questions to ask every person who comes:
-  - start/stop ?
-  - for yourself? you want good one?
-  - etc.
+p4
+- there are 3 main ways people can reach out: come, phone call, platforms (e.g. olx) (we need to make sure that all 3 ways have their specific requirements fulfilled)
+- sell trickle charger 
+- need to update olx account itself and also posts (make one photo collage with working utk, new accumulators and somehting else)
 
-- general thoughts
-  - there are 3 main ways people can reach out: come, phone call, platforms (e.g. olx)
-    we need to make sure that all 3 ways have their specific requirements fulfilled
-create a paper bouklet with different groups (60ah, 70ah, etc...), and empty places for prices
+- prepare phrases to convince people to come:
+    Усі акумулятори проходять пре продажну перевірку, ми запевненін що вони будуть довго служити
+    надаємо гарантію, ми на ринку вже 25 років, займаємось тільки тими виробниками в яких впевнені
+    самі діагностуємо і відновлюємо акумулятори, тому розуміємся які кращі, гірші, які вам будуть служити, а якщо будете берегти то ще довше
 
-- need to update olx account itself and also posts
-  - make one photo collage with working utk, new accumulators and somehting else
-
-  - Прийом відпрацьованих свинцевих АКБ додати
-if person asks for a specific model (forse) -> suggest very similar things (and explain similarity)
-
+- live stream of what's going on with your battery/auto
